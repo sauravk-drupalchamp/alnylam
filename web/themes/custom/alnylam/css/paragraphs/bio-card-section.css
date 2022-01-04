@@ -1,0 +1,54 @@
+.bios-card-with-image-field , .bios-card-without-image-field.col-sm-12 {
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 30px;
+  padding: 64px 48px;
+}
+.paragraph-id--134 .bios-card-with-image-field{
+  margin-bottom: 0px !important;
+}
+.paragraph-id--149 
+.bios-card-with-image-field .col-sm-3{
+  padding: 0 !important;
+}
+.paragraph-id--137{
+  background-color: #f4f9fc;
+}
+.paragraph-id--137 h2{
+  margin-top: 0px !important;
+}
+.bios-card-with-image-field .col-sm-9{
+  padding-left: 27.5px;
+}
+.bios-card-with-image-field .image{
+  display: flex;
+  justify-content: left;
+}
+
+.bios-card-with-image-field .name , .bios-card-without-image-field .name {
+  line-height: 1.1em;
+  margin: 0px 0px 16px 0px !important;
+}
+.bios-card-with-image-field .designation , .bios-card-without-image-field .designation {
+  font-size: 35px;
+  font-weight: 200;
+  color: #003366;
+  line-height: 1.1em;
+  padding-bottom: 16px;
+}
+.bios-card-with-image-field .bio-desc p , .bios-card-without-image-field .bio-desc p {
+  text-align: justify;
+  margin-bottom: 20px;
+  font-weight: 300;
+  line-height: 24px;
+}
+h1.name,h3.position{
+  display: inline;
+  line-height: 48px;
+}
+.name-position .position{
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 48px;
+  margin-top: 0;
+}

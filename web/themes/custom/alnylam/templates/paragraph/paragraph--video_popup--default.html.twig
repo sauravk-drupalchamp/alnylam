@@ -1,0 +1,37 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+
+	<div{{attributes.addClass(classes)}}>
+		{% set ComponentWidth =  paragraph.field_set_width.value %}
+
+		<div class="video-popup-content" style="width:{{ ComponentWidth }}px; margin:auto;">
+			<a data-colorbox-inline=".video-box-{{ paragraph.id() }}" style="width: 571px; height:326px;">
+				<div class="three-column-image-box">{{ content.field_upload_image }}
+					<div class="three-column-video-play-button"></div>
+				</div>
+				<div class="video-box-{{ paragraph.id() }}" style="display: none;">{{ content.field_embed_video }}</div>
+			</a>
+			<div class="video-popup-desc">{{ content.field_video_desc }}</div>
+		</div>
+	</div>
+
+{% endblock paragraph %}

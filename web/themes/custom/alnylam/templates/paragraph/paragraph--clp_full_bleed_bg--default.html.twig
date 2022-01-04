@@ -1,0 +1,40 @@
+
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+	<div{{attributes.addClass(classes)}}>
+    {% set Class = paragraph.field_label.value %}
+	{% set ComponentWidth =  paragraph.field_set_width.value %}
+    {% set BackgroundImage = file_url(paragraph.field_background_thumbnail.entity.uri.value) %}  
+    <div{{attributes.addClass(classes)}}>
+        <div id="clp-full-bleed-bg" style="background: url({{BackgroundImage}});   background-size: cover; background-repeat: no-repeat;">
+            <div class="text-wrapper" style="width:{{ComponentWidth}}px;margin:auto;">
+                {% if paragraph.field_video_desc.value %}
+                    {{paragraph.field_video_desc.value|raw}}
+                {% endif %}
+            </div>
+            <div class="{{paragraph.field_pop_up_id.value|raw}} popup-content" style="display:none; background:#fff; overflow:hidden;">{{content.field_pop_up_content}}</div>
+        </div>
+	</div>
+
+	</div>
+{% endblock paragraph %}
+

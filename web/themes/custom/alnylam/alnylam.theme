@@ -1,0 +1,85 @@
+<?php
+
+use Drupal\block\Entity\Block;
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+
+/**
+ * Implements hook_preprocess_HOOK() for page alter.
+ *
+ */
+function alnylam_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'page__'.$content_type;
+  }
+}
+
+/**
+ * Implements template_preprocess_html().
+ */
+function alnylam_preprocess_html(&$variables) {
+  $node = \Drupal::request()->attributes->get('node');
+  if ($node = \Drupal::request()->attributes->get('node')) {
+    $variables['attributes']['class'][] = 'page-node-' . $node->id();
+    $type_name = $node->type->entity->label();  
+    if ($type_name == 'Basic page') {
+	if (isset($node) && is_object($node)) {
+	    if (!empty($node->field_custom_body_class->getValue()[0]['value'])) {
+		$custom_body_class = $node->field_custom_body_class->getValue()[0]['value'];
+		// if something, then set $custom_body_class to something.
+		$variables['attributes']['class'] = $custom_body_class;
+	    }
+	}
+    }
+  }
+}
+
+// File: THEMENAME.theme in your theme's root directory
+function alnylam_preprocess(&$variables, $hook)
+{
+    $variables['base_path'] = base_path();
+}
+
+/**
+ * Block suggestions for custom block bundles.
+ */
+function alnylam_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+  if (isset($variables['elements']['content']['#block_content'])) {
+    array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
+  }
+}
+
+/**
+ * Implements hook_preprocess_page
+ *
+ * @param $variables
+ */
+function alnylam_preprocess_page(&$variables) {
+
+  if($node = \Drupal::request()->attributes->get('node')){
+    $type_name = $node->type->entity->label();  
+    if ($type_name == 'CLP') {    
+
+        if(!empty($node->get('field_header')->getValue()[0]['target_id'])){
+        
+        $get_header_value = $node->get('field_header')->getValue()[0]['target_id'];
+        $variables['header_value'] = $get_header_value;
+      
+        }
+        if(!empty($node->get('field_footer')->getValue()[0]['target_id'])){
+        
+          $get_footer_value = $node->get('field_footer')->getValue()[0]['target_id'];
+          $variables['footer_value'] = $get_footer_value;
+      
+        }
+    }
+  }
+}

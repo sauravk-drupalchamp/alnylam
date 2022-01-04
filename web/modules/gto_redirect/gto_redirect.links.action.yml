@@ -1,0 +1,5 @@
+gto_redirect.add:
+  route_name: gto_redirect.add
+  title: 'Add redirect'
+  appears_on:
+    - 'gto_redirect.list'

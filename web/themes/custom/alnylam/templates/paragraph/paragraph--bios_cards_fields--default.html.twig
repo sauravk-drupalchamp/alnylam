@@ -1,0 +1,62 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+
+	<div{{attributes.addClass(classes)}}>
+
+		{% if paragraph.field_upload_image.value %}
+			<div class="bios-card-with-image-field">
+				<div class="col-sm-3">
+					<div class="image">{{content.field_upload_image}}</div>
+				</div>
+				<div class="col-sm-9">
+					<div class="name-position">
+						<h1 class="name">
+							{{paragraph.field_heading_2.value}}
+						</h1>
+						{% if paragraph.field_title.value is not  empty %}
+							<h3 class="position">,&nbsp;{{paragraph.field_title.value}}</h3>
+						{% endif %}
+					</div>
+					<div class="designation">{{content.field_image_caption}}</div>
+					<div class="bio-desc">{{content.field_description_text_area}}</div>
+				</div>
+			</div>
+		{% else %}
+			<div class="bios-card-without-image-field col-sm-12">
+				<div class="name-position">
+					<h1 class="name">
+						{{paragraph.field_heading_2.value}}
+					</h1>
+					{% if paragraph.field_title.value is not  empty %}
+						<h3 class="position">,&nbsp;{{paragraph.field_title.value}}</h3>
+					{% endif %}
+				</div>
+				{% if paragraph.field_image_caption.value is not  empty %}
+					<div class="designation">{{content.field_image_caption}}</div>
+				{% endif %}
+				<div class="bio-desc">{{content.field_description_text_area}}</div>
+			</div>
+		{% endif %}
+
+	</div>
+
+{% endblock paragraph %}

@@ -1,0 +1,11 @@
+.three-column-card-content{
+	overflow: hidden;
+	padding: 64px 0px;
+}
+.three-column-card-content .three-column-card-title {
+    font-size: 35px;
+    font-weight: 300;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 40px;
+}

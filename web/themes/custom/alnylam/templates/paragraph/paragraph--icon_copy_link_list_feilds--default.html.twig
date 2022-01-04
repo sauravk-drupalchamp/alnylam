@@ -1,0 +1,41 @@
+
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+	<div{{attributes.addClass(classes)}}>
+
+		{% set ComponentWidth =  paragraph.field_set_width.value %}
+    {% if paragraph.field_description_text_area.value %}
+		<div id="icon-copy-link-list-feilds">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="icon">{{content.field_default_icon}}</div>
+                    </div>
+                    <div class="col-sm-9">
+                        <h3>{{content.field_heading_1}}</h3>
+                        <div class="desc">{{content.field_description_text_area}}</div>
+                    </div>
+                </div>
+		</div>
+    {% endif %}
+	</div>
+{% endblock paragraph %}
+

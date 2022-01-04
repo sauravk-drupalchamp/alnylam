@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+{% set ComponentWidth = paragraph.field_set_width.value %}
+{% set BackgroundColor = paragraph.field_background_color_code.value %}
+
+
+{% block paragraph %}
+	<div {{attributes.addClass(classes)}}>
+		<div id="clp-2-column-video-text" style="width:{{ComponentWidth}}px; margin:auto; background-color:{{BackgroundColor}};">
+			<div class="text">
+				{{content.field_description_text_area}}
+			</div>
+			<div class="video">
+				{{content.field_2_column_video_field}}
+			</div>
+			<div class="{{paragraph.field_pop_up_id.value|raw}} popup-content" style="display:none; background:#fff;">{{content.field_clp_2_column_pop_up}}</div>
+		</div>
+	</div>
+{% endblock paragraph %}

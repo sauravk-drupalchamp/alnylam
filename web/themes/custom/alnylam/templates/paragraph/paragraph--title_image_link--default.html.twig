@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% block paragraph %}
+	<div{{attributes.addClass(classes)}}>
+
+    <section class="whole-title-image-link-area" style="overflow:hidden">
+      <div class="title-image-link">  
+        <div class="image"> {{content.field_upload_image}}</div> 
+        <div class="hidden-content">
+          <div class="title">{{content.field_heading_1}}</div>
+          <div class="link">{{content.field_link}}</div>
+        </div>   
+      </div>
+    </section>
+
+	</div>
+{% endblock paragraph %}

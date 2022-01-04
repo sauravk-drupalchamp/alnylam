@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+	<div{{attributes.addClass(classes)}}>
+		{% set ComponentWidth =  paragraph.field_set_width.value %}
+		<div class="three-column-video-desc-box" style="width:{{ ComponentWidth }}px; margin:auto; ">{{ content.field_body }}</div>
+		<div class="three-column-video-content-box" style="width:{{ ComponentWidth }}px; margin:auto; ">{{ content.field_3_column_video_card }}</div>
+	</div>
+</div>{% endblock paragraph %}

@@ -1,0 +1,44 @@
+{#
+/**
+ * @file
+ * Theme override to display a single component.
+ *
+ * header area template
+ */
+#}
+
+<header>
+ <div id="whole-mobile-header" class="container-fluid">
+    <div class=mobile-block>
+      {% if page.mobile_menu %}
+        <div class="mobile-header-menu">{{ page.mobile_menu }}</div>
+      {% endif %}
+      {% if page.mobile_logo %}
+        <div class="mobile-header-logo">{{ page.mobile_logo }}</div>
+      {% endif %}
+      {% if page.mobile_search %}
+        <div class="mobile-header-search">{{ page.mobile_search }}</div>
+      {% endif %}
+    </div>
+  </div>
+  <div id="whole-header-top" class="container-fluid">
+    {% if page.header_top_left %}
+      <div class="header-top-left col-sm-2">{{ page.header_top_left }}</div>
+    {% endif %}
+    {% if page.header_top_middle %}
+      <div class="header-top-middle col-sm-9">{{ page.header_top_middle }}</div>
+    {% endif %}
+    {% if page.header_top_right %}
+      <div class="header-top-right col-sm-1">{{ page.header_top_right }}</div>
+    {% endif %}
+  </div>
+  <div id="whole-header-bottom" class="container-fluid">
+    {% if page.header_bottom_left %}
+      <div class="header-bottom-left col-sm-6">{{ page.header_bottom_left }}</div>
+    {% endif %}
+    {% if page.header_bottom_right %}
+      <div class="header-bottom-right col-sm-6">{{ page.header_bottom_right }}</div>
+    {% endif %}
+  </div>
+  
+</header>

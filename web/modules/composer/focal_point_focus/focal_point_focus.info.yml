@@ -1,0 +1,14 @@
+name: Focal Point Focus
+description: Uses focuspoint (jquery plugin) and Focal Point crops for Image Formatter.
+dependencies:
+  - drupal:image
+  - crop:crop
+  - focal_point:focal_point
+core_version_requirement: ^8 || ^9
+core: 8.x
+type: module
+
+# Information added by Drupal.org packaging script on 2020-05-09
+version: '8.x-1.10'
+project: 'focal_point_focus'
+datestamp: 1589056589

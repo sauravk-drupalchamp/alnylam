@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+
+	<div{{attributes.addClass(classes)}}>
+		<div class="default-icon-{{ paragraph.id() }} default-icon">
+			{{content.field_default_icon}}
+		</div>
+	</div>
+
+{% endblock paragraph %}

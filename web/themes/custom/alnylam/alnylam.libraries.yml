@@ -1,0 +1,40 @@
+framework:
+  css:
+    theme:
+      css/style.css: {}
+      css/themes.css: {}
+      css/header.css: {}
+      css/footer.css: {}
+      css/banner.css: {}
+      css/ipad.css: {}
+      css/mobile.css: {}
+      css/mobile-user.css: {}
+      css/trials.css: {}
+      css/signup-update.css: {}
+      css/signup-us-residents.css: {}
+      css/paragraphs/full-html.css: {}
+      css/paragraphs/banner-overlay-html-content.css: {}
+      css/paragraphs/heading-video-description.css: {}
+      css/paragraphs/two-column-left-content-box.css: {}
+      css/paragraphs/callout-h1-cta.css: {}
+      css/paragraphs/full-width-video.css: {}
+      css/paragraphs/image-title-description.css: {}
+      css/paragraphs/contact-us-4-column-card.css: {}
+      css/paragraphs/video-pou-up.css: {}
+      css/paragraphs/3-column-card.css: {}
+      css/paragraphs/video-with-content.css: {}
+      css/paragraphs/service-section.css: {}
+      css/paragraphs/bio-card-section.css: {}
+      css/paragraphs/diversity-equity-inclusion.css: {}
+      css/paragraphs/patient-philosophy.css: {}   
+      css/mobile-medical-professional.css: {}
+      css/mobile-patients.css: {}  
+      css/mobile-signup-update.css: {}
+      css/paragraphs/clp.css: {}  
+      css/clp-header.css: {} 
+      css/clp-footer.css: {}
+      css/clp-mobile.css: {}
+
+  js:
+    js/simple.js: {}
+    js/select.js: {}

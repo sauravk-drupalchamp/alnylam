@@ -1,0 +1,13 @@
+parameters:
+  route_normalizer_enabled: true
+services:
+  gto_redirect.repository:
+    class: Drupal\gto_redirect\RedirectRepository
+    arguments: ['@entity_type.manager', '@database']
+    tags:
+      - { name: backend_overridable }
+  gto_redirect.request_subscriber:
+    class: Drupal\gto_redirect\EventSubscriber\RedirectRequestSubscriber
+    arguments: ['@gto_redirect.repository']
+    tags:
+      - { name: event_subscriber }

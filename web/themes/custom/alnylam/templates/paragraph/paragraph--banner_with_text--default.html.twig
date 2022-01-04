@@ -1,0 +1,46 @@
+
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+	<div{{attributes.addClass(classes)}}>
+    {% set Class = paragraph.field_label.value %}
+	{% set ComponentWidth =  paragraph.field_set_width.value %}
+    {% set BackgroundImage = file_url(paragraph.field_upload_image.entity.uri.value) %}  
+    <div{{attributes.addClass(classes)}}>
+        <div id="simple-banner-with-text-wrapper" style="background: url({{BackgroundImage}});   background-size: cover; background-repeat: no-repeat;">
+            <div class="text-wrapper" style="width:{{ComponentWidth}}px;margin:auto;">
+                {% if paragraph.field_description_text_area.value %}
+                <div class="upper-text">
+                    {{paragraph.field_description_text_area.value|raw}}
+                </div>
+                {% endif %}
+                {% if paragraph.field_qutote.value %}
+                <div class="quote" style="width:{{ComponentWidth}}px; margin:auto;">
+                    {{paragraph.field_qutote.value|raw}}    
+                </div>
+                {% endif %}
+            </div>
+        </div>
+	</div>
+
+	</div>
+{% endblock paragraph %}
+

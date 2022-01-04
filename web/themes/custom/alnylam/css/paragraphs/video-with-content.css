@@ -1,0 +1,70 @@
+ .whole-title-description-video-video-th-area{
+   margin-bottom: 20px;
+ }
+ .whole-video-with-content-area ul li::marker {
+	color: #ff9900;
+}
+.whole-video-with-content-area ul li{
+  margin-bottom: 10px;
+}
+ .whole-video-with-content-area .video-with-conten-title{
+  font-size: 35px;
+  font-weight: 300;
+  color: #003366;
+  text-align: center;
+  margin-bottom: 30px;
+ }
+ .whole-video-with-content-area .whole-title-description-video-video-th-area .title-text{
+   font-size: 35px;
+  font-weight: 300;
+  color: #003366;
+  line-height: 1.1em;
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+ }
+ .whole-video-with-content-area .whole-title-description-video-video-th-area .description{
+  text-align: left;
+  font-size: 17px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #333;
+ }
+.whole-video-with-content-area .whole-title-description-video-video-th-area .video-desc{
+  background-color: #00254b;
+  color: #fff;
+  text-align: center;
+  padding: 11px 0px 12px;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0;
+  font-weight: 300;
+}
+.whole-video-with-content-area .whole-title-description-video-video-th-area .three-column-image-box{
+  position: relative;
+}
+.whole-video-with-content-area .whole-title-description-video-video-th-area .three-column-video-play-button img{
+  height: 64px;
+  width: 64px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ 
+.whole-title-description-video-video-th-area .col-sm-6.text-content{
+    padding: 64px 40px;
+}
+
+.paragraph-id--46 .field--name-field-heading-1 {
+  position: relative;
+}
+.paragraph-id--46 .field--name-field-heading-1:after {
+  position: absolute;
+  content: "TM";
+  font-size: 12px;
+  top: -9px;
+  color: #003366;
+}

@@ -1,0 +1,24 @@
+{#
+/**
+ * @file
+ * Theme override to display a single component.
+ *
+ * footer area template
+ */
+#}
+
+<footer>
+
+	<div id="clp-whole-footer-bottom" class="container-fluid">
+		<div class="clp-footer-bottom">
+			<div class="row">
+                {% if page.cpl_footer_bottom_left %}
+					<div class="footer-bottom-left-area col-sm-6">{{ page.cpl_footer_bottom_left }}</div>
+				{% endif %}
+				{% if page.cpl_footer_bottom_right %}
+					<div class="footer-bottom-right-area col-sm-6">{{ page.cpl_footer_bottom_right}}</div>
+				{% endif %}
+		</div>
+	</div>
+
+</footer>

@@ -1,0 +1,17 @@
+{#
+/**
+ * @file
+ * Theme override to display a single component.
+ *
+ * header area template
+ */
+#}
+
+
+{% if header_value == 5  %}
+	{% include '@alnylam/includes/header.html.twig' %}
+{% elseif header_value == 6 %}
+	{% include '@alnylam/includes/headerv2.html.twig' %}
+{% else %}
+	{% include '@alnylam/includes/header.html.twig' %}
+{% endif %}

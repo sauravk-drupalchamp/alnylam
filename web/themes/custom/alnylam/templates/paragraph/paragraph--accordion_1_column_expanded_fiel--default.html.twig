@@ -1,0 +1,47 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+<div{{attributes.addClass(classes)}}>
+
+	{% set ComponentBackgroundColor =  paragraph.field_background_color_code.value %}
+
+	<div id="accordion-column-feilds" style="margin:auto; padding:64px 40px; background-color: {{ ComponentBackgroundColor }};">
+        {% if paragraph.field_heading_2.value %}
+          <div class="row inner-block-1">
+            <div class="col-sm-10 field-heading">{{content.field_heading_2}}</div>
+            <a data-colorbox-inline=".popup-content-{{ paragraph.id() }}" style="width: 650px; height:400px;">
+              <div class="col-sm-2 order-test-button">ORDER TEST ›</div>	
+            </a>
+          </div>
+        {% endif %}
+    <div class="row inner-block-2">
+          <div class="col-sm-10">{{content.field_description_text_area}}</div>
+          <div class="col-sm-2 expand-accordion">
+          <img class="close-accordian" style="display:none;" src="/themes/custom/alnylam/images/minus.png" alt="minus"/>
+          <img class="open-accordian" src="/themes/custom/alnylam/images/add.png" alt="minus"/>
+          </div>
+    </div>
+    <div class="accordion-content" style="display:none;">{{content.field_qutote}}</div>
+    <div class="popup-content-{{ paragraph.id() }} popup-content" style="display:none; background:#fff;">{{content.field_video_desc}}</div>
+  </div>
+</div>
+
+{% endblock paragraph %}

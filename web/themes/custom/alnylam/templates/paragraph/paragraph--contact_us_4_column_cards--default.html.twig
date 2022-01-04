@@ -1,0 +1,15 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% block paragraph %}
+	<div{{attributes.addClass(classes)}}>
+		<div class="contact-us-details">{{ content.field_full_html_paragraph }}</div>
+	</div>
+{% endblock paragraph %}

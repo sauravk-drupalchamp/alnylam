@@ -1,0 +1,22 @@
+div#clp-whole-footer-bottom {
+  font-size: 12px;
+  background: #00254b;
+}
+div#clp-whole-footer-bottom,
+div#clp-whole-footer-bottom a {
+  color: #fff !important;
+}
+.clp-footer-bottom {
+  max-width: 1170px;
+  margin: auto;
+}
+.clp-footer-bottom .row {
+  display: flex;
+  align-items: center;
+}
+.region.region-cpl-footer-bottom-right {
+    text-align: right;
+}
+.footer-bottom-left-area.col-sm-6 ul.menu {
+  display: inline-flex;
+}

@@ -1,0 +1,39 @@
+
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% set ComponentWidth =  paragraph.field_set_width.value %}
+
+{% block paragraph %}
+	<div{{attributes.addClass(classes)}}>
+        <div id="simple-banner-wrapper">
+            <div class="simple-banner" style="">
+                {{content.field_upload_image}}
+            </div>
+            {% if paragraph.field_qutote.value %}
+            <div class="quote" style="width:{{ComponentWidth}}px; margin:auto;">
+                {{content.field_qutote}}
+            </div>
+            {% endif %}
+        </div>
+	</div>
+  
+{% endblock paragraph %}
+

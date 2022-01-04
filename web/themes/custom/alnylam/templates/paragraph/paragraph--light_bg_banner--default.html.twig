@@ -1,0 +1,49 @@
+
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+	<div{{attributes.addClass(classes)}}>
+    {% set Class = paragraph.field_label.value %}
+		{% set ComponentWidth =  paragraph.field_set_width.value %}
+    {% if paragraph.field_description_text_area.value or paragraph.field_heading_2.value %}
+		<div id="light-bg-banner" style="width:{{ ComponentWidth }}px; margin:auto;">
+                <div class="row">
+                    <div class="col-sm-8">
+                        {% if paragraph.field_heading_1.value %}
+                        <h2>{{content.field_heading_1}}</h2>
+                        {% endif %}
+                        
+                        {% if paragraph.field_heading_2.value %}
+                        <h3 class="margin-top-0px">{{content.field_heading_2}}</h3>
+                        {% endif %}
+                        
+                        {% if paragraph.field_description_text_area.value %}
+                        <div class="description_text_area">{{content.field_description_text_area}}</div>
+                        {% endif %}
+                        
+                    </div>
+                    <div class="col-sm-4 {{Class}}">{{content.field_link}}</div>
+                </div>
+		</div>
+    {% endif %}
+	</div>
+{% endblock paragraph %}
+

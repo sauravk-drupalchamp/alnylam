@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+
+	<div{{attributes.addClass(classes)}}>
+
+		<div class="cultivating-culture-box">
+			<div class="cultivating-img-{{ paragraph.id() }}">{{content.field_default_icon}}<span class="img-active">{{content.field_active_icon}}</span>
+			</div>
+			<div class="cultivating-text-box">
+				<div class="cultivating-title-text">{{ paragraph.field_title.value }}</div>
+				<div class="cultivating-body-text">{{ paragraph.field_body.value|raw }}</div>
+			</div>
+		</div>
+
+	</div>
+{% endblock paragraph %}

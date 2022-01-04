@@ -1,0 +1,45 @@
+.image-title-desc-box{
+    text-align: center;
+    padding: 30px;
+    background: #fff;
+    width: 345px;
+    height: 422px;
+    float: left;
+    margin-right: 30px;
+}
+
+.three-column-card-content .field--item:nth-child(3n) .image-title-desc-box{
+    margin-right: 0px !important;
+}
+.three-column-card-box .field.field--name-field-3-column-card.field--type-entity-reference-revisions.field--label-hidden.field--items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-title-desc-box .image-box img {
+    width: 114px;
+    height: 114px;
+    margin: auto;
+}
+
+.image-title-desc-box h3.title-text {
+    height: 40px;
+    font-size: 35px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    text-align: center;
+    color: #003366;
+}
+.image-title-desc-box .desc-box {
+    font-size: 17px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333;
+}

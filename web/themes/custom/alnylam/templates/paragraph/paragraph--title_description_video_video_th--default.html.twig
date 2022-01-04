@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% block paragraph %}
+	<div{{attributes.addClass(classes)}}>
+
+		{% set videoPosition =  paragraph.field_video_position.value %}
+
+		<section class="whole-title-description-video-video-th-area" style="overflow:hidden;">
+			<div class="left-content">
+				<div class="col-sm-6" style="float:{{ videoPosition }};">
+
+					<a data-colorbox-inline=".video-box-{{ paragraph.id() }}" style="width: 650px; height:400px;">
+						<div class="three-column-image-box">{{ content.field_upload_image }}
+							<div class="three-column-video-play-button"><img src="/themes/custom/alnylam/images/button-desktop-play-button-40-px.png"></div>
+						</div>
+						<div class="video-box-{{ paragraph.id() }}" style="display: none;">{{ content.field_embed_video }}</div>
+					</a>
+					{% if paragraph.field_video_desc.value %}
+						<div class="video-desc">{{ content.field_video_desc}}</div>
+					{% endif %}
+				</div>
+			</div>
+			<div class="col-sm-6  text-content">
+				{% if paragraph.field_title.value %}
+					<div class="title-text">{{ content.field_title}}</div>
+				{% endif %}
+				<div class="description">{{ content.field_description_text_area}}</div>
+			</div>
+		</section>
+	</div>
+{% endblock paragraph %}

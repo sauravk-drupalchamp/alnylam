@@ -1,0 +1,43 @@
+type: theme
+base theme: bootstrap
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+name: "Alnylam pharmaceuticals"
+description: "A Drupal Bootstrap 3 based sub-theme."
+package: "Bootstrap"
+
+regions:
+  mobile_menu: "Mobile Header Menu"
+  mobile_logo: "Mobile Header Logo"
+  mobile_search: "Mobile Header Search"
+  header_top_left: "Header Top Left"
+  header_top_middle: "Header Top Middle"
+  header_top_right: "Header Top Right"
+  header_bottom_left: "Header Bottom Left"
+  header_bottom_right: "Header Bottom Right"
+  clp_mobile_menu: "CLP Mobile Header"
+  clp_mobile_language_block: "CLP Language block"
+  clp_mobile_language_switcher: "CLP Language Switcher"
+  clp_mobile_logo: "CLP Mobile Logo"
+  clp_mobile_cta: "CLP Mobile CTA"
+  clp_header_top_left: "CLP Header Top Left"
+  clp_header_right_top: "CLP Header Right Top"
+  clp_header_right_bottom: "CLP Header Right Bottom"
+  clp_header_language_block: "CLP Header Language Block"
+
+  content: "Content Area"
+
+  footer_top_column_first: "Footer Top Column-1"
+  footer_top_column_second: "Footer Top Column-2"
+  footer_top_column_third: "Footer Top Column-3"
+  footer_top_column_fourth: "Footer Top Column-4"
+
+  footer_bottom_left: "Footer Bottom Left"
+  footer_bottom_right: "Footer Bottom Right"
+  cpl_footer_bottom_left: "CLP Footer Bottom Left"
+  cpl_footer_bottom_right: "CLP Footer Bottom Right"
+
+libraries-extend:
+  bootstrap/framework:
+    - alnylam/framework

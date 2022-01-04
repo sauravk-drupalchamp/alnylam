@@ -1,0 +1,73 @@
+/* .whole-service-content-area{
+  margin-bottom:20px;
+  background: #fff;
+  padding: 40px 0px;
+} */
+/* .service-content-area .service-content-heading{
+  color: #003366;
+  margin-bottom: 0 !important;
+  padding-bottom: 24px !important;
+  font-size: 35px;
+  font-weight: 200;
+  line-height: 1.1em;
+  text-align: center;
+} */
+.service-content-area .service-field-area .service-image-field{
+  text-align: center;
+}
+.service-content-area .service-field-area .service-image-field img {
+    width: 77px;
+    height: 77px;
+    margin: auto;
+}
+.service-content-area .service-field-area .service-box{
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.service-field-area .field--item:last-child .service-box {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+/* .service-field-area .service-box .service-desc-field .service-field-heading {
+	font-size: 23px;
+	font-weight: 600;
+	color: #003366;
+	line-height: 32px;
+  padding-bottom: 10px;
+} */
+.service-field-area .service-box .service-image-field .heading{
+  font-size: 13px;
+  line-height: 1.538461538461538em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.service-field-area .service-box .service-image-field .image-caption{
+  font-size: 14px;
+  color: #000;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.service-field-area .service-box .service-field-description p{
+  font-weight: 300;
+  line-height: 24px;
+}
+.service-field-area .service-box .service-field-description h6{
+  font-size: 13px;
+  line-height: 1.538461538461538em;
+  font-weight: 600;
+  /* text-transform: uppercase; */
+  color: #303030;
+}
+.service-field-area .service-box .service-field-description p a {
+	font-weight: 600;
+	border-bottom: 1.5px solid #b9d9eb;
+}
+.service-field-area .service-box .service-field-description p a:hover{
+  text-decoration: none;
+  color: #ff9900;
+}

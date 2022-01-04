@@ -1,0 +1,32 @@
+
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+{% set ComponentWidth = paragraph.field_set_width.value %}
+{% set ComponentBackground = paragraph.field_background_color_code.value %}
+{% block paragraph %}
+	<div{{attributes.addClass(classes)}}>
+        <div id="our-products" style="background-color:{{ComponentBackground}}; padding: 64px 0px;">
+        <div class="our-product-feild" style="width: {{ComponentWidth}}px; margin:auto;">
+            <div>{{content.field_our_product_fields}}</div>
+        </div>
+    </div>
+	</div>
+{% endblock paragraph %}
+

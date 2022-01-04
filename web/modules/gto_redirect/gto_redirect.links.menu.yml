@@ -1,0 +1,13 @@
+gto_redirect.list:
+  title: 'List of Redirects'
+  description: 'View list of Redirects'
+  route_name: gto_redirect.list
+  parent: 'system.admin_reports'
+  weight: 0
+
+gto_redirect.add:
+  title: 'Add Redirect'
+  description: 'Add a system redirect'
+  route_name: gto_redirect.add
+  parent: 'system.admin_config'
+  weight: 10

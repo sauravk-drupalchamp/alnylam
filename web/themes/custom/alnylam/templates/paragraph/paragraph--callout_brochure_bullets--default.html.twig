@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+	<div{{attributes.addClass(classes)}}>
+		{% set ComponentBackground =  paragraph.field_background_color_code.value %}
+		{% set ComponentWidth =  paragraph.field_set_width.value %}
+		{% set BackgroundImage = file_url(paragraph.field_upload_image.entity.uri.value) %}
+		<section class="whole-callour-brochure-bullet-area" style="width: {{ComponentWidth}}px; margin:auto; padding: 64px 0px 0px 0px;">
+			<div class="whole-callour-brochure-bullet-area-bg-img" style="background:{{ ComponentBackground }} url({{BackgroundImage}}) -110px 0 no-repeat; overflow:hidden;">
+				{# <div class="callour-brochure-bullet-left">{{ content.field_upload_image }}</div> #}
+				<div class="callour-brochure-bullet-right col-sm-8">
+					{{ content.field_video_desc }}
+				</div>
+			</div>
+		</section>
+
+	</div>
+{% endblock paragraph %}

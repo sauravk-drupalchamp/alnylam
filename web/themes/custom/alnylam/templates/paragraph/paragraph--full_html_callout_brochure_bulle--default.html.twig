@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% block paragraph %}
+	<div{{attributes.addClass(classes)}}>
+		{% set ComponentBackground =  paragraph.field_background_color_code.value %}
+		{% set ComponentWidth =  paragraph.field_set_width.value %}
+
+		<section class="whole-full-html-callout-brochure-area" style="background:{{ ComponentBackground }}; padding:50px 0 0 0px; overflow:hidden;">
+			<div style="width: {{ComponentWidth}}px; margin:auto;">
+				<h2 class="heading">{{content.field_heading_1}}</h2>
+				<div class="full-html-content">{{content.field_html_content}}</div>
+				<div>{{content.field_callout_brochure_bullets}}</div>
+			</div>
+		</section>
+
+	</div>
+{% endblock paragraph %}

@@ -1,0 +1,249 @@
+section#block-signupforupdates {
+    background: #fff;
+    max-width: 1130px;
+    margin: auto;
+    padding: 64px 0px;
+    margin-top: -40px;
+}
+section#block-signupforupdates h1{
+    margin-top: 0px !important;
+}
+section#block-signupforupdates h2{
+    padding-bottom: 48px;
+    border-bottom: 1px solid #999;
+}
+section#block-signupforupdates h4{
+    margin-top: 64px;
+}
+/* -------- patient ---------- */
+fieldset#edit-patient--wrapper legend {
+    display: none;
+}
+div#edit-markup-01 h4 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 35px;
+}
+/* -------- patient ---------- */
+fieldset#edit-patient--wrapper legend {
+    display: none;
+}
+div#edit-markup-01 h4 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 35px;
+}
+fieldset#edit-patient--wrapper {
+    text-align: center;
+}
+div#edit-patient {
+    width: 55%;
+    margin: auto;
+}
+#edit-patient--wrapper #edit-patient .radio {
+    display: inline-block;
+    width: 281px;
+    cursor: pointer;
+    margin-right: 25px;
+}
+#edit-patient--wrapper #edit-patient .radio label {
+    background-color: #0099CC;
+    margin: 10px 13px;
+    padding: 10px 20px;
+    width: 100%;
+    color: #fff;
+}
+div#edit-patient .form-radio {
+    display: none;
+}
+#edit-patient--wrapper .fieldset-wrapper {
+    margin-bottom: 57px;
+}
+#edit-patient--wrapper #edit-patient .radio label:hover{
+    background-color: #FF9900;
+}
+div#edit-patient .radio .option {
+    padding-left: 0;
+}
+/* ----------- personal information ------------ */
+div#edit-personal-information .panel-heading {
+    display: none;
+}
+div#edit-personal-information .panel-body {
+    max-width: 880px;
+    margin: auto;
+    padding: 40px 0 35px 0;
+}
+#edit-markup-05 .intro_custom_subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: -10px;
+}
+div#edit-personal-information {
+    background-color: #f8f8f8;
+    border: none;
+    margin: 25px -100vw 0 -100vw;
+}
+#edit-personal-information .panel-body .form-item-country{
+    display: inline-block;
+    width: 48.5%;
+}
+
+#edit-personal-information .panel-body .form-item-zip-postal-code{
+    width: 48.5%;
+    float: right;
+}
+
+#edit-personal-information .panel-body .form-control {
+    display: block;
+    height: 45px;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    margin: 0;
+    line-height: 30px;
+    background: #ffffff;
+    color: #000;
+    font-weight: 200;
+    border: none;
+    border-radius: 0;
+}
+
+#edit-personal-information .panel-body .intro_custom_subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    font-weight: 400;
+    color: #333333;
+}
+
+#edit-personal-information .panel-body .control-label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #7b7b7b;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+#edit-personal-information .panel-body .form-group {
+    margin-bottom: 25px;
+}
+#edit-personal-information .panel-body .form-item-i-describe-myself-as-a- {
+    width: 48.5%;
+}
+#edit-personal-information .panel-body .form-item-medical-specialization {
+    display: inline-block !important;
+    width: 48.5%;
+}
+#edit-personal-information .panel-body .form-item-professional-designation {
+    float: right;
+    width: 48.5%;
+}
+/* ------- im intrested in ------- */
+#edit-interested .panel-heading{
+    display: none;
+}
+div#edit-interested .panel-body {
+    max-width: 880px;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+div#edit-interested {
+    border: none;
+}
+
+div#edit-markup-02 h4 {
+    font-size: 35px;
+    font-weight: 300;
+    color: #003366;
+    text-align: center;
+    margin-top:40px;
+}
+
+#edit-interested .panel-body div#edit-markup-06 {
+    text-align: center;
+    padding-bottom: 0;
+}
+
+div#edit-markup-06 .btn-primary {
+    background-color: #0099cc;
+    font-size: 16px;
+    padding: 8px 36px;
+    border: none;
+    border-radius: 0px;
+    margin: 35px 0 23px 0;
+}
+div#edit-interested .panel-body #edit-markup-03 {
+    padding-bottom: 10px;
+}
+div#edit-markup-03 .intro_custom_subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    color: #333333;
+    font-weight: 400;
+}
+#edit-interested .panel-body .control-label{
+    font-size: 15px;
+    color: #7b7b7b;
+}
+#edit-interested .panel-body .checkbox {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 10px;
+}
+#edit-interested .panel-body .checkbox label {
+    margin-bottom: 20px;
+    padding-left: 38px;
+}
+#edit-interested .panel-body .form-item-by-submitting-this-form-i-agree-to-the-alnylam-privacy-policy-i- {
+    width: 100%;
+    margin-top: 15px;
+    border-top: 1px solid #999;
+}
+#edit-interested .panel-body .checkbox input[type="checkbox"] {
+    width: 1.6em;
+    height: 1.6em;
+    position: absolute;
+    left: 18px;
+}
+.webform-submission--us-residents-form .panel-default {
+    border-color: transparent;
+}
+#edit-interested .panel-body .form-item-by-submitting-this-form-i-agree-to-the-alnylam-privacy-policy-i- label {
+    margin-bottom: 20px;
+    padding-left: 34px;
+    margin-top: 45px;
+}
+#edit-interested .panel-body .form-item-by-submitting-this-form-i-agree-to-the-alnylam-privacy-policy-i-.js-form-item-by-submitting-this-form-i-agree-to-the-alnylam-privacy-policy-i-.checkbox .control-label:before {
+    top: 45px !important;
+}
+div#edit-markup-04 .optional {
+    text-align: left;
+    font-style: italic;
+    font-size: 17px;
+    color: #7b7b7b;
+    font-weight: 400;
+}
+div#edit-actions-01 {
+    text-align: center;
+    padding-bottom: 75px
+}
+button#edit-actions-01-submit {
+    font-size: 16px;
+    padding: 16px 46px;
+    border-radius: 0px;
+    background-color: #0099cc;
+    border: none;
+    width: 25%;
+    margin: 20px auto;
+}
+button#edit-actions-01-submit:hover{
+    background-color: #FF9900;
+}
+
+section#block-webform .panel {
+    box-shadow: none;
+}

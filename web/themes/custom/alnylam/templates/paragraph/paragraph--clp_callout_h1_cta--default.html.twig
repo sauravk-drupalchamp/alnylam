@@ -1,0 +1,34 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+{% block paragraph %}
+	<div {{attributes.addClass(classes)}}>
+		{% set ComponentWidth =  paragraph.field_set_width.value %}
+		<div class="whole-clp-callout-h1-cta--component">
+			<div class="clp-callout-h1-cta--component" style="width:{{ ComponentWidth }}px; margin:auto; ">
+				<div class="clp-callout-h1-cta-content col-sm-7">
+					<h1 class="clp-title-text">{{ content.field_heading_1	 }}</h1>
+					<div class="clp-callout-h1-cta-short-description">{{ content.field_video_desc }}</div>
+				</div>
+				<div class="clp-callout-h1-cta-link col-sm-5">{{ content.field_body }}</div>
+			</div>
+			<div class="{{paragraph.field_pop_up_id.value|raw}} popup-content" style="display:none; background:#fff;">{{content.field_h1_cta_popup_field}}</div>
+		</div>
+	</div>
+{% endblock paragraph %}

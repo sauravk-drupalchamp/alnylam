@@ -1,0 +1,11 @@
+
+{% block paragraph %}
+<div{{attributes.addClass(classes)}}>
+{% if paragraph.field_heading_1.value %}
+        <h1 class="text-center">{{paragraph.field_heading_1.value|raw}}</h1>
+        <p class="text-center">{{paragraph.field_description_text_area.value|raw}}
+        <p class="text-center"><a class="button-more" href="{{paragraph.field_external_cta.uri}}">{{paragraph.field_external_cta.title}}</a></p>
+{% endif %}	 
+</div>
+{% endblock paragraph %}
+

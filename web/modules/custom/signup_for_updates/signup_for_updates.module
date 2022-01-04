@@ -1,0 +1,247 @@
+<?php
+
+/**
+ * @file
+ * This is the module that enhanced the site functionality.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_alter().
+ */
+function signup_for_updates_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Signup for updates - International.
+  
+  if (strstr($form_id, 'webform_submission_signup_for_updates_international_')) {
+    $form['actions']['submit']['#submit'][] = 'international_webform_custom_submit';
+  }
+
+  // Signup for updates - US residents.
+  if (strstr($form_id, 'webform_submission__us_residents_')) {
+    $form['actions']['submit']['#submit'][] = 'us_residents_webform_custom_submit';
+  }
+}
+
+/**
+ * Implements Signup for updates - US residents webform custom submit().
+ */
+function us_residents_webform_custom_submit(array $form, FormStateInterface $form_state) {
+  $firstName = $form_state->getValue('first_name');
+  $lastName = $form_state->getValue('last_name');
+  $email = $form_state->getValue('email');
+  $audienceType = $form_state->getValue('medical_professional');
+  $audienceTypeOther = '';
+  $country = $form_state->getValue('country');
+  $postalCode = $form_state->getValue('zip_postal_code');
+  $interestAmyloidosis = $form_state->getValue('transthyretin_mediated_amyloidosis_attr_amyloidosis_');
+  $interestCns = $form_state->getValue('central_nervous_system_neurodegenerative_diseases_examples_alzhe');
+  $interestComplementMediatedDiseases = $form_state->getValue('complement_mediated_diseases_examples_atypical_hemolytic_uremic_');
+  $interestHyperoxaluria = $form_state->getValue('primary_hyperoxaluria_type_1');
+  $interestPorphyrias = $form_state->getValue('acute_hepatic_porphyria');
+  $interestHypertension = $form_state->getValue('hypertension');
+  $medicalSpecialization = $form_state->getValue('medical_specialization');
+  $professionalDesignation = $form_state->getValue('professional_designation');
+  $sourceInitial = "Alnylam.com";
+
+  // [i_describe_myself_as_a_] =>
+  // [by_submitting_this_form_i_agree_to_the_alnylam_privacy_policy_i_] => 0
+  // [i_would_like_to_speak_with_an_alnylam_representative_] => 0
+  // [antibot_key] =>
+  $signupArray = [
+    "firstName" => $firstName,
+    "lastName" => $lastName,
+    "email" => $email,
+    "audienceType" => $audienceType,
+    "audienceTypeOther" => $audienceTypeOther,
+    "country" => $country,
+    "postalCode" => $postalCode,
+    "interestAmyloidosis" => boolval($interestAmyloidosis),
+    "interestCns" => boolval($interestCns),
+    "interestComplementMediatedDiseases" => boolval($interestComplementMediatedDiseases),
+    "interestPorphyrias" => boolval($interestPorphyrias),
+    "interestHypertension" => boolval($interestHypertension),
+    "medicalSpecialization" => $medicalSpecialization,
+    "professionalDesignation" => $professionalDesignation,
+    "sourceInitial" => "Alnylam.com",
+  ];
+
+  $signUP_jsonData = json_encode($signupArray);
+  if (!empty($signUP_jsonData)) {
+    $config = \Drupal::config('signup_for_updates.settings');
+    $client_id = $config->get('client_id');
+    $client_secret = $config->get('client_secret');
+    $username = $config->get('username');
+    $password = $config->get('password');
+    $token_url = $config->get('token_url');
+    $base_url = $config->get('base_url');
+    $sign_up_url = $config->get('sign_up');
+    try {
+      $response = \Drupal::httpClient()
+        ->post($token_url, [
+          'body' => json_encode([
+            'clientId' => $client_id,
+            'clientSecret' => $client_secret,
+            'userName' => $username,
+            'password' => $password,
+          ]),
+          'headers' => [
+            'Content-Type' => 'application/json',
+          ],
+        ]);
+      if ($response->getStatusCode() == 200) {
+        $response_body = (string) $response->getBody();
+        $token_data = json_decode($response_body);
+        $access_token = $token_data->accessToken;
+      }
+    }
+    catch (\Exception $e) {
+      \Drupal::logger('signup_for_updates')->error($e->getMessage());
+      \Drupal::messenger()->addError("Token generate fail");
+    }
+    if (isset($access_token) && !empty($access_token)) {
+      try {
+        $response = \Drupal::httpClient()
+          ->post($base_url . $sign_up_url, [
+            'body' => $signUP_jsonData,
+            'headers' => [
+              'Content-Type' => 'application/json',
+              'Authorization' => 'Bearer ' . $access_token,
+            ],
+          ]);
+        if ($response->getStatusCode() == 200 || $response->getStatusCode() == 201) {
+          $response_body = (string) $response->getBody();
+          $data = json_decode($response_body);
+          if ($data->status == "OK") {
+            \Drupal::messenger()->addMessage('Successfully Signup');
+          }
+          else {
+            \Drupal::messenger()->addError('Signup API error from REST engine');
+          }
+        }
+      }
+      catch (\Exception $e) {
+        \Drupal::logger('signup_for_updates')->error($e->getMessage());
+        \Drupal::messenger()->addError("Signup API error");
+      }
+    }
+    else {
+      \Drupal::messenger()->addError('Token generate fail');
+    }
+  }
+  else {
+    \Drupal::messenger()->addError('Signup array problem');
+  }
+}
+
+/**
+ * Implements Signup for updates - International webform custom submit().
+ */
+function international_webform_custom_submit(array $form, FormStateInterface $form_state) {
+  $firstName = $form_state->getValue('first_name');
+  $lastName = $form_state->getValue('last_name');
+  $email = $form_state->getValue('email_address');
+  $audienceType = $form_state->getValue('medical_professional');
+  $audienceTypeOther = '';
+  $country = $form_state->getValue('country');
+  $postalCode = NULL;
+  $interestAmyloidosis = $form_state->getValue('primary_hyperoxaluria_type_1');
+  $interestCns = $form_state->getValue('central_nervous_system_neurodegenerative_diseases_examples_alzhe');
+  $interestComplementMediatedDiseases = $form_state->getValue('complement_mediated_diseases_examples_atypical_hemolytic_uremic_');
+  $interestPorphyrias = $form_state->getValue('porphyria');
+  $medicalSpecialization = $form_state->getValue('medical_specialization');
+  $professionalDesignation = $form_state->getValue('professional_designation');
+  $sourceInitial = "Alnylam.com";
+
+  // [transthyretin_mediated_amyloidosis_attr_amyloidosis_] => 0
+  // [by_submitting_this_form_i_certify_that_i_am_a_healthcare_profess] => 0
+  // [i_agree_to_the_processing_of_my_personal_data_by_alnylam_and_its] => 0
+  // [i_would_like_to_speak_with_an_alnylam_representative_] => 0
+  $signupArray = [
+    "firstName" => $firstName,
+    "lastName" => $lastName,
+    "email" => $email,
+    "audienceType" => $audienceType,
+    "audienceTypeOther" => $audienceTypeOther,
+    "country" => $country,
+    "postalCode" => $postalCode,
+    "interestAmyloidosis" => boolval($interestAmyloidosis),
+    "interestCns" => boolval($interestCns),
+    "interestComplementMediatedDiseases" => boolval($interestComplementMediatedDiseases),
+    "interestPorphyrias" => boolval($interestPorphyrias),
+    "medicalSpecialization" => $medicalSpecialization,
+    "professionalDesignation" => $professionalDesignation,
+    "sourceInitial" => "Alnylam.com",
+  ];
+
+  $signUP_jsonData = json_encode($signupArray);
+  if (!empty($signUP_jsonData)) {
+    $config = \Drupal::config('signup_for_updates.settings');
+    $client_id = $config->get('client_id');
+    $client_secret = $config->get('client_secret');
+    $username = $config->get('username');
+    $password = $config->get('password');
+    $token_url = $config->get('token_url');
+    $base_url = $config->get('base_url');
+    $sign_up_url = $config->get('sign_up');
+
+    try {
+      $response = \Drupal::httpClient()
+        ->post($token_url, [
+          'body' => json_encode([
+            'clientId' => $client_id,
+            'clientSecret' => $client_secret,
+            'userName' => $username,
+            'password' => $password,
+          ]),
+          'headers' => [
+            'Content-Type' => 'application/json',
+          ],
+        ]);
+
+      if ($response->getStatusCode() == 200) {
+        $response_body = (string) $response->getBody();
+        $token_data = json_decode($response_body);
+        $access_token = $token_data->accessToken;
+      }
+    }
+    catch (\Exception $e) {
+      \Drupal::logger('signup_for_updates')->error($e->getMessage());
+      \Drupal::messenger()->addError("Token generate fail");
+    }
+
+    if (isset($access_token) && !empty($access_token)) {
+      try {
+        $response = \Drupal::httpClient()
+          ->post($base_url . $sign_up_url, [
+            'body' => $signUP_jsonData,
+            'headers' => [
+              'Content-Type' => 'application/json',
+              'Authorization' => 'Bearer ' . $access_token,
+            ],
+          ]);
+
+        if ($response->getStatusCode() == 200 || $response->getStatusCode() == 201) {
+          $response_body = (string) $response->getBody();
+          $data = json_decode($response_body);
+          if ($data->status == "OK") {
+            \Drupal::messenger()->addMessage('Successfully Signup');
+          }
+          else {
+            \Drupal::messenger()->addError('Signup API error from REST engine');
+          }
+        }
+      }
+      catch (\Exception $e) {
+        \Drupal::logger('signup_for_updates')->error($e->getMessage());
+        \Drupal::messenger()->addError("Signup API error");
+      }
+    }
+    else {
+      \Drupal::messenger()->addError('Token generate fail');
+    }
+  }
+  else {
+    \Drupal::messenger()->addError('Signup array problem');
+  }
+}

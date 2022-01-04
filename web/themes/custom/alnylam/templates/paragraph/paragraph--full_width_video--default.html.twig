@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% block paragraph %}
+	<div{{attributes.addClass(classes)}}>
+
+		{% set backgroundimage = file_url(paragraph.field_background_thumbnail.entity.fileuri) %}
+
+		<section style="background: url({{ backgroundimage }}) no-repeat top left;height: 550px; background-size: cover;" class="whole-full-with-video-area">
+			<div class="full-width-video-content">
+				<a data-colorbox-inline=".full-width-video-box" style="width: 650px; height:400px;">
+					<div class="full-width-video-title">
+						<h2>{{ paragraph.field_title.value  }}</h2>
+						<img src="/themes/custom/alnylam/images/button-desktop-play-button-40-px.png"></div>
+					<div class="full-width-video-box" style="display: none;">{{ content.field_embed_video }}</div>
+				</a>
+			</div>
+		</section>
+
+	</div>
+{% endblock paragraph %}

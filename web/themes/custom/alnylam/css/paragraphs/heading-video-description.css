@@ -1,0 +1,98 @@
+.three-column-video-content-box {
+    overflow: hidden;
+	padding:64px 0px 14px 0px;
+}
+/* .paragraph.paragraph--type--heading-video-description.paragraph-id--26.paragraph--view-mode--default */
+.three-column-title-and-width-box {
+    background: #00254b;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0px;
+    margin-bottom: 24px;
+}
+.three-column-title-and-width-box .three-column-video-heading {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+}
+.three-column-title-and-width-box .three-column-video-heading2 {
+    font-size: 17px;
+    font-weight: bold;
+}
+.three-column-image-box{
+    position: relative;
+}
+.three-column-image-box img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.three-column-video-play-button img {
+	height: 64px;
+	width: 64px;
+	position: absolute;
+	top: 44%;
+	left: 43%;
+	transform: translate(-1%,-10%);
+}
+.three-column-video-content-box .three-column-video-short-description {
+    margin: 14px 0 0 0;
+}
+.three-column-video-content-box .three-column-video-link {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 15px;
+    border-bottom: 1.5px solid #b9d9eb;
+    display: inline-block;
+}
+
+.three-column-video-content-box .three-column-video-link a:hover {
+    text-decoration: none;
+    color: #ff9900;
+}
+
+#cboxContent,
+#cboxLoadedContent,
+#colorbox {
+    overflow: hidden !important;
+    min-height: 365px;
+    width: 650px;
+}
+
+#cboxWrapper,
+#cboxContent {
+    background: transparent;
+    overflow: hidden;
+}
+#cboxClose:hover {
+	background-position: 0px -3px;
+}
+#cboxClose {
+  right: 10px;
+  top: 10px;
+  background: url(../../images/buttons-close-x-56px.svg) no-repeat 0px;
+  width: 50px;
+  height: 50px;
+}
+.path-frontpage #cboxClose , .page-node-37 #cboxClose  {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background: url(../../images/controls.png) no-repeat -25px 0px;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px;
+}
+.our-products-ext.cboxElement::after {
+	content: "";
+	background: url(../../images/External_link_font_awesome.svg.png);
+	background-size: cover;
+	width: 12px;
+	height: 12px;
+	display: block;
+	position: relative;
+	top: -18px;
+	right: -77px;
+}

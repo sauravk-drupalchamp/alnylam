@@ -1,0 +1,41 @@
+
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+	<div{{attributes.addClass(classes)}}>
+
+        <div class="image-desc-fields">
+            <div class="col-sm-4">
+                <div class="img">
+                    {{content.field_upload_image}}
+                </div>
+                <div class="desc" style="display:none;">
+                    {{content.field_description_text_area}}
+                </div>
+                <img class="advocacy-open-btn" src="/themes/custom/alnylam/images/advocacy-open.png" alt="+"/>
+                <img class="advocacy-close-btn" src="/themes/custom/alnylam/images/advocacy-close.png" alt="+"/>
+            </div>
+        </div>
+
+	</div>
+  
+{% endblock paragraph %}
+

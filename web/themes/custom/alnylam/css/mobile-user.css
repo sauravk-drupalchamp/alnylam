@@ -1,0 +1,1156 @@
+@media only screen and (min-width:0px) and (max-width:400px) { 
+   
+}
+@media only screen and (min-width:401px) and (max-width:767px) { 
+
+}
+@media only screen and (min-width:0px) and (max-width:767px){ 
+    /*mobile header section css start here*/
+	#whole-mobile-header {
+		display: block;
+		padding: 10px 13px;
+	}
+	div#whole-header-top,
+	div#whole-header-bottom{
+		display: none
+	}
+	body.search-open #whole-mobile-header .mobile-header-search .search-block-form {
+		display: block;
+	}
+	#whole-mobile-header .mobile-header-search .search-block-form {
+		display: none;
+	}
+	#whole-mobile-header .mobile-header-search .block-views-exposed-filter-blocksearch-content-page-1 {
+		display: none;
+	}
+	#whole-mobile-header .mobile-header-search .block-views-exposed-filter-blocksearch-content-page-1 {
+		display: none;
+		position: absolute;
+		top: -10px;
+		width: 93%;
+	}
+	#whole-mobile-header .mobile-header-search .block-views-exposed-filter-blocksearch-content-page-1 input {
+		width: 100%;
+		font-size: 16px;
+		border-radius: 2px;
+		border: 2px solid #002855;
+		height: 39px;
+		padding: 15px;
+		color: #002855;
+		letter-spacing: 0;
+		font-weight: 500;
+	}
+	.language-arrow::before {
+        content: "";
+        background: #fff;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        right: 24px;
+        top: 29px;
+        transform: rotate(-315deg);
+    }
+	#whole-mobile-header .mobile-header-search .block-views-exposed-filter-blocksearch-content-page-1 button.form-submit {
+		position: absolute;
+		top: 1px;
+		right: -8px;
+		padding: 6px 25px;
+		font-size: 14px;
+		border-radius: 3px;
+		border: 2px solid #09c;
+		background-color: #09c;
+		font-weight: bold;
+	}
+	#whole-mobile-header .mobile-header-search .block-views-exposed-filter-blocksearch-content-page-1 button.form-submit span{
+		display: none;
+	}
+	.mobile-header-search .header-right-search {
+		background: url(../images/search.png) no-repeat 0px;
+		border: 0;
+		width: 24px;
+		height: 24px;
+		font-size: 0px;
+		cursor: pointer;
+		position: absolute;
+		right: 0;
+	}
+	body.search-open #whole-mobile-header .mobile-header-search .header-right-search{
+		background: url(../images/search-close.png) no-repeat bottom;
+		position: absolute;
+		top: -2px;
+		right: 0;
+	}
+	.mobile-header-search .language {
+		width: 15px;
+		box-shadow: none;
+		background: url(../images/language.png) no-repeat center;
+		color: transparent;
+		cursor: pointer;
+		position: relative;
+		
+	}
+	.mobile-header-search .language.block::after {
+        content: "";
+        background: url(../images/navigation-global-caret-down-ko.png) no-repeat right;
+        width: 21px;
+        height: 5px;
+        position: absolute;
+        right: -13px;
+        top: 11px;
+    }
+	.language-switcher-main {
+		width: 100%;
+		margin-right: 0px;
+		margin-bottom: 9px;
+	}
+	section#block-languageswitcher-2 .field--item:first-child .language-switcher-main {
+		border-bottom: 1px solid #999999;
+		padding-bottom: 10px;
+	}
+	.sf-accordion-toggle a, .sf-accordion-toggle a.sf-expanded {
+		width: 24px;
+		height: 16px;
+		font-size: 0px;
+		background: url(../images/group-5.svg) no-repeat;
+		display: block;
+	}
+	.sf-accordion-toggle a.sf-expanded {
+		background: url(../images/buttons-close-x-48-px.png) no-repeat 3px 5px !important;
+		height: 24px;
+		width: 25px;
+	}
+	ul#superfish-mobile-main-menu-accordion {
+		background: #001f3d;
+		position: absolute;
+		right: 0px;
+		height: 100vh;
+		z-index: 1111;
+		padding: 0 16px;
+		top: 55px !important;
+	}
+	.mobile-header-search #block-languageswitcher-2 {
+		display: none;
+		position: absolute;
+		padding: 12px 11px 14px 16px;
+		top: 35px;
+		right: 5px;
+		z-index: 9999;
+		width: 245px;
+		height: 426px;
+		background: #fff;
+		overflow-y: scroll;
+	}
+	.mobile-header-search #block-language-2 {
+		display: none;
+	}
+	.menu.sf-menu a.sf-accordion-button {
+		float: right;
+		font-size: 0px !important;
+	}
+	.mobile-header-menu  .block-superfish ul.menu li:nth-child(1) .sf-accordion-button::after {
+		content: " " !important;
+		margin: 0px;
+		width: 32px;
+		height: 32px;
+		background: url(../images/navy-blue.png) no-repeat right;
+		display: block;
+	}
+	.mobile-header-menu  .block-superfish ul.menu li:nth-child(1).sf-depth-1.menuparent{
+		border-bottom: 2px solid #0099cc
+	}
+	.mobile-header-menu  .block-superfish ul.menu li:nth-child(2).sf-depth-1.menuparent{
+		border-bottom: 2px solid #ff9900
+	}
+	.mobile-header-menu  .block-superfish ul.menu li:nth-child(3).sf-depth-1.menuparent{
+		border-bottom: 2px solid #6eceb2
+	}
+	.mobile-header-menu  .block-superfish ul.menu li:nth-child(4).sf-depth-1.menuparent{
+		border-bottom: 2px solid #c90287
+	}
+	ul.sf-menu.sf-accordion.sf-accordion-with-buttons li:nth-child(1).menuparent.sf-expanded .sf-accordion-button:after{
+		background: url(../images/navy-blue-minus.png) no-repeat right;
+	}
+	.mobile-header-menu  .block-superfish ul.menu li:nth-child(2) .sf-accordion-button::after {
+		content: " " !important;
+		margin: 0px;
+		width: 32px;
+		height: 32px;
+		background: url(../images/yellow-plus.png) no-repeat right;
+		display: block;
+	}
+	ul.sf-menu.sf-accordion.sf-accordion-with-buttons li:nth-child(2).menuparent.sf-expanded .sf-accordion-button:after{
+		background: url(../images/yellow-minus.png) no-repeat right;
+	}
+	.mobile-header-menu  .block-superfish ul.menu li:nth-child(3) .sf-accordion-button::after {
+		content: " " !important;
+		margin: 0px;
+		width: 32px;
+		height: 32px;
+		background: url(../images/gray-plus.png) no-repeat right;
+		display: block;
+	}
+	ul.sf-menu.sf-accordion.sf-accordion-with-buttons li:nth-child(3).menuparent.sf-expanded .sf-accordion-button:after{
+		background: url(../images/gray-minus.png) no-repeat right;
+	}
+	.mobile-header-menu .block-superfish ul.menu li:nth-child(4) .sf-accordion-button::after {
+		content: " " !important;
+		margin: 0px;
+		width: 32px;
+		height: 32px;
+		background: url(../images/pink-plus.png) no-repeat right;
+		display: block;
+	}
+	ul.sf-menu.sf-accordion.sf-accordion-with-buttons li:nth-child(4).menuparent.sf-expanded .sf-accordion-button:after{
+		background: url(../images/pink-minus.png) no-repeat right;
+	}
+	.mobile-header-menu .block-superfish ul.menu li:nth-child(5) .sf-accordion-button::after,
+	.mobile-header-menu .block-superfish ul.menu li:nth-child(6) .sf-accordion-button::after,
+	.mobile-header-menu .block-superfish ul.menu li:nth-child(7) .sf-accordion-button::after,
+	.mobile-header-menu .block-superfish ul.menu li:nth-child(8) .sf-accordion-button::after,
+	.mobile-header-menu .block-superfish ul.menu li:nth-child(9) .sf-accordion-button::after{
+		content: " " !important;
+		margin: 0px;
+		width: 32px;
+		height: 32px;
+		background:url(../images/white-plus.png) no-repeat right;
+		display: block;
+	}
+	ul.sf-menu.sf-accordion.sf-accordion-with-buttons li:nth-child(5).menuparent.sf-expanded .sf-accordion-button:after,
+	ul.sf-menu.sf-accordion.sf-accordion-with-buttons li:nth-child(6).menuparent.sf-expanded .sf-accordion-button:after,
+	ul.sf-menu.sf-accordion.sf-accordion-with-buttons li:nth-child(7).menuparent.sf-expanded .sf-accordion-button:after,
+	ul.sf-menu.sf-accordion.sf-accordion-with-buttons li:nth-child(8).menuparent.sf-expanded .sf-accordion-button:after,
+	ul.sf-menu.sf-accordion.sf-accordion-with-buttons li:nth-child(9).menuparent.sf-expanded .sf-accordion-button:after{
+		background: url(../images/white-minus.png) no-repeat right;
+	}
+	.mobile-header-menu .block-superfish ul.menu li.sf-depth-1.menuparent ul{
+		overflow: hidden;
+		background: #122e4a !important;
+	}
+	.mobile-header-menu a.sf-depth-2 {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.mobile-header-menu .block-superfish ul.menu li:nth-child(1).sf-depth-1.menuparent ul{
+		border-bottom: 3px solid #0099cc;
+	}
+	.mobile-header-menu .block-superfish ul.menu li:nth-child(2).sf-depth-1.menuparent ul{
+		border-bottom: 3px solid #ff9900;
+	}
+	.mobile-header-menu .block-superfish ul.menu li:nth-child(3).sf-depth-1.menuparent ul{
+		border-bottom: 3px solid #6eceb2;
+	}
+	.mobile-header-menu .block-superfish ul.menu li:nth-child(4).sf-depth-1.menuparent ul{
+		border-bottom: 3px solid #c90287;
+	}
+	.mobile-sociallinks-block li:first-child,
+	.mobile-sociallinks-block li a span {
+		display: none;
+	}
+	ul#superfish-mobile-main-menu-accordion li span,
+	ul#superfish-mobile-main-menu-accordion li a{
+		color: #fff !important;
+		padding: 5px 0 !important;
+	}
+	ul#superfish-mobile-main-menu-accordion li span.sf-depth-1.menuparent,
+	ul#superfish-mobile-main-menu-accordion li a.sf-depth-1.menuparent {
+		color: #fff !important;
+		padding: 5px 0 !important;
+	}
+	.mobile-sociallinks-block li {
+		width: 25% !important;
+		font-size: 25px;
+		text-align: center;
+	}
+	.search-block-form .input-group .form-submit {
+		right: -3px;
+		top: -100px;
+	}
+	.search-block-form .form-control {
+		padding: 17px 55px 18px 15px;
+		font-size: 16px !important;
+		position: relative;
+		top: -8px;
+		width: 93%;
+	}
+	.search-language-block .mobile-header-search .language{
+		background: url(../images/bitmap.png) no-repeat center;
+		width: 40px;
+		position: absolute;
+		right: 10px;
+	}
+	.search-language-block .mobile-header-search #block-language-2{
+		display: block;
+	}
+	.search-language-block #whole-mobile-header{
+		background: #001f3d;
+	}
+	.search-language-block .mobile-header-search .header-right-search{
+		display: none;
+	}
+	header ul li span, header ul li a {
+		line-height: 0;
+	}
+	.mobile-block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.mobile-header-search .region.region-mobile-search {
+		position: absolute;
+		left: 12px;
+		width: 95%;
+		top: 20px;
+	}
+	span.sf-depth-1.menuparent.nolink.sf-with-ul {
+		line-height: 30px;
+		width: 90%;
+	}
+	ul.sf-menu.sf-accordion li.sf-depth-1.menuparent {
+		margin-bottom: 15px;
+	}
+	.mobile-header-logo .navbar-btn {
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}
+	.mobile-header-logo .navbar-btn img {
+		width: 120px;
+	}
+	.search-block-form .input-group .form-submit {
+		right: 3px;
+		top: 0px;
+	}
+	.search-block-form .input-group .form-submit::before{
+		content: none;
+	}
+	.search-block-form .input-group .form-submit {
+		width: 24px;
+		height: 24px;
+	}
+	.newsList {
+		max-width: 100% !important;
+	}
+	/*HOMEPAGE*/
+	/* Our Science/Our Pipeline */
+   .paragraph-id--324 h1.our-science {
+		padding-left: 9px;
+   }
+   /* Featured Articles */
+   .paragraph-id--425 .description--component {
+		padding: 0;
+   }
+   .paragraph-id--425 a.button-more {
+		border-bottom: 4px solid #bbd9eb;
+   }
+   ul.newsList li a {
+		border-bottom: none;
+   }
+   .mobile-newsroom {
+		padding: 0px 32px 20px 32px;
+		text-align: center;
+	}
+	.mobile-newsroom .button-more {
+		margin-top: 0 !important;
+	}
+   /*Our company/Diversity,Equity*/
+   .diversity-homepage .col-sm-6 {
+		padding: 0;
+   }
+  .diversity-homepage .col-sm-6 p {
+		padding: 0 15px;
+   }
+   .partnering-together-box>div {
+		width: 100% !important;
+    }
+    .partnering-together-box h2 {
+        font-size: 24px;
+    }
+    .partnering-together-box p{
+        font-size: 17px;
+        line-height: 24px;
+        font-weight: 300;
+    }
+    .heading-image-popup-content-area .image-title {
+        font-size: 35px !important;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding-bottom: 0px;
+    }
+	
+.paragraph-id--571 #full-html-content-background .description--component .col-sm-3, .col-sm-6 {
+        padding-bottom: 0px !important;
+    }
+    .col-sm-12.vision {
+        width: 100% !important;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .vision .vision-text {
+        width: 100% !important;
+        margin-top: 164px;
+        padding: 30px 35px !important;
+        text-align: center !important;
+    }
+    .vision .vision-image, .core-values .core-values-image {
+        position: absolute;
+        top: 0px !important;
+        right: unset !important;
+        display: flex;
+        justify-content: center;
+    }
+    .vision-image img, .core-values-image img, .mission-image img {
+        width: 80%;
+    }
+    .col-sm-12.core-values {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .core-values .core-values-text {
+        width: 100% !important;
+        margin-top: 165px;
+        padding: 32px 35px !important;
+        text-align: center !important;
+    }
+    .col-sm-12.mission {
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .mission .mission-image {
+        position: absolute;
+        top: 0px !important;
+        left: unset !important;
+        transform: none !important;
+        display: flex;
+        justify-content: center;
+    }
+    .mission .mission-text {
+        margin-top: 165px !important;
+        margin-left: 0 !important;
+        padding: 32px 35px !important;
+        text-align: center !important;
+    }
+   /*JOB SEEKERS/THIS IS YOUR MOMENT*/
+   .paragraph-id--332 .description--component {
+		padding: 0;
+   }
+   .career-section .content {
+		padding: 64px 32px;
+   }
+   .career-section .col-sm-7.image {
+		padding: 0 10px;
+   }
+	/*About section page*/
+	section.whole-video-with-content-area {
+		width: 100% !important;
+	}
+	.whole-video-with-content-area .whole-title-description-video-video-th-area .left-content .col-sm-6 {
+		float: unset !important;
+		padding: 0;
+	}
+	.paragraph--type--callout-h1-cta .whole-callout-h1-cta--component .callout-h1-cta--component {
+		width: 100% !important;
+		display: unset;
+	}
+	.callout-h1-cta--component .callout-h1-cta-content.col-sm-8 {
+        padding: 0;
+    }
+	.whole-title-description-video-video-th-area .col-sm-6.text-content {
+		padding: 30px 32px !important;
+	}
+	.whole-video-with-content-area .whole-title-description-video-video-th-area .title-text {
+		padding-bottom: 2px !important;
+	}
+	.callout-h1-cta-content .title-text {
+		font-size: 35px !important;
+		padding-bottom: 10px;
+	}
+	/* .whole-callout-h1-cta--component{
+		padding: 56px 16px !important;
+	} */
+	.banner-overlay-html-content-description--component {
+		padding: 56px 10px 64px 10px !important;
+		width: 100% !important;
+	}
+	.video-popup-content {
+		width: 100% !important;
+        padding: 0px 10px;
+	}
+	.video-popup-content .three-column-image-box img {
+		width: 100% !important;
+		height: auto !important;
+	}
+    .video-popup-content .three-column-image-box .three-column-video-play-button{
+        bottom: 8px !important;
+        left: 16px !important;
+    }
+    .video-popup-desc{
+        font-size: 14px;
+    }
+	body .banner-overlay-html-content-description--component {
+		margin-top: 0px !important;
+	}
+	.three-column-card-content>div {
+		width: 100% !important;
+	}
+    .image-title-desc-box {
+        width: 100% !important;
+        margin-right: 0px !important;
+        margin-bottom: 32px !important;
+        height: auto !important;
+    }
+	.banner-overlay-html-content-description--component {
+		width: 100% !important;
+		padding: 48px 16px 64px 30px !important;
+		margin-top: 0 !important;
+    }
+   .banner-overlay-html-content-description--component h1 {
+	    margin-bottom: 16px;
+	    margin-top: 0px;
+	    text-align: left;
+    }
+   .banner-overlay-html-content-description--component h2 {
+        text-align: left;
+        font-size: 28px;
+    }
+	.three-column-card-box .field.field--name-field-3-column-card.field--type-entity-reference-revisions.field--label-hidden.field--items{
+		display: unset !important;
+	}
+     /* Patients */
+   .patient-philosophy.corporate-responsibility {
+        padding: 0 !important;
+    }
+   .patient-philosophy.corporate-responsibility div {
+        width: 100% !important;
+    }
+    .corporate-responsibility h2.text-align-center {
+        overflow: hidden;
+        margin: 0 !important;
+        margin-right: 30px !important;
+        padding: 62px 10px 42px;
+        font-size: 35px;
+        text-align: left;
+    }
+    .patient-philosophy.corporate-responsibility .col-sm-6 {
+        padding: 0 10px;
+    }
+    .corporate-responsibility .col-sm-6 img {
+        padding-bottom: 42px;
+    }
+    .col-sm-6 .field--name-field-description-text-area {
+          overflow: hidden;
+          margin: 0 !important;
+    }
+    .field--name-field-description-text-area ul{
+          margin-bottom: 80px;
+          padding-left: 1em;
+    }
+      /* Corporate Responsibility Summary */
+      section.whole-callour-brochure-bullet-area {
+          width: 100% !important;
+          padding: 0 !important;
+      }
+      .whole-callour-brochure-bullet-area .callour-brochure-bullet-left {
+          justify-content: center !important;
+          padding: 56px 32px 0px !important;
+          background-image: radial-gradient(circle at 39% 20%, #0099cc, #0099cc 3%, rgba(0, 151, 202, 0.98) 4%, rgba(0, 51, 102, 0) 68%) !important;
+      }
+      .whole-callour-brochure-bullet-area .callour-brochure-bullet-right {
+          padding: 16px 32px 64px !important;
+      }
+      .button-more-down {
+          padding: 15px 88px !important;
+      }
+      .button-more-down::after {
+          top: 27px;
+          right: 73px;
+      }
+      /* Alnylam Corporate Responsibility News */
+      .description--component h2.text-align-center {
+          margin-top: 0;
+      }
+      .paragraph-id--429 h2 {
+          margin-bottom: 17px !important;
+      }
+      .description--component ul {
+          margin: 22px 0px 27px !important;
+          padding: 0 0px !important;
+      }
+      .paragraph-id--428 .description--component {
+          padding: 0 32px !important;
+      }
+      /* GRANTS AND GIVING */
+      div#html-content-background {
+          width: 100% !important;
+          padding: 40px 32px !important;
+      }
+      .paragraph.paragraph--type--html-content-with-background.paragraph-id--188.paragraph--view-mode--default, .paragraph.paragraph--type--html-content-with-background.paragraph-id--190.paragraph--view-mode--default, .paragraph.paragraph--type--html-content-with-background.paragraph-id--192.paragraph--view-mode--default {
+        margin: 0 23px 32px;
+    }
+      .paragraph-id--187 .description--component ul li a {
+          float: none;
+      }
+      .paragraph-id--194 {
+        margin: 0 23px;
+    }
+          /* Submit a request for support */
+      .paragraph-id--195 {
+          padding: 0 16px;
+      }
+      .paragraph-id--195 div#light-bg-banner {
+          width: 100% !important;
+          margin: 30px 0 !important;
+          padding: 12px 32px;
+      }
+      .paragraph-id--195 #light-bg-banner .row {
+          display: block !important;
+      }
+      .paragraph-id--195 #light-bg-banner .col-sm-4 .field--name-field-link {
+          text-align: center !important;
+          margin-top: 32px;
+      }
+      .paragraph-id--195 #light-bg-banner .col-sm-4 .field--name-field-link a {
+          padding: 20px 98px !important;
+          line-height: 24px !important;
+      }
+      /* INDEPENDENT MEDICAL EDUCATION PROGRAMS */
+      .paragraph-id--220 #full-html-light-dark {
+        padding: 74px 0px;
+    }
+      #full-html-light-dark .row{
+          margin: 0;
+      }
+      div#full-html-light-dark>div {
+          width: 100% !important;
+      }
+      .paragraph-id--220 #full-html-light-dark .field--name-field-heading-1 {
+          text-align: justify;
+          padding: 0 16px 47px;
+          font-size: 24px;
+      }
+      .paragraph-id--230 div#light-bg-banner {
+          width: 100% !important;
+          padding: 12px 25px;
+      }
+      .paragraph-id--230 #light-bg-banner .row {
+          display: block !important;
+          padding-bottom: 30px;
+          margin: auto;
+      }
+      .paragraph-id--230 #light-bg-banner h3{
+          font-size: 23px;
+      }
+      .paragraph-id--220 #full-html-light-dark .field_fullhtml_light_dark_field {
+          padding: 15px 16px !important;
+      }
+      .paragraph-id--230 #light-bg-banner .col-sm-8, .col-sm-4 {
+          padding: 0;
+      }
+      .paragraph-id--230 #light-bg-banner .col-sm-4 .field--name-field-link {
+          margin-top: 28px;
+          text-align: start;
+      }
+      .paragraph-id--230 #light-bg-banner .col-sm-4 .field--name-field-link a {
+          position: relative;
+          padding: 22px 69px 22px 46px !important;
+          line-height: 24px;
+      }
+      .paragraph-id--230 #light-bg-banner .col-sm-4 .field--name-field-link a::after {
+          right: 67px !important;
+          top: 28px !important;
+      }
+      .paragraph-id--229 #full-html-light-dark h5 {
+        font-size: 20px;
+    }
+      /* Transthyretin-mediated amyloidosis (ATTR amyloidosis) */
+      .paragraph-id--220 #full-html-light-dark .field_full_html_paragraph .field--item {
+          margin: 32px 32px 32px 16px;
+          padding: 5px 29px 5px 16px;
+      }
+      .paragraph-id--220 #full-html-light-dark .field_full_html_paragraph .description--component .field--item {
+          margin: 0;
+          padding: 32px 0px;
+      }
+      .paragraph-id--220 #full-html-light-dark .field_full_html_paragraph .description--component .row .col-sm-5{
+          padding: 0;
+          font-size: 17px !important;
+          line-height: 24px;
+      }
+      .paragraph-id--220 #full-html-light-dark .field_full_html_paragraph .description--component .row .col-sm-7 .col-sm-4{
+          display: inline-block;
+          padding: 10px 5px 13px !important;
+          text-align: center;
+          width: 32%;
+      }
+      .dots.small {
+          width: 16px;
+          height: 16px;
+      }
+      .paragraph-id--220 #full-html-light-dark .field_full_html_paragraph .description--component .col-sm-4 p {
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          padding-top: 6px;
+      }
+      .paragraph-id--226 hr{
+          margin: 0;
+      }
+      .field_full_html_paragraph .description--component .content-area {
+          padding: 0px !important;
+      }
+      .dots.large {
+          width: 20px;
+          height: 20px;
+      }
+      .field_full_html_paragraph .description--component .content-area h5{
+          margin-top: 23px;
+      }
+      .field_full_html_paragraph .description--component .content-area table.bottom48 {
+          margin-bottom: 36px;
+      }
+	  /*The Science of RNAi */
+    #full-html-content-background{
+        padding: 60px 0px !important;
+        margin-bottom: 35px;
+    }
+    #full-html-content-background .row.inner-block {
+        padding: 0 32px !important;
+    }
+    .paragraph-id--253 .description--component h2.text-align-center {
+        text-align: center;
+        padding: 0;
+        margin-bottom: 24px;
+    }
+    .paragraph-id--260 #full-html-light-dark .field_fullhtml_light_dark_field {
+        padding: 0;
+    }
+    .paragraph-id--256 .description--component {
+        padding: 0 25px !important;
+    }
+    .paragraph-id--256 .description--component h2.text-align-center {
+        padding: 0;
+        text-align: center;
+        margin-bottom: 22px;
+    }
+    .paragraph-id--256 .description--component p{
+        margin-bottom: 24px;
+    }
+    .paragraph.paragraph--type--dark-bg-banner.paragraph-id--255.paragraph--view-mode--default {
+        margin-top: 60px;
+    }
+    .paragraph.paragraph--type--dark-bg-banner.paragraph-id--255.paragraph--view-mode--default {
+        margin: 60px 16px 0;
+    }
+    .paragraph-id--255 div#dark-bg-banner {
+        width: 100% !important;
+        padding: 0 24px 32px;
+    }
+    .paragraph-id--255 #dark-bg-banner .row{
+        display: block;
+    }
+    .paragraph-id--255 #dark-bg-banner .row .col-sm-4{
+        text-align: center;
+    }
+    .paragraph-id--255 #dark-bg-banner .row .col-sm-8{
+        padding: 0;
+        line-height: 24px;
+    }
+    .paragraph-id--259 .description--component .field--item {
+        margin-top: 10px !important;
+        padding: 0 8px !important;
+    }
+    .paragraph-id--260 #full-html-light-dark {
+        padding-bottom: 40px;
+    }
+    .paragraph-id--261 .video-popup-content {
+        width: 100% !important;
+        padding: 0 20px;
+    }
+    .paragraph-id--261 .video-popup-content .three-column-image-box {
+        width: 100% !important;
+        padding: 0 10px;
+    }
+    .video-popup-content .three-column-image-box img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .paragraph-id--261 .video-popup-content .video-popup-desc {
+        width: 100% !important;
+    }
+    .paragraph-id--263  #full-html-content-background .row.inner-block {
+        padding: 0 30px;
+    }
+    .paragraph-id--263 .description--component h2.text-align-center {
+        padding: 0;
+        text-align: center;
+        margin-bottom: 22px;
+    }
+    .paragraph-id--263 .description--component p{
+        margin-bottom: 24px;
+    }
+    .paragraph-id--262 .description--component ul {
+        padding: 0 20px !important;
+    }
+    .paragraph-id--318 div#icon-copy-link-list>div {
+    width: 100% !important;
+    }
+    .paragraph-id--318 div#icon-copy-link-list-feilds {
+        padding: 0 32px;
+        margin-bottom: 64px;
+    }
+    #icon-copy-link-list-feilds .icon {
+        padding-top: 0px;
+    }
+    .paragraph-id--317 h4 {
+        padding-top: 18px;
+    }
+    #icon-copy-link-list-feilds .desc p.widget {
+        background-color: #b9d9eb;
+        width: 48px;
+        height: 1px;
+        margin-bottom: 13px;
+    }
+    #icon-copy-link-list-feilds .desc ul{
+        margin-bottom: 0;
+    }
+    #icon-copy-link-list-feilds .desc ::marker {
+        color: #ff9b00;
+    }
+
+    #two-column-card {
+        padding: 64px 0px 0px;
+    }
+    #two-column-card>div {
+        width: 100% !important;
+    }
+    #two-column-card .image-title-desc-box {
+        width: 100%;
+        margin-right: 0;
+        padding: 0 32px 64px;
+        height: auto;
+        min-height: auto;
+    }
+    #two-column-card .image-title-desc-box .desc-box h2 {
+        margin: 18px 0 5px;
+    }
+    .image-title-desc-box .desc-box p a {
+        margin: 0;
+    }
+	/*Delivery Platforms */
+    #full-html-content-background .row.inner-block h2{
+        margin: 0;
+        margin-bottom: 16px;
+    }
+    .description--component p {
+        margin-bottom: 24px;
+    }
+    .description--component p:nth-child(6) {
+        margin-bottom: 0;
+    }
+    .description--component p:last-child {
+        margin-bottom: 0;
+    }
+	/*CLINICAL TRIALS */
+    .paragraph-id--52>div{
+        padding: 60px 0px;
+    }
+    .whole-service-content-area {
+        width: 100% !important;
+        padding: 0 18px;
+    }
+    .paragraph-id--51>div {
+        padding: 20px 15px !important;
+    }
+    .service-content-area .service-content-heading {
+        font-size: 28px !important;
+    }
+    .service-field-area .service-box .service-image-field .heading {
+        margin-top: 0px !important;
+    }
+    .service-desc-field.col-sm-9 {
+        padding: 0;
+    }
+    .service-desc-field .service-field-heading {
+        padding-top: 30px;
+    }
+	/* OUR PIPELINE */
+    .paragraph-id--349 #full-html-content-background .row.inner-block {
+        padding: 0 !important;
+    }
+	.paragraph.paragraph--type--full-html-content-with-backgroun.paragraph-id--349.paragraph--view-mode--default img {
+        padding: 0px 
+    }
+    .fullbleed-bg {
+        background-size: 186% !important;
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+        width: 100% !important;
+        height: 627px;
+        display: block;
+        padding: 64px 0px;
+    }
+    .fullbleed-bg>div {
+        width: 100% !important;
+    }
+    .fullbleed-bg .bleed-box .icon img {
+        margin-top: 64px;
+        margin-bottom: 25px !important;
+    }
+    .bleed-box {
+        width: 100% !important;
+        position: absolute;
+        bottom: 0;
+        padding: 0px 40px;
+        padding-bottom: 64px;
+    }
+    .bleed-box .desc{
+        line-height: 25px;
+    }
+	 /* --our leadership-- */
+     .banner-overlay-html-content-description--component {
+        padding: 56px 32px 64px 32px !important;
+    }
+    .banner-overlay-html-content-description--component h1,
+    .banner-overlay-html-content-description--component h2,
+    .bios-card-with-image-field .bio-desc p,
+    .bios-card-without-image-field .bio-desc p  {
+        text-align: left;
+    }
+    .font-20 {
+        padding: 0px;
+        text-align: left;
+    }
+
+    .whole-bios-card-section{
+        width: 100% !important;
+    }
+
+    .banner-overlay-html-content-description--component {
+        width: 100% !important;
+    }
+    .name-position .position {
+        font-size: 32px !important;
+        font-weight: 300;
+        line-height: 32px;
+    }
+    .bios-card-with-image-field .col-sm-9 .name-position {
+		padding-right: 29px !important;
+    }
+    .bios-card-with-image-field .designation, .bios-card-without-image-field .designation {
+        font-size: 28px !important;
+        font-weight: 300;
+    }
+    .bio-desc {
+        width: 100%;
+    }
+    .bios-card-with-image-field .col-sm-9 {
+        padding-right: 16px !important;
+        padding-left: 13px !important;
+        margin-top: 25px;
+    }
+    .bios-card-with-image-field {
+        padding: 30px 18px !important;
+        padding-right: 8px;
+    }
+    .bio-desc p:last-child {
+        margin-bottom: 0;
+        padding-right: 0px;
+    }
+    .bios-card-without-image-field.col-sm-12 {
+        padding: 26px !important;
+    }
+
+    .whole-callout-h1-cta--component .callout-h1-cta--component{
+        width: 100% !important;
+    }
+    .callout-h1-cta-content .title-text {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .whole-callout-h1-cta--component {
+        padding: 64px 32px !important;
+    }
+    .callout-h1-cta--component {
+        display: block !important;
+    }
+    .callout-h1-cta-link a {
+        width: 100% !important;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .paragraph-id--127 .bios-card-with-image-field .image {
+        height: 311px;
+        background-image: url(../images/bitmaps2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .paragraph-id--127 .bios-card-with-image-field .image .field--name-field-upload-image.field--type-image img {
+        display: none;
+    }
+
+    .paragraph-id--137 .description--component {
+        padding: 0px 30px;
+    }
+    /* --Patient access philosphy-- */
+    /* ---Our Patient Access Philosophy-- */
+    section.whole-full-html-callout-brochure-area>div {
+        width: 100% !important;
+    }
+    section.whole-callour-brochure-bullet-area {
+        width: 100% !important;
+    }
+    .callour-brochure-bullet-left .img-responsive {
+        margin: auto;
+    }
+    .whole-callour-brochure-bullet-area .callour-brochure-bullet-right h5:first-child {
+        padding-right: 10px;
+    }
+    .whole-callour-brochure-bullet-area .callour-brochure-bullet-left {
+        display: block !important;
+    }
+    .whole-callour-brochure-bullet-area .callour-brochure-bullet-right ul li p {
+        text-align: left !important;
+        font-size: 17px;
+    }
+    .whole-callour-brochure-bullet-area .callour-brochure-bullet-right {
+        padding: 56px 32px 64px 32px !important;
+    }
+    .callour-brochure-bullet-right p:last-child {
+        text-align: center;
+    }
+    .button-more-down {
+        width: 100%;
+    }
+    /* --alnylam assist-- */
+    .patient-philosophy>div {
+        width: 100% !important;
+    }
+    .heading-image-popup-content-area .image-title {
+        font-size: 32px !important;
+        font-weight: 300;
+    }
+    .patient-philosophy .heading-image-popup-content-area.col-sm-4 {
+        width: 100% !important;
+    }
+    .banner-overlay-html-content-description--component p.decoration {
+        top: 0px !important;
+        left: -23px !important;
+    }
+	/*product listing*/
+	.paragraph-id--345 .our-product-feild {
+		width: 100% !important;
+	}
+	/*CAREERS */
+    .paragraph-id--531 div#full-html-content-background .row.inner-block {
+        width: 100% !important;
+    }
+    .paragraph-id--531 div#full-html-content-background .row.inner-block p:last-child {
+        margin-bottom: 65px;
+    }
+    .paragraph-id--532 .fullbleed-bg {
+        display: flex;
+        background-size: cover !important;
+        background-position: center center !important;
+        height: 915px;
+    }
+    .paragraph-id--532 .fullbleed-bg>div {
+        margin: 32px 35px !important;
+    }
+    .paragraph-id--532 .fullbleed-bg .bleed-box {
+        height: auto;
+        position: unset;
+        padding: 30px 0px;
+    }
+    .paragraph.paragraph--type--body.paragraph-id--602.paragraph--view-mode--default .row {
+        display: block !important;
+    }
+    .paragraph-id--602 .row .col-sm-8, .paragraph-id--602 .row .col-sm-4 {
+        padding: 0 32px;
+    }
+    .paragraph-id--602 .row .col-sm-4 button.button-more-down {
+        padding: 15px 30px !important;
+    }
+    .paragraph-id--602 .row .col-sm-4 button.button-more-down::after {
+        top: 27px;
+        right: 50px;
+    }
+	/* OUR-CULTURE */
+    #full-html-content-background .paragraph-id--517  p.text-align-center {
+        padding: 0;
+    }
+    .paragraph.paragraph--type--body.paragraph-id--517.paragraph--view-mode--default .img-wrapper {
+        display: block !important;
+        text-align: center;
+        height: auto !important;
+    }
+    .paragraph-id--606 .row {
+        margin: 15px;
+    }
+    .paragraph-id--606 .row .col-sm-8 {
+        padding: 0;
+    }
+	/* CONTACT US */
+    .contact-us-column-card-map>div {
+        width: 100% !important;
+    }
+    .paragraph-id--151 .row {
+        margin: 0 16px;
+    }
+    .contact_us_full_html .col-sm-3 {
+        width: 100% !important;
+        margin-bottom: 32px;
+        padding: 20px 0 32px !important;
+        text-align: center !important;
+        min-height: auto !important;
+    }
+	.contact-us-map-card .map-card-block {
+		padding-bottom: 32px;
+	}
+	.contact-us-map-card {
+		padding: 50px 27px !important;
+	}
+	 /* alnylam-leadership */
+    .paragraph-id--137 p.text-align-center.font-20 {
+        margin-bottom: 0 !important;
+    }
+	/*search-content page */
+	.view-search-content .view-content .views-row .views-field-title h3::before {
+		top: 5px;
+		left: 22px;
+	}
+	#content .block-views-exposed-filter-blocksearch-content-page-1 .form--inline.form-inline .form-group {
+        margin: 0;
+	}
+	#content .block-views-exposed-filter-blocksearch-content-page-1 .form--inline{
+		width: 100%;
+		padding: 25px 12px;
+	}
+	#content .block-views-exposed-filter-blocksearch-content-page-1 .form--inline .form-item-search-api-fulltext input {
+		font-size: 18px;
+		height: 45px;
+		margin: 0px 0px;
+	}
+	#content .block-views-exposed-filter-blocksearch-content-page-1 button.form-submit {
+		top: 28px;
+		right: 15px;
+		padding: 7px 25px;
+		font-size: 15px;
+		margin-right: 0;
+	}
+	#content .view-search-content {
+		width: 100%;
+	}
+	#content .view-search-content .view-header {
+		text-align: justify;
+		padding: 0px 20px;
+	}
+	#content .view-search-content .view-header h3{
+		padding-left: 0px;
+	}
+	#content .view-search-content .view-content .views-row {
+		padding: 20px 25px 25px;
+	}
+}

@@ -1,0 +1,31 @@
+
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+{% set Class = paragraph.field_label.value %}
+{% block paragraph %}
+	<div{{attributes.addClass(classes)}}>
+                <div class="col-sm-4 img-desc-link">
+                    <div class="img">{{content.field_upload_image}}</div>
+                    <div class="desc">{{content.field_description_text_area}}</div>
+                    <div class="link {{Class}}">{{content.field_link}}</div>
+                </div>
+	</div>
+{% endblock paragraph %}
+

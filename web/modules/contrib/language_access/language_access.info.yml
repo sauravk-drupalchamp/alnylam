@@ -1,0 +1,13 @@
+name: Language Access
+description: Provide access permissions by language.
+type: module
+package: Multilingual
+core_version_requirement: ^8.8 || ^9
+dependencies:
+  - drupal:language
+  - drupal:user
+
+# Information added by Drupal.org packaging script on 2021-06-09
+version: '8.x-1.6'
+project: 'language_access'
+datestamp: 1623249812

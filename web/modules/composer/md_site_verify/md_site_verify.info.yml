@@ -1,0 +1,14 @@
+name: Multidomain Site Verify
+description: "Verifies ownership of a site for use with search engines."
+type: module
+package: Domain
+core: 8.x
+core_version_requirement: ^8 || ^9
+configure: md_site_verify.verifications_list
+dependencies:
+  - domain:domain
+
+# Information added by Drupal.org packaging script on 2020-09-26
+version: '2.0.0-beta1'
+project: 'md_site_verify'
+datestamp: 1601143610

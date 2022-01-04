@@ -1,0 +1,70 @@
+@media only screen and (min-width:0px) and (max-width:767px){ 
+	section#block-signupforupdates h2 {
+		font-weight: bold;
+		font-size: 45px;
+	}
+	div#edit-medical-professional .form-type-radio {
+		width: 100%;
+		padding: 5px 30px;
+	}
+	section#block-signupforupdates {
+		padding: 5px 0px;
+		margin-top: 0px;
+	}
+	button#edit-actions-submit {
+		width: 100%;
+		margin: 0px 0 0px 0;
+	}
+	#edit-interested-international- .panel-body .checkbox {
+		width: 100%;
+	}
+	div#edit-interested-international- .panel-body {
+		width: 100% !important;
+		padding: 10px 30px;
+	}
+	/* SIGN UP FOR EMAIL UPDATES */
+    #edit-persional-information-international {
+        width: 100%;
+        margin: 0;
+    }
+    #edit-persional-information-international .panel-body {
+        width: 100%;
+        margin: auto;
+        padding: 40px 15px 30px;
+    }
+    div#edit-persional-information-international .panel-body .form-group {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .has-glyphicons .select-wrapper:after {
+        top: 14%;
+    }
+	/* US residents */
+    div#edit-patient {
+        width: 100%;
+        margin: auto;
+    }
+    div#edit-personal-information {
+        margin: 25px 0 0;
+        padding: 0 15px;
+    }
+    div#edit-personal-information .panel-body {
+        padding: 40px 15px 35px;
+    }
+    #edit-personal-information .panel-body .form-group {
+        width: 100% !important;
+    }
+    #edit-personal-information .panel-body .form-group .select-wrapper::after {
+        top: 12%;
+    }
+    div#edit-interested .panel-body {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #edit-interested .panel-body .checkbox {
+        width: 100%;
+    }
+    button#edit-actions-01-submit {
+        width: 100% !important;
+    }
+}

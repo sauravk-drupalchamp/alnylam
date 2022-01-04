@@ -1,0 +1,59 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+
+	<div{{attributes.addClass(classes)}}>
+
+		{% set link =  content.field_cta[0]['#url'] %}
+		{% set link_text =  content.field_external_cta[0]['#title'] %}
+
+		{% if paragraph.field_cta.value %}
+
+			<div class="heading-image-popup-content-area col-sm-4">
+				<a href="{{ link }}" style="width: 650px; height:400px;">
+					<div class="image-field">{{content.field_upload_image}}</div>				
+				</a>
+				<div class="image-title">{{content.field_heading_1}}</div>
+				<div class="description-field">{{content.field_description_text_area}}</div>
+				<div class="site-link">{{content.field_cta}}</div>
+
+				{# <div class="popup-content-{{ paragraph.id() }} popup-content" style="display:none; background:#fff;">{{content.field_video_desc}}</div> #}
+
+			</div>
+
+		{% else %}
+
+			<div class="heading-image-popup-content-area col-sm-4">
+				<a data-colorbox-inline=".popup-content-{{ paragraph.id() }}" style="width: 650px; height:400px;">
+					<div class="image-field">{{content.field_upload_image}}</div>				
+				</a>
+				<div class="image-title">{{content.field_heading_1}}</div>
+				<div class="description-field">{{content.field_description_text_area}}</div>
+				{# <a data-colorbox-inline=".popup-content-{{ paragraph.id() }}">Learn More ›</a> #}
+				<a class="our-products-ext" data-colorbox-inline=".popup-content-{{ paragraph.id() }}">{{link_text}}</a>
+				<div class="popup-content-{{ paragraph.id() }} popup-content" style="display:none; background:#fff;">{{content.field_video_desc}}</div>
+
+			</div>
+
+		{% endif %}
+	</div>
+
+{% endblock paragraph %}

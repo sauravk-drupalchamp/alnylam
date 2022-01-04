@@ -1,0 +1,31 @@
+
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished','homepage-video-container',
+  ]
+%}
+
+{% block paragraph %}
+	<div {{attributes.addClass(classes)}} style="position:relative;">
+        {% set ComponentWidth = paragraph.field_set_width.value %}
+
+        <div id="home-page-full-video" style="width: {{ComponentWidth}}px; margin: auto;">
+            <div class="quote">{{content.field_qutote}}</div>
+            <div class="homepage-video">{{content. 	field_video_desc}}</div>            
+        </div>
+	</div>
+{% endblock paragraph %}

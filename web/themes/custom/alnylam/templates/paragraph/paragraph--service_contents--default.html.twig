@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+
+	<div{{attributes.addClass(classes)}}>
+
+		<div style="margin-bottom:30px; background: #fff; padding:30px 20px">
+			<h2 class="service-content-heading text-center">{{content.field_heading_1}}</h2>
+			<div class="service-field-area" style="overflow:hidden;">{{content.field_service_fields}}</div>
+		</div>
+
+	{% endblock paragraph %}

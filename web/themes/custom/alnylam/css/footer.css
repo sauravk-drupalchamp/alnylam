@@ -1,0 +1,117 @@
+#whole-footer-top ul.menu.nav li {
+    display: inline-block;
+    width: 100%;
+}
+#whole-footer-top ul.menu.nav li a {
+    font-size: 14px;
+    padding: 8px;
+	color:#00254b;
+    font-weight: normal;
+    line-height: 1.71;
+}
+#whole-footer-top ul.menu.nav li a:hover {
+    background: transparent;
+}
+#whole-footer-bottom .row {
+    display: flex;
+    align-items: center;
+}
+ul.footer-social-link-section {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    float: right;
+}
+ul.footer-social-link-section span,
+#whole-footer-top .caret{
+    display: none;
+}
+ul.footer-social-link-section li {
+    display: inline-block;
+    margin-right: 15px;
+}
+ul.footer-social-link-section li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+
+/* PATIENT ADVOCACY */
+.alnylam-advocacy-imperatives h2 {
+	margin-bottom: 32px;
+	margin-top: 0px;
+}
+
+.paragraph-id--548 .description--component h2{
+    margin-top: 0px !important;
+}
+.paragraph-id--548 h3 {
+    font-weight: 400 !important;
+    margin-bottom: 32px;
+    font-size: 28px;
+    line-height: 32px;
+}
+.alnylam-advocacy-imperatives img {
+    margin-bottom: 24px;
+}
+.paragraph-id--548 .advocacy-group {
+	width: 970px;
+	margin: auto;
+	box-shadow: 0 2px 4px 0 rgba(151, 151, 151, 0.46);
+	padding: 8px 48px;
+	z-index: 20;
+	position: relative;
+}
+.paragraph-id--548 .advocacy-group p{
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+.paragraph-id--548 .advocacy-group .legends .ref {
+    display: inline-block;
+    width: 33%;
+    font-size: 17px;
+    line-height: 1;
+}
+
+.paragraph-id--548 .advocacy-group .legends .ref .outer {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0px 10px 1px 0px;
+    padding: 0px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    border-radius: 50%;
+    vertical-align: bottom;
+    overflow: hidden;
+    font-size: 1px;
+    line-height: 1;
+}
+
+.paragraph-id--548 .advocacy-group .legends .ref .outer .inner {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 4px;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1px;
+    line-height: 1;
+}
+
+.paragraph-id--548 .advocacy-group .legends .ref.ahp .outer .inner {
+    background-color: #990066;
+}
+.paragraph-id--548 .advocacy-group .legends .ref.hattr .outer .inner {
+    background-color: #663366;
+}
+.paragraph-id--548 .advocacy-group .legends .ref.ph1 .outer .inner {
+    background-color: #ebab21;
+}
+
+/* PATIENT ADVOCACY GRID */
+.show-desc{
+    display: block;
+    position: absolute;
+    z-index: 50;
+}

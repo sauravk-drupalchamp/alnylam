@@ -1,0 +1,41 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+	<div class="container col-sm-4">
+		<div{{attributes.addClass(classes)}}>
+
+			<div class="three-column-video-content">
+				<a data-colorbox-inline=".three-column-video-box-{{ paragraph.id() }}" style="width: 650px; height:400px;">
+					<div class="three-column-image-box">{{ content.field_upload_image }}
+						<div class="three-column-video-play-button"><img src="/themes/custom/alnylam/images/button-desktop-play-button-40-px.png"></div>
+					</div>
+					<div class="three-column-video-box-{{ paragraph.id() }}" style="display: none;">{{ content.field_embed_video }}</div>
+				</a>
+			</div>
+			<div class="three-column-title-and-width-box">
+				<div class="three-column-video-heading">{{ content.field_heading_1  }}</div>
+				<div class="three-column-video-heading2">{{ content.field_heading_2  }}</div>
+			</div>
+			<div class="three-column-video-short-description">{{ content.field_short_description  }}</div>
+			<div class="three-column-video-link">{{ content.field_link }}</div>
+		</div>
+	</div>
+{% endblock paragraph %}

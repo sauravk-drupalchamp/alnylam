@@ -1,0 +1,4 @@
+root = true
+
+[*.{php, install, module}]
+indent_style = tab

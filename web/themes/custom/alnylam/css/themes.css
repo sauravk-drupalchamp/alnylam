@@ -1,0 +1,2349 @@
+/*globally css*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #003366;
+  line-height: 100%;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 1.07;
+  margin-bottom: 24px;
+}
+/* OUR-COMPANY */
+h1.our-company::before {
+  background-image: url(../images/our-company.png);
+  background-size: 50px 30px;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  content: "";
+  margin-right: 16px;
+}
+/* OUR-SCINCE */
+h1.our-science::before {
+  background-image: url(../images/our-science.png);
+  background-size: 50px 30px;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  content: "";
+  margin-right: 16px;
+}
+/* OUR-PRODUCTS */
+h1.our-products::before {
+  background-image: url(../images/our-products.png);
+  background-size: 50px 30px;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  content: "";
+  margin-right: 16px;
+}
+/* OUR-NEWS */
+h1.our-news::before {
+  background-image: url(../images/our-news.png);
+  background-size: 50px 30px;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  content: "";
+  margin-right: 16px;
+}
+/* SECONDARY-DARK */
+h1.secondary-dark::before {
+  background-image: url(../images/secondary.png);
+  background-size: 50px 30px;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  content: "";
+  margin-right: 16px;
+}
+/* SECONDARY-LIGHT */
+h1.secondary-light::before {
+  background-image: url(../images/secondary-light.png);
+  background-size: 50px 30px;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  content: "";
+  margin-right: 16px;
+}
+/* SUB-HEADING */
+span.our-company {
+  height: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #0099cc;
+}
+
+span.our-science {
+  height: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #ff9900;
+}
+
+span.our-products {
+  height: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: rgb(110, 206, 178);
+}
+
+span.our-news {
+  height: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #c90287;
+}
+
+span.our-secondary-dark {
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: rgb(0, 37, 75);
+}
+
+span.our-secondary-light {
+  height: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: rgb(185, 217, 235);
+}
+.paragraph-id--417 .quote h1.our-company::before,
+.paragraph-id--331 h1.our-company::before,
+.paragraph-id--324 h1.our-science::before,
+.whole-patient-comes-first-section h1.secondary-light::before,
+.paragraph-id--412 h1.our-news::before,
+.paragraph-id--424 h1.our-company::before,
+.paragraph-id--332 h1.secondary-dark::before {
+  margin-left: -67px;
+}
+h2 {
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: 300;
+  color: #003366;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 23px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #003366;
+}
+
+h4 {
+  font-size: 21px;
+  line-height: 28px;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+a{
+  color: #003366;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+p a {
+  font-weight: 600;
+}
+a:hover {
+  text-decoration: none;
+  color: #ff9900;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+sup{
+  vertical-align: super;
+  line-height: 0;
+  font-size: 10px;
+}
+.video-play-button.play-bg {
+	background: url(../images/prev.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.font-20 {
+  font-size: 20px;
+  line-height: 32px;
+}
+p.font-20{
+  margin-bottom: 24px !important;
+}
+.margin-bottom-64px{
+  margin-bottom: 64px !important;
+}
+.margin-bottom-32px{
+  margin-bottom: 32px !important;
+}
+.margin-bottom-24px{
+  margin-bottom: 24px !important;
+}
+.margin-bottom-17px{
+  margin-bottom: 17px !important;
+}
+.margin-bottom-16px{
+  margin-bottom: 16px !important;
+}
+.margin-bottom-0px{
+  margin-bottom: 0px !important;
+}
+.margin-top-64px{
+  margin-top: 64px !important;
+}
+.margin-top-32px{
+  margin-top: 32px !important;
+}
+.margin-top-24px{
+  margin-top: 24px !important;
+}
+.margin-top-17px{
+  margin-top: 17px !important;
+}
+.margin-top-16px{
+  margin-top: 16px !important;
+}
+.margin-top-0px{
+  margin-top: 0px !important;
+}
+.field--name-field-add-section .field--item {
+  position: relative;
+}
+
+.user-login-form,
+.user-pass {
+  max-width: 450px;
+  margin: auto;
+  padding: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: #b9d9eb;
+  border-radius: 10px;
+}
+body.user-logged-in.path-user #midcontent-area #content {
+  max-width: 50%;
+  margin: auto;
+  padding: 50px;
+}
+.button-link {
+  padding: 15px 47px;
+  background: #0099cc;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}
+.button-link:hover {
+  background: #ff9900;
+  color: #fff;
+}
+.download-link {
+  padding: 15px 47px;
+  background: #0099cc;
+  color: #fff;
+  font-weight: 600;
+  background: #0099cc url(../images/Download_white.svg) right 32px center
+    no-repeat;
+  background-size: 9px 13px;
+}
+.download-link:hover {
+  color: #ff9900;
+  background: #0099cc url(../images/Download_orange.svg) right 32px center
+    no-repeat;
+  background-size: 9px 13px;
+}
+.description--component a{
+  border-bottom: 1.5px solid #b9d9eb;
+}
+.widget-line-our-company {
+  height: 1px;
+  width: 43px;
+  background-color: #0099cc;
+  display: block;
+  margin-bottom: 16px;
+}
+.widget-line-our-science {
+  height: 1px;
+  width: 43px;
+  background-color: #ff9900;
+  display: block;
+  margin-bottom: 16px;
+}
+.widget-line-our-product {
+  height: 1px;
+  width: 43px;
+  background-color: #59b99a;
+  display: block;
+  margin-bottom: 16px;
+}
+.widget-line-our-news {
+  height: 1px;
+  width: 43px;
+  background-color: #990066;
+  display: block;
+  margin-bottom: 16px;
+}
+.dots {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.dots.small {
+  width: 16px;
+  height: 16px;
+}
+.dots.green {
+  background: #59b99a;
+}
+.dots.blue {
+  background: #b9d9eb;
+}
+.dots.red {
+  background: #990066;
+}
+.dots.large {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+}
+.button-more.button-more {
+  background: #fff;
+  border: 4px solid #bbd9eb;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #00245b;
+  margin-top: 32px !important;
+  height: 72px;
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 35px;
+}
+.button-more.button-more:hover {
+  background: #00254b;
+  color: #fff;
+  border: 4px solid transparent;
+}
+
+.button-more-down {
+  background: #fff;
+  border: 4px solid #bbd9eb;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #00245b;
+  margin-top: 32px !important;
+  height: 72px;
+  display: inline-block;
+  text-transform: uppercase;
+  position: relative;
+  line-height: 35px;
+}
+.button-more-down::after {
+	content: "";
+	background: url(../images/icon-button-download.png);
+	background-size: cover;
+	width: 12px;
+	height: 12px;
+	display: block;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+}
+.button-more-down:hover::after {
+	content: "";
+	background: url(../images/Download_white.svg);
+	background-size: cover;
+	width: 12px;
+	height: 17px;
+	display: block;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+}
+.button-more-down-2 {
+  background: #fff;
+  border: 4px solid #bbd9eb;
+  padding: 24px 40px 24px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #00245b;
+  margin-top: 32px !important;
+  height: 72px;
+  display: inline-block;
+  text-transform: uppercase;
+  position: relative;
+  line-height: 15px;
+}
+.button-more-down-2::after {
+	content: "";
+	background: url(../images/icon-button-download.png);
+	background-size: cover;
+	width: 12px;
+	height: 12px;
+	display: block;
+	position: absolute;
+	top: 26px;
+	right: 25px;
+}
+.button-more-down-2:hover::after {
+	content: "";
+	background: url(../images/Download_white.svg);
+	background-size: cover;
+	width: 12px;
+	height: 17px;
+	display: block;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+}
+.button-more-down-2:hover {
+  background: #00254b;
+  color: #fff;
+  border: 4px solid #bbd9eb;
+}
+.button-more-down:hover {
+  background: #00254b;
+  color: #fff;
+  border: 4px solid #bbd9eb;
+}
+.cta-down a::after {
+	content: "";
+	background: url(../images/icon-button-download.png);
+	background-size: cover;
+	width: 12px;
+	height: 12px;
+	display: block;
+	position: absolute;
+	top: 30px;
+	right: 32px;
+}
+.cta-down a:hover::after {
+	content: "";
+	background: url(../images/Download_white.svg);
+	background-size: cover;
+	width: 12px;
+	height: 17px;
+	display: block;
+	position: absolute;
+	top: 27px;
+	right: 30px;
+}
+.link.our-products-down {
+  position: relative;
+}
+.link.our-products-down a::after{
+  content: "";
+	background: url(../images/icon-button-download.png);
+	background-size: cover;
+	width: 12px;
+	height: 12px;
+	display: block;
+	position: absolute;
+	top: 8px;
+	right: 86px;
+}
+.link.our-products-ext a{
+  position: relative;
+} 
+.link.our-products-ext a::after{
+  content: "";
+	background: url(../images/External_link_font_awesome.svg.png);
+	background-size: cover;
+	width: 12px;
+	height: 12px;
+	display: block;
+	position: absolute;
+  top: 7px;
+  right: -16px;
+}
+
+.field--name-field-custom-body-class {
+  display: none;
+}
+/* Testimonial section css */
+
+#block-cultivatingalnylamscultureofinclusion {
+  background-color: #b9d9eb;
+  padding: 71px 101px 58px 154px;
+}
+#block-cultivatingalnylamscultureofinclusion .field--name-body {
+  width: 40%;
+  float: left;
+}
+#block-cultivatingalnylamscultureofinclusion .field--name-field-paragraph {
+  width: 53%;
+  float: right;
+  background: url(../images/cultivating-bg.svg) no-repeat top center;
+}
+
+/* --------------------------partenring together section------------------------------------- */
+.paragraph--type--partnering-together {
+  padding-top: 45px;
+}
+.paragraph--type--partnering-together .field--name-field-heading-1 {
+  font-size: 35px;
+  text-align: center;
+  font-weight: 300;
+  color: #003366;
+  line-height: 1.9;
+  letter-spacing: normal;
+}
+.paragraph.paragraph--type--partnering-together
+  .field--name-field-description-text-area
+  p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #333333;
+  text-align: center;
+  line-height: 1.6;
+}
+.paragraph.paragraph--type--partnering-together
+  .field--name-field-description-text-area
+  p {
+  width: 996px;
+  margin: auto;
+}
+.paragraph--type--partnering-together .field--name-field-image {
+  width: 1170px;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 35px;
+  margin-bottom: 55px;
+}
+.paragraph--type--partnering-together .field--name-field-image .field--item {
+  float: left;
+}
+.paragraph--type--partnering-together
+  .field--name-field-image.field--type-entity-reference-revisions.field--label-hidden.field--items
+  .field--item
+  .paragraph--type--image {
+  overflow: hidden;
+  margin-right: 30px;
+}
+.paragraph--type--partnering-together
+  .field--name-field-image.field--type-entity-reference-revisions.field--label-hidden.field--items
+  .field--item:last-child
+  .paragraph--type--image {
+  margin-right: 0;
+}
+
+/* ------------------------------Recognition For Our DE&I Efforts section-------------------------------------------- */
+
+.paragraph--type--recognition-for-our-de-i-efforts {
+  max-width: 1220px;
+  margin: auto;
+  overflow: hidden;
+  padding: 55px 0px;
+}
+
+.paragraph--type--recognition-for-our-de-i-efforts
+  .field--name-field-heading-1 {
+  text-align: center;
+  font-size: 35px;
+  color: #003366;
+  font-weight: 300;
+}
+
+.paragraph--type--recognition-for-our-de-i-efforts
+  .field--name-field-description-text-area
+  p {
+  color: #333333;
+  text-align: center;
+  font-size: 20px;
+  width: 969px;
+  margin: auto;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.whole-title-image-link-area {
+  float: left;
+  margin-right: 32px;
+}
+
+.whole-title-image-link-area .title-image-link {
+  background: #f8f8f8;
+  height: 224px;
+  width: 208px;
+  padding: 20px 16px 69px 16px;
+  position: relative;
+}
+.whole-title-image-link-area .image:after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: url(../images/open.png) no-repeat;
+  position: absolute;
+  left: 40%;
+  bottom: 12px;
+}
+.whole-title-image-link-area .hidden-content {
+  background: #00254b;
+  height: 224px;
+  width: 208px;
+  padding: 20px 16px 69px 16px;
+  position: absolute;
+  top: 0px;
+  text-align: center;
+  display: none;
+  margin-left: -16px;
+}
+
+.whole-title-image-link-area
+  .hidden-content
+  .title
+  .field--name-field-heading-1 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.whole-title-image-link-area .hidden-content .link a {
+  color: #fff;
+  border-bottom: 2px solid #b9d9eb;
+}
+.whole-title-image-link-area .hidden-content .link {
+  margin-top: 40px;
+}
+
+.whole-title-image-link-area .link:after {
+  content: "";
+  height: 50px;
+  left: 40%;
+  bottom: 20px;
+  position: absolute;
+  width: 50px;
+  background: url(../images/buttons-circle-close.png) no-repeat;
+}
+.title-image-link.active .image {
+  display: none;
+}
+.title-image-link.active .hidden-content {
+  display: unset;
+}
+/* ------------------------------------------------------CAPELLA------------------------------------------------------------------ */
+.row.capella{
+  margin-bottom: 30px;
+}
+.capella-date {
+  font-size: 24px;
+  color: #bebebe;
+  line-height: normal;
+  text-transform: none;
+  font-weight: 200;
+}
+.-capella-img {
+  margin-top: 43px;
+}
+
+.capella-title {
+  font-size: 35px;
+  margin: 0px;
+  font-weight: 200 !important;
+  text-transform: none;
+  line-height: normal;
+  margin-bottom: 10px;
+  padding-right: 25px;
+}
+
+.capella-link {
+  background: #fff;
+  border: 4px solid #bbd9eb;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #00245b;
+  margin-top: 32px !important;
+  height: 72px;
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 35px;
+}
+.capella-link:hover {
+  background: #00254b;
+  color: #fff;
+  border: 4px solid transparent;
+  cursor: pointer;
+}
+.capella-link:hover a,
+.capella-link a:hover {
+  color: white !important;
+  cursor: pointer;
+}
+.online-voice-progress-detail .image-box{
+  margin-bottom: 32px;
+}
+.online-voice-progress-detail .date-text{
+  font-size: 24px;
+  color: #bebebe;
+  line-height: normal;
+  text-transform: none;
+  font-weight: 200;
+}
+.whole-callout-h1-cta--component.capella-node {
+	margin: 50px -100vw 0 -100vw;
+}
+/* -----------------------------------------------------------Capella Details Page----------------------------------------------------------- */
+body.page-node-type-online-voice-of-progress-capella #content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0px 50px;
+}
+
+body.page-node-type-online-voice-of-progress-capella
+  #content
+  .field.field--name-field-date.field--type-datetime.field--label-hidden.field--item.quickedit-field {
+  font-size: 24px;
+  color: #bebebe;
+  line-height: normal;
+  text-transform: none;
+  font-weight: 200;
+  line-height: 1.1em;
+  padding: 15px 0px;
+}
+
+body.page-node-type-online-voice-of-progress-capella
+  #content
+  img.attachment-full.size-full.wp-post-image {
+  max-height: 450px;
+  overflow: hidden;
+}
+
+body.page-node-type-online-voice-of-progress-capella
+  #content
+  .field.field--name-field-description-capella.field--type-text-with-summary.field--label-hidden.field--item.quickedit-field {
+  width: 100%;
+  margin: 0 0 18px;
+  color: #bebebe;
+  font-weight: 500;
+}
+
+/* --------------------------------------------------------------------BACK TO HOMEPAGE BUTTON---------------------------------------------------------------- */
+.custom_btn_al {
+  color: #fff;
+  background-color: #00254b;
+  padding: 15px 75px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.custom_btn_al:hover {
+  color: #00254b;
+  background-color: #fff;
+  border: 2px solid #00254b;
+}
+
+/* TWO COLUMN CARD */
+#two-column-card {
+  overflow: hidden;
+  padding: 64px 0px;
+}
+#two-column-card .image-title-desc-box {
+  text-align: left;
+  padding: 0 10px;
+  background: transparent;
+  margin-right: 2% !important;
+  width: 48%;
+  min-height: 515px;
+  float: left;
+  margin-bottom: 48px;
+}
+
+#two-column-card .image-title-desc-box:last-child {
+  margin-right: 0px;
+}
+
+#two-column-card .image-title-desc-box .image-box img {
+  width: 100% !important;
+  height: 100% !important;
+}
+#two-column-card .image-title-desc-box .desc-box {
+  text-align: left !important;
+}
+#two-column-card .image-title-desc-box .desc-box a {
+  display: inline-block;
+  padding: 17px 0 0 2px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #00254b;
+  border-bottom: solid 1.5px #b9d9eb;
+  text-transform: uppercase;
+}
+/* ------------------------------Icon Copy Link List--------------------------------- */
+#icon-copy-link-list-feilds {
+  padding-bottom: 64px;
+}
+#icon-copy-link-list-feilds .row .col-sm-3 {
+  display: flex;
+  justify-content: center;
+}
+
+#icon-copy-link-list-feilds .icon {
+  padding-top: 30px;
+}
+#icon-copy-link-list a{
+ border-bottom: 1px solid #b9d9eb;
+}
+/*-----------------------Latest News section-------------------------*/
+.news.heading {
+  margin-top: 64px;
+}
+.news a.button-more {
+  margin-left: 64px;
+}
+.news a.button-more{
+  margin-top: 0px !important;
+}
+.news .row,
+.news span {
+  padding-left: 48px;
+  display: flex;
+  align-items: center;
+}
+.paragraph-id--412 span.our-news {
+  margin-left: 50px;
+}
+.paragraph-id--412 h1.our-news {
+  margin-left: 50px;
+}
+.slick--skin--d3-back .slick-initialized {
+	padding-top: 0px !important;
+  padding-bottom: 45px !important;
+}
+#block-views-block-latest-homepage-news-block-1,
+#block-views-block-latest-homepage-news-from-xml-block-1 {
+  background: #00254b;
+  padding: 0px 45px;
+  margin-top: -40px;
+  position: relative;
+}
+#block-views-block-latest-homepage-news-block-1 .view-header,
+#block-views-block-latest-homepage-news-from-xml-block-1 .view-header {
+  width: 15%;
+  float: left;
+}
+#block-views-block-latest-homepage-news-block-1 .view-content,
+#block-views-block-latest-homepage-news-from-xml-block-1 .view-content {
+  width: 70%;
+  float: left;
+  padding: 36px 0px;
+}
+#block-views-block-latest-homepage-news-block-1 h2,
+#block-views-block-latest-homepage-news-from-xml-block-1 h2 {
+  color: #b1d9f3;
+  font-weight: 200;
+}
+#block-views-block-latest-homepage-news-block-1 .view-content a,
+#block-views-block-latest-homepage-news-from-xml-block-1 .view-content a {
+  color: #b1d9f3;
+}
+#block-views-block-latest-homepage-news-block-1 .view-content a:hover,
+#block-views-block-latest-homepage-news-from-xml-block-1 .view-content a:hover {
+  color: #ff9900;
+}
+#block-views-block-latest-homepage-news-block-1
+  .views-slideshow-controls-bottom
+  .views_slideshow_controls_text_previous,
+#block-views-block-latest-homepage-news-block-1
+  .views-slideshow-controls-bottom
+  .views_slideshow_controls_text_pause,
+#block-views-block-latest-homepage-news-from-xml-block-1
+  .views-slideshow-controls-bottom
+  .views_slideshow_controls_text_previous,
+#block-views-block-latest-homepage-news-from-xml-block-1
+  .views-slideshow-controls-bottom
+  .views_slideshow_controls_text_pause {
+  display: none;
+}
+#block-views-block-latest-homepage-news-block-1
+  .views-slideshow-controls-bottom
+  #views_slideshow_controls_text_next_latest_homepage_news-block_1
+  a,
+#block-views-block-latest-homepage-news-from-xml-block-1
+  .views-slideshow-controls-bottom
+  #views_slideshow_controls_text_next_latest_homepage_news_from_xml-block_1
+  a {
+  font-size: 0px;
+}
+#block-views-block-latest-homepage-news-block-1
+  .views-slideshow-controls-bottom
+  #views_slideshow_controls_text_next_latest_homepage_news-block_1,
+#block-views-block-latest-homepage-news-from-xml-block-1
+  .views-slideshow-controls-bottom
+  #views_slideshow_controls_text_next_latest_homepage_news_from_xml-block_1 {
+  background: url(../images/news_feed_arrow.png);
+  background-size: 100% 100%;
+  height: 33px;
+  width: 18px;
+  position: absolute;
+  right: 40px;
+  top: 34%;
+}
+#block-views-block-latest-homepage-news-block-1
+  .views-slideshow-controls-bottom
+  #views_slideshow_controls_text_next_latest_homepage_news-block_1:hover,
+#block-views-block-latest-homepage-news-from-xml-block-1
+  .views-slideshow-controls-bottom
+  #views_slideshow_controls_text_next_latest_homepage_news_from_xml-block_1:hover {
+  background: url(../images/news_feed_arrow_hover.png);
+  background-size: 100% 100%;
+  height: 33px;
+  width: 18px;
+  position: absolute;
+  right: 40px;
+  top: 34%;
+}
+
+.user-logged-in
+  #block-views-block-latest-homepage-news-block-1
+  .views-slideshow-controls-bottom
+  #views_slideshow_controls_text_next_latest_homepage_news-block_1,
+.user-logged-in
+  #block-views-block-latest-homepage-news-from-xml-block-1
+  .views-slideshow-controls-bottom
+  #views_slideshow_controls_text_next_latest_homepage_news_from_xml-block_1 {
+  background: url(../images/news_feed_arrow.png);
+  background-size: 100% 100%;
+  height: 33px;
+  width: 18px;
+  position: absolute;
+  right: 40px;
+  top: 38%;
+  margin-top: 38px;
+}
+
+/*--------------------------------------------- Our Products------------------------------------------ */
+
+#our-products .image-desc-link {
+  display: flow-root;
+  background-color: #fff;
+  padding: 48px 40px;
+  justify-content: center;
+  text-align: center;
+}
+#our-products hr{
+  border: solid 0.5px rgba(153, 153, 153, 0.5);
+}
+#our-products .image-desc-link h4 {
+  width: auto;
+  font-size: 23px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 32px;
+  letter-spacing: normal;
+  color: #003366;
+  text-align: left;
+}
+#our-products .image-desc-link .img-desc-link .img{
+  min-height: 180px;
+}
+#our-products .image-desc-link .img-desc-link .img img{
+  padding: 46px 0 23px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#our-products .image-desc-link .img-desc-link .desc {
+  margin: 16px 0px 16px 0 !important;
+  font-size: 17px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333;
+}
+
+#our-products .image-desc-link .img-desc-link .link a {
+  font-size: 17px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #00254b;
+  border-bottom: solid 1.5px #b9d9eb;
+  display: inline-block;
+}
+
+/* HOMEPAGE VIDEO */
+#home-page-full-video sup {
+  font-size: 50% !important;
+  vertical-align: middle;
+}
+#home-page-full-video .quote {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#home-page-full-video .quote h1.our-company {
+  color: #fff;
+}
+
+.bottom-border {
+  overflow: hidden;
+  border-bottom: 8px solid #ff9900;
+  padding-bottom: 72px !important;
+}
+
+/*-------------homepage paient come first section------------*/
+.whole-patient-comes-first-section {
+  height: 485px;
+  padding: 44px 0px;
+}
+.whole-patient-comes-first-section .content {
+  width: 1170px;
+  margin: auto;
+  padding: 0px 100px;
+}
+.whole-patient-comes-first-section .row {
+  display: flex;
+  align-items: center;
+}
+.whole-patient-comes-first-section .button-more{
+  margin-top: 0px !important;
+}
+.whole-patient-comes-first-section .content .description h1,
+.whole-patient-comes-first-section .content .description p {
+  color: #fff;
+}
+
+.whole-patient-comes-first-section .content .description p .button-more:hover {
+  border: 4px solid #bbd9eb;
+  color: #fff;
+}
+.whole-patient-comes-first-section button {
+  margin-left: 25px;
+  margin-top: 0px;
+}
+.image-quote.overlap {
+  width: 1170px;
+  margin: auto;
+  margin-top: -194px;
+  position: relative;
+  z-index: 1;
+}
+.image-quote.overlap .quote {
+  position: absolute;
+  top: 80px;
+  left: 100px;
+  width: 470px;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 0;
+  color: #fff;
+}
+.image-quote.overlap .quote p.quote-text {
+  position: relative;
+}
+.image-quote.overlap .quote p.quote-text::before {
+  content: "";
+  background: url(../images/quote.svg) no-repeat left;
+  background-size: cover;
+  width: 30px;
+  height: 25px;
+  display: block;
+  position: absolute;
+  left: -30px;
+  top: -15px;
+}
+.patients-comes-first-video {
+  height: 455px;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  left: 0;
+  right: 0;
+}
+span.video-play-button {
+  background-image: url(../images/play-button.png);
+  background-size: cover;
+  display: block;
+  width: 154px;
+  height: 40px;
+  position: absolute;
+  z-index: 101;
+  bottom: 72px;
+  left: 100px;
+  cursor: pointer;
+}
+
+.quote span {
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 24px;
+  margin-right: 20px;
+}
+
+/* OUR SCIENCE HOMEPAGE */
+.paragraph-id--324 .description--component {
+  padding: 64px 70px;
+}
+#our-science-homepage p.font-20 {
+  margin-bottom: 24px !important;
+}
+#our-science-homepage p.image-title {
+  padding: 0px 16px;
+}
+.circle-icon-box {
+  width: 114px;
+  height: 114px;
+  background-size: cover;
+  box-shadow: 0 1px 4px 0 rgba(151, 151, 151, 0.46);
+  background-color: var(--white);
+  border-radius: 65px;
+}
+.circle-icon-box:hover {
+  cursor: pointer;
+}
+.genetic-medicines {
+  background-image: url(../images/icon-pipeline-default-genetic.png);
+}
+.genetic-medicines:hover {
+  background-image: url(../images/gm.png);
+}
+.cardio-metabolic-medicine {
+  background: url(../images/icon-pipeline-default-cbd.png) no-repeat center;
+}
+.cardio-metabolic-medicine:hover {
+  background: url(../images/cmd.png) no-repeat center;
+}
+.infectious-disease {
+  background: url(../images/icon-pipeline-active-infectious-copy.png) no-repeat
+    center;
+}
+.infectious-disease:hover {
+  background: url(../images/id.png) no-repeat center;
+}
+.central-nervous-system {
+  background: url(../images/icon-pipeline-default-cns-ocular.png) no-repeat
+    center;
+}
+.central-nervous-system:hover {
+  background: url(../images/cns.png) no-repeat center;
+}
+
+#our-science-homepage .col-sm-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HOMEPAGE IMAGE-LEFT OVERLAY */
+.career-section .content {
+  margin: 48px 0 0 -100px;
+  padding: 64px 40px 64px 96px;
+  background: #ffffff;
+  border-bottom: 8px solid #00245b;
+  box-shadow: 0 2px 4px 0 rgba(151, 151, 151, 0.46);
+  width: 48%;
+}
+.career-section{
+  margin-bottom: 64px;
+}
+.career-section .content p {
+  margin-top: 15px;
+}
+.career-section .image img {
+  width: 670px;
+  height: 632px;
+}
+
+.career-section .content button {
+  margin-top: 20px;
+}
+/*---------------Corporate Responsibility Homepage------------------*/
+#whole-corporate-responsibility-area .default-icon {
+  position: absolute;
+  cursor: pointer;
+}
+#whole-corporate-responsibility-area .active-icon {
+  position: absolute;
+  display: none;
+}
+#whole-corporate-responsibility-area .default-icon-423.default-icon,
+#whole-corporate-responsibility-area .active-icon-423.active-icon {
+  top: 155px;
+  left: 35%;
+}
+#whole-corporate-responsibility-area .default-icon-421.default-icon,
+#whole-corporate-responsibility-area .active-icon-421.active-icon {
+  top: 20px;
+  left: 188px;
+}
+#whole-corporate-responsibility-area .default-icon-421.default-icon:hover {
+  background: url(../images/p1.png) no-repeat;
+}
+#whole-corporate-responsibility-area .default-icon-421.default-icon:hover img {
+  opacity: 0;
+}
+#whole-corporate-responsibility-area .default-icon-422.default-icon,
+#whole-corporate-responsibility-area .active-icon-422.active-icon {
+  top: 121px;
+  right: 23px;
+}
+#whole-corporate-responsibility-area .default-icon-422.default-icon:hover {
+  background: url(../images/c1.png) no-repeat;
+}
+#whole-corporate-responsibility-area .default-icon-422.default-icon:hover img {
+  opacity: 0;
+}
+#whole-corporate-responsibility-area .default-icon-418.default-icon,
+#whole-corporate-responsibility-area .active-icon-418.active-icon {
+  right: 90px;
+  top: 299px;
+}
+#whole-corporate-responsibility-area .default-icon-418.default-icon:hover {
+  background: url(../images/e1.png) no-repeat;
+}
+#whole-corporate-responsibility-area .default-icon-418.default-icon:hover img {
+  opacity: 0;
+}
+#whole-corporate-responsibility-area .default-icon-419.default-icon,
+#whole-corporate-responsibility-area .active-icon-419.active-icon {
+  top: 299px;
+  left: 88px;
+}
+#whole-corporate-responsibility-area .default-icon-419.default-icon:hover {
+  background: url(../images/pa1.png) no-repeat;
+}
+#whole-corporate-responsibility-area .default-icon-419.default-icon:hover img {
+  opacity: 0;
+}
+#whole-corporate-responsibility-area .default-icon-420.default-icon,
+#whole-corporate-responsibility-area .active-icon-420.active-icon {
+  top: 121px;
+  left: 23px;
+}
+#whole-corporate-responsibility-area .default-icon-420.default-icon:hover {
+  background: url(../images/s1.png) no-repeat;
+}
+#whole-corporate-responsibility-area .default-icon-420.default-icon:hover img {
+  opacity: 0;
+}
+
+#whole-corporate-responsibility-area .button-more {
+  margin-top: 13px;
+}
+#whole-corporate-responsibility-area .inner-block .icon-section {
+  background: url(../images/group-8.png) no-repeat;
+  background-position: center;
+  height: 430px;
+}
+
+/* DIVERSITY EQUITY HOMEPAGE */
+.paragraph-id--331 .description--component {
+  padding: 64px 70px;
+}
+.row.diversity-homepage img {
+	padding-top: 52px;
+}
+
+/*-----------Featured article homepage section-----------*/
+
+.paragraph-id--425 ul.newsList {
+  margin: 0px 0px !important;
+  padding: 0px !important;
+  margin-bottom: 64px !important;
+}
+.newsList{
+  margin: 24px auto;
+}
+ul.newsList li {
+  padding: 0px !important;
+  margin: 0px !important;
+  margin-right: 29px !important;
+}
+.paragraph-id--425 .description--component h3 {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.39;
+  color: #003366;
+  margin-top: 0px !important;
+}
+ul.newsList .newsTitle {
+  font-weight: 300;
+  font-size: 20px !important;
+}
+.newsCategory,ul.newsList .newsTitle {
+  text-align: left;
+}
+/* NEWS VIEW */
+.paragraph-id--426 .description--component,
+.paragraph-id--429 .description--component {
+  padding-bottom: 0px !important;
+}
+.paragraph-id--426 h2,
+.paragraph-id--429 h2 {
+  margin-bottom: 30px;
+}
+.paragraph-id--426 .description--component ul{
+  margin-bottom: 0px !important;
+}
+
+.paragraph-id--427 .description--component,
+.paragraph-id--428 .description--component {
+  padding-top: 0px !important;
+}
+
+/* OUR SCIENCE PAGE */
+.paragraph.paragraph--type--dark-bg-banner.paragraph-id--255.paragraph--view-mode--default {
+  margin-top: 16px;
+}
+
+/* DELIVERY PLATFORM */
+.paragraph-id--281 #full-html-content-background,
+.paragraph-id--278 #full-html-content-background {
+  margin-bottom: 0px;
+}
+.paragraph-id--281 #full-html-content-background h2 {
+  margin-top: 0px !important;
+}
+#html-content-background a{
+  border-bottom: 1.5px solid #b9d9eb;
+}
+/* PIPELINE */
+.paragraph.paragraph--type--full-html-content-with-backgroun.paragraph-id--349.paragraph--view-mode--default img {
+	margin-top: 32px;
+	padding: 0px 64px;
+}
+.paragraph.paragraph--type--full-html-content-with-backgroun.paragraph-id--349.paragraph--view-mode--default h2{
+  margin-top: 30px !important;
+  padding-top: 64px;
+}
+.paragraph-id--348 .description--component{
+  background: #fff;
+}
+/* .paragraph-id--354 .service-content-area .service-field-area .service-image-field img,.paragraph-id--361 .service-content-area .service-field-area .service-image-field img{
+	width: 50% !important;
+	height: auto;
+	margin: auto;
+} */
+
+.paragraph-id--354 .field.field--name-field-upload-image.field--type-image.field--label-hidden.field--item img, .paragraph-id--361 .field.field--name-field-upload-image.field--type-image.field--label-hidden.field--item img {
+	width: 50%;
+	height: 50%;
+	margin: auto;
+}
+
+.paragraph-id--349 #full-html-content-background {
+  margin-top: 15px;
+  padding: 25px 0px 0px 0px;
+  margin-bottom: 0px;
+}
+
+/* FULL BLEED */
+
+.fullbleed-bg {
+  height: 524px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0px;
+  overflow: hidden;
+}
+.fullbleed-bg .bleed-box h2{
+  margin-top: 0px !important;
+  text-align: center;
+}
+
+.bleed-box{
+  height: 385px;
+  padding: 64px 40px;
+}
+
+.fullbleed-bg .bleed-box .icon img.img-responsive{
+  width: 170px;
+  height: 74px;
+  color: #333;
+  margin-bottom: 32px;
+}
+
+.fullbleed-bg .bleed-box .desc{
+  margin: 0px 0px 16px 0px;
+}
+
+.fullbleed-bg .bleed-box .link a{
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #00254b;
+  text-transform: uppercase;
+  border-bottom: solid 1.5px #b9d9eb;
+}
+.fullbleed-bg .bleed-box .career-full-bleed{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.fullbleed-bg .bleed-box .career-full-bleed .col-sm-4{
+  text-align: center;
+  position: relative;
+}
+.fullbleed-bg .bleed-box .desc .career-full-bleed .col-sm-4 img{
+  height: 160px;
+  width: auto;
+}
+.fullbleed-bg .bleed-box .career-full-bleed a{
+  font-weight: 600;
+  color: #003366;
+  border-bottom: 1.5px solid #b9d9eb;
+  margin-top: 16px;
+  text-transform: uppercase;
+  display: block;
+}
+.paragraph-id--532 .fullbleed-bg .bleed-box{
+  height: auto;
+  width: 780px;
+  padding: 30px
+}
+.paragraph-id--532 .fullbleed-bg .bleed-box .career-full-bleed .col-sm-4{
+  width: 250px !important;
+}
+.paragraph-id--532 .fullbleed-bg .bleed-box h2 {
+  margin-top: 0px !important;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.paragraph-id--532 .fullbleed-bg .bleed-box .career-full-bleed a {
+  font-weight: 600;
+  color: #003366;
+  border-bottom: 1.5px solid #b9d9eb;
+  margin-top: 50px;
+  text-transform: uppercase;
+  display: block;
+}
+.paragraph-id--602 .description--component .col-sm-8 h2{
+  margin-bottom: 8px;
+}
+/* TWO COLUMN CARD WITH LEFT TEXT */
+.two-column-card-with-left-content .link-box a{
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #00254b;
+  border-bottom: solid 1.5px #b9d9eb;
+}
+
+/* GENETIC TESTING & COUNSELLING */
+#accordion-column-content #accordion-column-feilds .accordion-inner-content .accordion-content{
+  background: #fff;
+  padding: 48px 143px 48px 70px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+}
+#accordion-column-feilds .inner-block-1{
+  padding: 0px 15px;
+}
+#accordion-column-feilds .inner-block-2{
+  border-top: 1px solid #979797;
+  margin: 16px 0.5px 15px 1.5px;
+}
+#accordion-column-feilds .inner-block-1 div.col-sm-10,#accordion-column-feilds .inner-block-1 div.col-sm-2,
+#accordion-column-feilds .inner-block-2 .col-sm-10,#accordion-column-feilds .inner-block-2 .col-sm-2{
+  padding: 0;
+}
+#accordion-column-feilds .inner-block-2 .col-sm-10{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+ #accordion-column-feilds .inner-block-2 .expand-accordion{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  cursor: pointer;
+}
+.field--item.accordion-content-show #accordion-column-feilds .inner-block-2 .expand-accordion .open-accordian{
+  display: none;
+}
+.field--item.accordion-content-show #accordion-column-feilds .inner-block-2 .expand-accordion .close-accordian{
+  display: block !important;
+}
+#accordion-column-feilds .inner-block-1 div.order-test-button {
+  padding: 6px 22px;
+  background: #fff;
+  border: solid 3px #b9d9eb;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  color: #00245b;
+  height: 48px;
+  display: inline-block;
+  line-height: 30px;
+}
+
+#accordion-column-feilds .inner-block-1 div.order-test-button:hover {
+  background: #00254b;
+  color: #fff;
+  border: 4px solid transparent;
+}
+.accordion-content{
+  margin: 32px 2px 0 0;
+  padding: 48px 143px 48px 70px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
+.paragraph--type--accordion-1-column-expanded-cont .accordion-content-show .accordion-content{
+  display: block !important;
+}
+#accordion-column-feilds .inner-block-1 div.field-heading,#accordion-column-feilds .accordion-content  h3{
+  font-size: 23px;
+  font-weight: 600 !important;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  color: #003366;
+}
+#accordion-column-feilds {
+	margin-top: 30px !important;
+}
+.paragraph-id--399 #full-html-content-background{
+  padding: 0 !important;
+  margin-bottom: 0px !important;
+}
+#genetic-testing-work .genetic-testing .col-sm-3 {
+	width: 270px;
+	height: 424px;
+	margin: 22px 30px 32px 0;
+	padding: 40px 24px 56px 24px;
+	border: solid 1px #f8f8f8;
+	background-color: #fff;
+  text-align: center;
+}
+#accordion-column-feilds .inner-block-2 .col-sm-10 .field.field--name-field-description-text-area {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.accordion-content-show #accordion-column-feilds .inner-block-2 .col-sm-10 .field.field--name-field-description-text-area {
+  display: block;
+}
+#genetic-testing-work .genetic-testing .col-sm-3:nth-child(4){
+  margin-right: 0px !important;
+}
+
+#genetic-testing-work .step p {
+  font-size: 23px !important;
+  font-weight: bold !important;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.39 !important;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ff9900 !important;
+  margin-top: 24px;
+}
+
+#genetic-testing-work .heading {
+  font-size: 27px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: center;
+  color: #003366;
+  margin-top: 8px;
+}
+#genetic-testing-work .genetic-testing .col-sm-3 .desc{
+  margin-top: 16px;
+}
+
+#genetic-testing-work p.bottom-text{
+  font-size: 17px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333;
+}
+
+#genetic-counselling-work{
+  padding: 0px 100px;
+  margin-top: 64px;
+}
+#genetic-counselling-work a{
+  border-bottom: 1.5px solid #b9d9eb;
+}
+.paragraph-id--400 .description--component{
+  padding-bottom:  64px 0px 0px 0px !important;
+}
+.paragraph-id--400 #genetic-counselling-work .genetic-counseling .col-sm-10  ul{
+  margin: 0px  !important;
+}
+
+#genetic-counselling-work .heading-text{
+  margin-bottom: 32px;
+}
+
+#genetic-counselling-work .genetic-counseling{
+  margin-bottom: 48px;
+}
+
+#genetic-counselling-work .col-sm-2{
+  text-align: center;
+}
+
+#genetic-counselling-work .col-sm-10{
+  padding-left: 56px !important;
+}
+
+#genetic-counselling-work .col-sm-2,#genetic-counselling-work .col-sm-10{
+  padding: 0px;
+}
+
+#genetic-counselling-work .col-sm-2 img{
+  width: 144px;
+  height: 144px;
+}
+
+#genetic-counselling-work .col-sm-10 h3{ 
+  font-size: 23px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.74;
+  letter-spacing: normal;
+  color: #003366;
+  margin: 0px 0px 16px 0px;
+}
+
+.paragraph-id--402 #html-content-background{
+  margin-bottom: 0px !important;
+}
+/********************For Patient Page***********************/
+.paragraph-id--432 .banner-overlay-html-content-description--component{
+  margin-bottom: 0px !important;
+}
+.paragraph-id--432 .banner-overlay-html-content-description--component h1.text-align-center{
+  margin-top: 0px;
+}
+.paragraph-id--440 .three-column-video-content-box{
+  padding: 18px 0px;
+}
+.paragraph-id--440 .three-column-video-desc-box h2{
+  margin-top: 50px;
+}
+.paragraph-id--433 .description--component{
+  padding-top: 0px;
+  padding-bottom: 64px;
+}
+.paragraph-id--436 #html-content-background{
+  padding: 64px 28px 64px 30px !important;
+}
+.paragraph-id--443 #dark-bg-banner {
+  padding: 45px 135px;
+  margin-top: 64px !important;
+  margin-bottom: 64px !important;
+}
+.paragraph-id--443 #dark-bg-banner .col-sm-8.left.content {
+  padding-right: 85px;
+}
+.paragraph-id--443 #dark-bg-banner .col-sm-4.right.button button:hover{
+  border: 4px solid #bbd9eb;
+}
+.paragraph-id--443 #dark-bg-banner p{
+  font-weight: 300;
+}
+.paragraph-id--443 #dark-bg-banner h2{
+  color: #fff;
+  font-size: 45px;
+  line-height: 1.1em;
+  font-weight: 200;
+}
+/******************Amyloidosis Page********************/
+.paragraph-id--451 .banner-overlay-html-content-description--component h1.text-align-center{
+  margin-top: 0px;
+}
+.paragraph-id--456 .description--component{
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+.paragraph-id--587 #html-content-background{
+  padding-top: 0px !important;
+}
+.paragraph-id--457 .patient-philosophy.corporate-responsibility{
+  padding-bottom: 64px !important;
+}
+.paragraph-id--457 .patient-philosophy.corporate-responsibility .col-sm-6 h2 {
+  margin-top: 0px;
+}
+.paragraph-id--457 .patient-philosophy.corporate-responsibility .col-sm-6 .content{
+  padding-left: 60px;
+}
+.paragraph-id--457 .patient-philosophy.corporate-responsibility .col-sm-6 .content ul{
+  padding-left: 18px;
+}
+.paragraph-id--457 .patient-philosophy.corporate-responsibility .col-sm-6 .content ul li{
+  margin-bottom: 0px;
+}
+
+.paragraph-id--465 .description--component{
+  padding-top: 64px !important;
+  padding-bottom: 32px !important;
+}
+.paragraph-id--465 h2{
+  margin-bottom: 24px !important;
+}
+.paragraph-id--458 .whole-callout-h1-cta--component .callout-h1-cta-content.col-sm-8 .title-text{
+  font-weight: 300;
+  line-height: 10px;
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+/***************************Acute Hepatic Porphyria*******************/
+.page-node-229 .description--component {
+  padding-top: 0px;
+}
+.paragraph-id--467 .banner-overlay-html-content-description--component{
+  margin-bottom: 0px !important;
+}
+.paragraph-id--467 .banner-overlay-html-content-description--component h1.text-align-center{
+  margin-top: 0px;
+}
+.paragraph-id--468 .description--component {
+  padding-top: 0px;
+  position: relative;
+}
+.paragraph-id--468 .description--component p.top-left {
+  width: 218px;
+  position: absolute;
+  top: 260px;
+}
+.paragraph-id--468 .description--component p.top-right {
+  width: 218px;
+  position: absolute;
+  top: 260px;
+  right: 0;
+}
+.paragraph-id--468 .description--component p.bottom-left {
+  width: 217px;
+  position: absolute;
+  bottom: 147px;
+}
+.paragraph-id--468 .description--component p.bottom-right {
+  width: 220px;
+  position: absolute;
+  bottom: 147px;
+  right: 0;
+}
+.paragraph-id--469 .description--component {
+  margin-top: 64px !important;
+}
+.paragraph-id--473 .three-column-video-desc-box{
+  margin-top: 64px !important;
+}
+.paragraph-id--589 #html-content-background h2{
+  margin-top: 0px !important;
+}
+/***************************Primary Hyperoxaluria Page****************************/
+.paragraph-id--481 .banner-overlay-html-content-description--component{
+  padding: 56px 201px;
+}
+.paragraph-id--481 .banner-overlay-html-content-description--component h1.text-align-center{
+  margin-top: 0px;
+}
+.paragraph-id--482 .description--component{
+  padding-bottom: 40px;
+}
+.paragraph-id--483 .description--component{
+  padding-bottom: 64px;
+}
+.paragraph-id--482 .description--component .inner-content{
+  width: 48%;
+  margin: auto;
+}
+.paragraph-id--482 .description--component .inner-content ul{
+  margin: 35px 0px !important;
+}
+.paragraph-id--482 .description--component .inner-content ul li{
+  margin: 0px !important;
+}
+.paragraph-id--485 .paragraph-id--484 .description--component p{
+  font-size: 17px !important;
+}
+.paragraph-id--485 .paragraph-id--484 .description--component .col-sm-6.left-content {
+  padding-left: 135px;
+}
+.paragraph-id--485 .paragraph-id--484 .description--component .col-sm-6.right-content{
+  padding-top: 10px;
+}
+.paragraph-id--485 .paragraph-id--484 .description--component .col-sm-6.right-content h3{
+  font-size: 23px;
+  font-weight: 300 !important;
+  text-align: center;
+}
+.paragraph-id--485 .paragraph-id--484 .description--component .bottom-content{
+  padding-left: 121px;
+}
+.paragraph-id--486 .description--component {
+  padding-top: 44px;
+  padding-bottom: 32px;
+}
+.paragraph-id--592 #html-content-background h2 {
+  margin-top: 0px !important;
+}
+/***********************Patient Services Page********************/
+.paragraph-id--495 .banner-overlay-html-content-description--component {
+  margin-bottom: 0px !important;
+}
+.paragraph-id--495 .banner-overlay-html-content-description--component h1.text-align-center {
+  margin-top: 0px;
+}
+.paragraph-id--496 .patient-philosophy.corporate-responsibility .col-sm-6 h2{
+  margin-top: 0px;
+}
+.paragraph-id--496 .patient-philosophy.corporate-responsibility col-sm-6 ul{
+  padding-left: 18px;
+}
+.paragraph-id--496 .patient-philosophy.corporate-responsibility .col-sm-6 ul li{
+  margin-bottom: 0px;
+}
+.paragraph-id--496 .patient-philosophy.corporate-responsibility .col-sm-6 p a{
+  position: relative;
+}
+.paragraph-id--496 .patient-philosophy.corporate-responsibility .col-sm-6 p a::after{
+  content: "";
+  background: url(../images/external-link-icon-over.svg);
+  background-size: cover;
+  width: 12px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: -14px;
+}
+.paragraph-id--497 .patient-philosophy.corporate-responsibility .col-sm-6 h2{
+  margin-top: 0px;
+}
+.paragraph-id--498 .description--component {
+  padding-top: 44px;
+  padding-bottom: 64px;
+}
+/**************************Genetic Testing And Counseling Program Page********************/
+.page-node-242 .description--component{
+  padding-top: 0px;
+}
+.paragraph-id--501 .description--component{
+  padding-bottom: 25px;
+}
+.paragraph-id--502 .video-popup-content .video-popup-desc{
+  display: none;
+}
+.paragraph-id--503 .description--component h3{
+  font-weight: 600;
+}
+.paragraph-id--503 .description--component hr{
+  border-top: 1px solid #979797;
+}
+.paragraph-id--504 #dark-bg-banner{
+  padding: 45px 115px;
+  margin-bottom: 64px !important;
+  margin-top: 64px !important;
+}
+.paragraph-id--504 #dark-bg-banner .col-sm-9 h3{
+  color: #ffffff;
+  font-weight: 600;
+}
+.paragraph-id--504 #dark-bg-banner .col-sm-9 p{
+  font-weight: 300;
+}
+.paragraph-id--506 .paragraph-id--505 .accordion-button{
+  background: #f8f8f8;
+  border: 0;
+  text-align: left;
+  padding-right: 50px;
+}
+.paragraph-id--506 .paragraph-id--505 .accordion-button:after{
+  position: absolute;
+  content: "";
+  right: -38px;
+  top: 19px;
+  background: url(../images/minus.png);
+  height: 100px;
+  width: 100px;
+}
+.paragraph-id--506 .paragraph-id--505 .accordion-button.collapsed {
+  background: #f8f8f8;
+  border: 0;
+  text-align: left;
+  position: relative;
+  padding-right: 50px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 50px;
+  text-overflow: ellipsis;
+}
+.paragraph-id--506 .paragraph-id--505 .accordion-button.collapsed:after{
+  position: absolute;
+  content: "";
+  right: -38px;
+  top: -15px;
+  background: url(../images/buttons-accordian-open-blue-48-px.png);
+  height: 100px;
+  width: 100px;
+}
+/****************************Patient Advocacy page**********************/
+.paragraph-id--561{
+  margin-top: 64px;
+}
+.paragraph-id--543 .banner-overlay-html-content-description--component {
+  padding: 56px 38px;
+  margin-bottom: 0px !important;
+}
+.paragraph-id--543 .banner-overlay-html-content-description--component h1{
+  margin-bottom: 24px !important;
+}
+.paragraph-id--561 #patient-advocacy-alnylam .image-desc-fields .img{
+  position: relative;
+}
+.paragraph-id--561 #patient-advocacy-alnylam .image-desc-fields .advocacy-open-btn {
+  position: absolute;
+  left: 45%;
+  bottom: 24px;
+  transition: 800ms ease-in-out;
+  cursor: pointer;
+}
+.paragraph-id--561 #patient-advocacy-alnylam .image-desc-fields.active .advocacy-open-btn {
+  position: absolute;
+  left: 45%;
+  bottom: 24px;
+  display: none;
+  transition: 800ms ease-in-out;
+}
+.paragraph-id--561 #patient-advocacy-alnylam .image-desc-fields .advocacy-close-btn {
+  position: absolute;
+  left: 45%;
+  bottom: 24px;
+  display: none;
+  transition: 800ms ease-in-out;
+  cursor: pointer;
+}
+.paragraph-id--561 #patient-advocacy-alnylam .image-desc-fields.active .advocacy-close-btn {
+  position: absolute;
+  left: 45%;
+  bottom: 24px;
+  display: block;
+  transition: 800ms ease-in-out;
+}
+.paragraph-id--561 #patient-advocacy-alnylam .image-desc-fields.active .desc{
+  display: block !important;
+  position: absolute;
+  top: 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  background-image: linear-gradient(to bottom, rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.85));
+  transition: 800ms ease-in-out;
+  text-align: center;
+  height: 358px;
+  width: 358px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.paragraph-id--561 #patient-advocacy-alnylam .image-desc-fields.active .desc p{
+  margin: 0px;
+}
+.paragraph-id--561 #patient-advocacy-alnylam .row .col-sm-4{
+  margin-top: 30px;
+}
+.paragraph-id--603{
+  margin-top: 50px;
+}
+.paragraph-id--609 .addblock--component{
+  margin-top: 64px !important;
+}
+#block-views-block-patient-advocacy-and-engagement-team-block-1 h2.block-title{
+  display: none;
+}
+#block-views-block-patient-advocacy-and-engagement-team-block-1 .view-header h2{
+  margin-bottom: 40px;
+}
+#block-views-block-patient-advocacy-and-engagement-team-block-1 .view-content{
+  text-align: center;
+}
+#block-views-block-patient-advocacy-and-engagement-team-block-1 .views-field.views-field-field-image img{
+  margin: auto;
+  margin-bottom: 30px;
+}
+#block-views-block-patient-advocacy-and-engagement-team-block-1 .views-row.clearfix.row-2{
+  display: flex;
+  justify-content: center;
+}
+#block-views-block-patient-advocacy-and-engagement-team-block-1 .views-field.views-field-title span.field-content{
+  font-weight: bold;
+  color: #003366;;
+}
+#block-views-block-patient-advocacy-and-engagement-team-block-1 .views-field.views-field-body p{
+  margin: 0;
+  line-height: 24px;
+}
+#block-views-block-patient-advocacy-and-engagement-team-block-1 .views-field.views-field-body .field-content{
+  margin-bottom: 64px;
+}
+.paragraph-id--571 #full-html-content-background .description--component .row{
+  display: flex;
+  align-items: center;
+}
+.paragraph-id--571 #full-html-content-background .description--component .row p{
+  color: #ffffff;
+}
+.paragraph-id--571 button.button-more{
+  margin-top: 0px !important;
+}
+/*****************************/
+.paragraph-id--571 #full-html-content-background{
+  margin-bottom: 0px;
+}
+.paragraph-id--620 .two-column-card-with-left-content{
+  margin-bottom: 64px;
+}
+.paragraph-id--620 .two-column-card-with-left-content .contact-link{
+  margin-top: 40px;
+  font-weight: 600;
+}
+.paragraph-id--620 .two-column-card-with-left-content .whole-accordian-column-content .whole-accordian-column-content.description{
+  padding: 0px 195px;
+  margin-bottom: 20px;
+}
+.paragraph-id--620 .accordian-content .accordion-item {
+  border-bottom: 1px solid #818181;;
+  margin-right: 60px;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+.paragraph-id--620 .accordian-content .accordion-item h2 button.accordion-button.collapsed:after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 50px;
+  width: 50px;
+  background: url(../images/add.png) no-repeat center;
+}
+.paragraph-id--620 .accordian-content .accordion-item h2 button.accordion-button:after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 50px;
+  width: 50px;
+  background: url(../images/minus.png) no-repeat center;
+}
+.paragraph-id--620 .accordian-content .accordion-item h2 button{
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+.paragraph-id--620 .accordian-content .accordion-item .accordion-body{
+  padding-right: 138px;
+  margin-bottom: 25px;
+}
+.paragraph-id--620 .accordian-content .accordion-item .accordion-body a{
+  font-weight: 600;
+}
+.paragraph-id--583 .description--component{
+  margin-bottom: 64px !important;
+}
+.paragraph-id--621 .description--component{
+  margin-bottom: 64px !important;
+}
+
+/* H1 CTA   Alnylam Medical Research */
+.paragraph.paragraph--type--callout-h1-cta.paragraph-id--246.paragraph--view-mode--default {
+	margin-top: 64px;
+}
+
+.row.genetic-testing-and-counseling-program-dark-bg-banner .col-sm-3 {
+  text-align: right;
+  padding-right: 25px;
+}
+.row.genetic-testing-and-counseling-program-dark-bg-banner .col-sm-9 h3{
+  margin-top: 0px !important;
+}
+
+.paragraph-id--583 ul.newsList{
+  margin-bottom: 0px !important;
+}
+
+.paragraph-id--583 h2{
+  margin-bottom: 32px !important;
+}
+
+.paragraph-id--620 .whole-accordian-column-content h2 {
+  margin-top: 0px;
+}
+/*search-content page */
+.view-search-content .view-content .views-row .views-field-title h3::before {
+    content: "";
+    width: 38px;
+    height: 38px;
+    background: url(../images/www-icon.png) no-repeat;
+    display: block;
+    position: absolute;
+    top: 28px;
+    left: 20px;
+}
+.view-search-content .view-filters {
+	background: #00254b;
+}
+.view-search-content .view-filters .views-exposed-form {
+	width: 1170px;
+	margin: auto;
+	padding: 21px 0 2px 0;
+	position:relative;
+}
+.view-search-content .view-filters .views-exposed-form .form--inline .form-item-search-api-fulltext input {
+	width: 1170px;
+    padding: 8px;
+    font-size: 24px;
+    border-radius: 2px;
+    border: 2px solid #002855;
+    height: 70px;
+    margin: 25px 0px;
+    padding: 20px;
+    color: #002855;
+    letter-spacing: 0;
+    font-weight: 500;
+}
+.view-search-content .view-filters .views-exposed-form .form--inline .form-item-search-api-fulltext input::placeholder {
+    color: #002855;
+}
+/* .view-search-content .view-filters .views-exposed-form .form--inline .form-item-search-api-fulltext .form-actions{
+	position: absolute;
+	top: 66px;
+	right: 0;
+} */
+.view-search-content .pager-nav .pagination > li > a {
+	width: 40px;
+	height: 40px;
+	margin: 0 11px 0 0;
+	padding: 5px 13px;
+	border: 2px solid#e5e5e5;
+	font-size: 18px;
+	cursor: pointer;
+	border-radius: 6px;
+	line-height: 23px;
+	font-weight: 400;
+}
+.view-search-content .pager-nav .pagination li a:hover {
+	border-color: #f8f8f8;
+	background-color: #f8f8f8 !important;
+	color: #ff9900 !important;
+}
+.view-search-content .pager-nav .pagination .active a {
+	border-color: #f8f8f8;
+	background-color: #f8f8f8 !important;
+	color: #303030 !important;
+}
+.view-search-content .pager__item--last a {
+	display: none;
+}	
+button#edit-submit-search-content {
+  position: absolute;
+  top: 37px;
+  right: 3px;
+  padding: 10px 32px;
+  font-size: 18px;
+  border-radius: 3px;
+  border: 2px solid #09c;
+  background-color: #09c;
+  font-weight: bold;
+}
+.form--inline.form-inline.clearfix {
+  position: relative;
+}
+button#edit-submit-search-content span {
+    display: none;
+}
+.view-search-content {
+    width: 1170px;
+    margin: auto;
+}
+.view-search-content .view-content .views-row {
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 0px;
+    padding: 10px 0px 30px 100px;
+    position: relative;
+}
+.view-search-content .view-content .views-row:last-child {
+    border-bottom: 0px solid #efefef;
+    margin-bottom: 0px;
+    padding-bottom: 64px;
+}
+#content .block-views-exposed-filter-blocksearch-content-page-1 .form--inline {
+    width: 1170px;
+    margin: auto;
+	padding: 21px 0 5px 0;
+    position: relative;
+}
+#content .block-views-exposed-filter-blocksearch-content-page-1 .form--inline.form-inline .form-group {
+    width: 100%;
+}
+#content .block-views-exposed-filter-blocksearch-content-page-1 .form--inline .form-item-search-api-fulltext input {
+	width: 100%;
+    padding: 8px;
+    font-size: 24px;
+    border-radius: 2px;
+    border: 2px solid #002855;
+    height: 70px;
+    margin: 25px 0px;
+    padding: 20px;
+    color: #002855;
+    letter-spacing: 0;
+    font-weight: 500;
+}
+#content .block-views-exposed-filter-blocksearch-content-page-1 .form--inline .form-item-search-api-fulltext input::placeholder {
+    color: #002855;
+}
+#content .block-views-exposed-filter-blocksearch-content-page-1{
+	background: #00254b;
+}
+#content .block-views-exposed-filter-blocksearch-content-page-1 button.form-submit {
+	 position: absolute;
+	 top: 57px;
+	 right: 3px;
+	 padding: 10px 32px;
+	 font-size: 18px;
+	 border-radius: 3px;
+	 border: 2px solid #09c;
+	 background-color: #09c;
+	 font-weight: bold;
+}
+#content .block-views-exposed-filter-blocksearch-content-page-1 button.form-submit span{
+	display: none;
+}
+#content .views-element-container .view-id-search_content .view-empty {
+    text-align: center;
+    padding: 50px;
+}
+#content .view-search-content .view-header h3 {
+	padding-left: 100px;
+	font-size: 17px;
+	color: red;
+}
+.view-search-content .view-content .views-row .views-field-field-body {
+    max-height: 75px;
+    overflow: hidden;
+}
+/*slider css */
+.paragraph-id--658 .block-views-blockpatient-advocacy-and-engagement-team-block-2 {
+    display: none;
+}
+.paragraph-id--483 .description--component p.mobile-view-img{
+  display: none;
+}
+/** Sorting Element Css **/
+#block-exposedformsearch-contentpage-1-2 
+.form-item.js-form-item.form-type-select.js-form-type-select.form-group ,
+#block-exposedformsearch-contentpage-1-3
+ .form-item.js-form-item.form-type-select.js-form-type-select.form-group {
+  display: none !important;
+}
+#block-exposedformsearch-contentpage-1-4 {
+  background: #fff !important;
+}
+#block-exposedformsearch-contentpage-1-4 
+.form-type-textfield.js-form-type-textfield{
+  display: none;
+}
+#block-exposedformsearch-contentpage-1-4  
+.form-item.js-form-item.form-type-select.js-form-type-select.form-item-sort-by.js-form-item-sort-by.form-group{
+  display: none;
+}
+#block-exposedformsearch-contentpage-1-4 
+.form-item.js-form-item.form-type-select.js-form-type-select.form-item-sort-order.js-form-item-sort-order.form-group {
+  width: 20%;
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  z-index: 1;
+}
+#block-exposedformsearch-contentpage-1-4 
+.form-item.js-form-item.form-type-select.js-form-type-select.form-item-sort-order.js-form-item-sort-order.form-group 
+label.control-label {
+  display: none;
+}
+#block-exposedformsearch-contentpage-1-4 
+.form-item.js-form-item.form-type-select.js-form-type-select.form-item-sort-order.js-form-item-sort-order.form-group 
+.select-wrapper {
+  width: 100% !important;
+}
+#block-exposedformsearch-contentpage-1-4 
+.form-item.js-form-item.form-type-select.js-form-type-select.form-item-sort-order.js-form-item-sort-order.form-group 
+.select-wrapper 
+select#edit-sort-order--3{
+  width: 100%;
+}
+#block-exposedformsearch-contentpage-1-4 .select-wrapper:after{
+  border: none;
+  padding: 12px 12px;
+}
+#block-exposedformsearch-contentpage-1-4  button#edit-submit-search-content--3 {
+  display: none;
+}

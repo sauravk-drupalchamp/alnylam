@@ -1,0 +1,71 @@
+{#
+/**
+ * @file
+ * Theme override to display a single component.
+ *
+ * header area template
+ */
+#}
+
+<header>
+	<div id="clp-whole-mobile-header">
+		<div class="clp-mobile-header-top">
+			{% if page.clp_mobile_menu %}
+				<div class="mobile-header-menu">{{ page.clp_mobile_menu }}</div>
+			{% endif %}
+		</div>
+		<div class="clp-mobile-header-middle container-fluid">
+
+			<div class="mobile-header-language">
+				{% if page.clp_mobile_language_block %}
+					<div class="language-block">{{page.clp_mobile_language_block }}</div>
+				{% endif %}
+				{% if page.clp_mobile_language_switcher %}
+					<div class="language-block-switcher">{{page.clp_mobile_language_switcher }}</div>
+				{% endif %}
+			</div>
+			{% if page.clp_mobile_logo %}
+				<div class="mobile-header-logo">{{page.clp_mobile_logo }}</div>
+			{% endif %}
+		</div>
+		<div class="clp-mobile-header-bottom container-fluid">
+
+			{% if page.clp_mobile_cta %}
+				<div class="clp-mobile-header-cta">{{ page.clp_mobile_cta }}</div>
+			{% endif %}
+		</div>
+	</div>
+
+	<div id="clp-whole-header-top" class="container-fluid">
+		<div class="site-branding-menu-wrapper .row">
+			<div class="col-sm-4 site-branding">
+				{% if page.clp_header_top_left %}
+					<div class="clp-header-top_left">{{ page.clp_header_top_left }}</div>
+				{% endif %}
+			</div>
+			<div class="col-sm-8 menu">
+				<div class="row secondary-menu">
+					{% if page.clp_header_right_top %}
+						<div class="clp-header-right-top">
+							{{ page.clp_header_right_top }}
+						</div>
+					{% endif %}
+				</div>
+				<div class="row ext-cta">
+					{% if page.clp_header_right_bottom %}
+						<div class="clp-header-right-bottom">
+							{{ page.clp_header_right_bottom }}
+						</div>
+					{% endif %}
+				</div>
+				<div class="clp-language-switcher-block-wrapper">
+					{% if page.clp_header_language_block %}
+						<div class="clp-language-switcher-block">
+							{{ page.clp_header_language_block }}
+						</div>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</header>

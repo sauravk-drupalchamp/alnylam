@@ -1,0 +1,40 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+	<div{{attributes.addClass(classes)}}>
+
+		{% set ComponentWidth =  paragraph.field_set_width.value %}
+		{% set ComponentBackgroundColor =  paragraph.field_background_color_code.value %}
+		<div class="two-column-card-with-left-content" style="background-color:{{ ComponentBackgroundColor }};">
+			<div style="width:{{ ComponentWidth }}px; margin:auto; ">
+
+				<div class="two-column-left-content-box col-sm-4">
+					<h3 class="title-box">{{ content.field_title }}</h3>
+					<div class="desc-box">{{ content.field_body }}</div>
+					<div class="link-box">{{ content.field_link }}</div>
+				</div>
+
+				<div class="two-column-card-box col-sm-8">{{ content.field_2_column_card }}</div>
+
+			</div>
+		</div>
+	</div>
+{% endblock paragraph %}

@@ -1,0 +1,50 @@
+
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% set BackgroundImage = file_url(paragraph.field_upload_image.entity.uri.value) %}
+{% set ContainerWidth = paragraph.field_container_width.value %}
+{% set BoxWidth = paragraph.field_set_width.value %}
+{% set BoxPosition = paragraph.field_box_position.value %}
+
+{% block paragraph %}
+	<div {{attributes.addClass(classes)}}>
+        <div class="fullbleed-bg" style="background: url({{BackgroundImage}});   background-size: cover; background-repeat: no-repeat;"> 
+            <div style="width: {{ContainerWidth}}px; margin: auto;">
+                <div class="bleed-box" style="width: {{BoxWidth}}px; float: {{BoxPosition}}; background: #fff;">
+                  {% if paragraph.field_default_icon.value %}
+                    <div class="icon">
+                        {{content.field_default_icon}}
+                    </div>
+                  {% endif %}
+                    <div class="desc">
+                      {{content.field_description_text_area}}
+                    </div>
+                    {% if paragraph.field_link.value %}
+                    <div class="link">
+                      {{content.field_link}}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+	</div>
+{% endblock paragraph %}
+

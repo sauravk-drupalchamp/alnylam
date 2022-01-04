@@ -1,0 +1,125 @@
+.whole-full-html-callout-brochure-area h2{
+  text-align: center;
+}
+.whole-full-html-callout-brochure-area .description--component{
+  padding-top: 20px;
+}
+.brochure-bullet {
+  background: #fff;
+  padding: 64px 40px;
+}
+.brochure-bullet h3 {
+  color: #003366;
+  line-height: 24px;
+  font-size: 23px;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.brochure-bullet ul li {
+  line-height: 24px;
+}
+.brochure-bullet ul li::marker {
+  color: #ff9900;
+}
+
+.whole-callour-brochure-bullet-area .callour-brochure-bullet-right{
+  padding: 64px 52px;
+  color: #fff;
+  float: right;
+}
+
+.whole-callour-brochure-bullet-area a{
+  color: #b9d9eb;
+  border-bottom: 1.5px solid #b9d9eb;
+}
+
+.whole-callour-brochure-bullet-area .callour-brochure-bullet-right h5{
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #ffffff;
+  font-size: 23px;
+  line-height: 32px;
+  margin-top: 0;
+}
+
+.whole-callour-brochure-bullet-area .callour-brochure-bullet-right ul{
+  margin: 14px 0px;
+}
+
+.whole-callour-brochure-bullet-area .callour-brochure-bullet-right ul li{
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.whole-callour-brochure-bullet-area .callour-brochure-bullet-right ul li::marker{
+  color: #ff9900;
+}
+
+.whole-callour-brochure-bullet-area .callour-brochure-bullet-right .button-download{
+  margin-top: 30px;
+}
+
+.whole-callour-brochure-bullet-area .callour-brochure-bullet-right .button-download a{
+  padding: 15px 47px;
+  background: #0099cc;
+  color: #fff;
+  font-weight: 600;
+  background: #0099cc url(../../images/Download_white.svg) right 32px center no-repeat;
+  background-size: 9px 13px;
+}
+
+.whole-callour-brochure-bullet-area .callour-brochure-bullet-right .button-download a:hover{
+  color: #ff9900;
+  background: #0099cc url(../../images/Download_orange.svg) right 32px center no-repeat;
+  background-size: 9px 13px;
+}
+
+.patient-philosophy .heading-image-popup-content-area .image-title{
+  margin-top: 25px;
+}
+
+.patient-philosophy .heading-image-popup-content-area a.cboxElement{
+  padding: 16px 0 0 2px;
+  font-size: 17px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #00254b;
+  border-bottom: solid 1.5px #b9d9eb;
+}
+
+
+.patient-philosophy .col-sm-6 ul li a {
+    font-weight: 600;
+}
+
+.patient-philosophy .col-sm-6 ul li{
+  margin-bottom: 20px;
+}
+.corporate-responsibility h2.text-align-center {
+    margin-bottom: 32px;
+}
+
+.corporate-responsibility .col-sm-6 ul li::marker{
+  color:#ff9900;
+  font-size: 14px;
+}
+
+.corporate-responsibility .col-sm-6 img{
+  width:100%;
+}
+.whole-callour-brochure-bullet-area .callour-brochure-bullet-right .download-btn{
+  margin-top: 30px;
+}
+.patient-philosophy.corporate-responsibility a {
+	border-bottom: 1.5px solid #b9d9eb;
+}
+/* CORPORATE RESPONSIBILTY */
+.paragraph.paragraph--type--callout-h1-cta.paragraph-id--184.paragraph--view-mode--default {
+	margin-top: 64px;
+}

@@ -1,0 +1,386 @@
+/* IMAGE OVERLAY */
+#simple-banner-wrapper{
+  position: relative;
+}
+#simple-banner-wrapper .quote{
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+  right: 0px;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  padding: 10px;
+}
+
+
+.banner-overlay-html-content-description--component{
+  padding: 56px 100px 64px 100px;
+  overflow: hidden;
+  background-color: #ffffff;
+  margin-top: -30px !important;
+}
+.banner-overlay-html-content-description--component h3{
+  margin-top: 32px;
+}
+.banner-overlay-html-content-description--component h1{
+  margin-bottom: 16px;
+  margin-top: 0px;
+}
+.banner-overlay-html-content-description--component h2 {
+  margin-bottom: 24px;
+  margin-top: 16px;
+}
+.banner-overlay-html-content-description--component a:not(.button-more){
+  font-weight: bold;
+  border-bottom: 1.5px solid #b9d9eb;
+}
+.paragraph-id--414 .banner-overlay-html-content-description--component a:not(.button-more){
+  font-weight: 600;
+}
+.banner-overlay-html-content-description--component a.button-more{
+  text-decoration: none;
+}
+.banner-overlay-html-content-description--component .grants-giving-overlay .row .inner-list{
+  width: 72%;
+  margin: auto;
+  overflow: hidden;
+}
+.paragraph-id--414 .banner-overlay-html-content-description--component {
+  box-shadow: 0 2px 4px 0 rgba(151, 151, 151, 0.46);
+  margin-top: -70px !important;
+}
+.paragraph-id--414 .banner-overlay-html-content-description--component a{
+  border-bottom: 4px solid #bbd9eb;
+}
+.paragraph-id--414 .banner-overlay-html-content-description--component a:hover{
+  border-bottom: 4px solid #00254b;
+}
+/* --------------Light BG BANNER Paragraph------------------------ */
+#light-bg-banner{
+  padding: 32px 48px;
+  border: 1px solid #00254b;
+  margin-bottom: 32px !important;
+  margin-top: 32px !important;
+  position: relative;
+}
+#light-bg-banner .row {
+  display: flex;
+  align-items: center;
+}
+#light-bg-banner h2 {
+	font-size: 35px;
+	line-height: 1.14;
+	color: #003366;
+	font-weight: 700;
+	margin-bottom: 8px;
+	margin-top: 0px !important;
+}
+
+/* #light-bg-banner h3{
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: 600;
+} */
+
+#light-bg-banner .description_text_area a{
+  font-weight: bold;
+  border-bottom: 1.5px solid #b9d9eb;
+}
+#light-bg-banner .col-sm-4 .field--name-field-link {
+  text-align: end;
+}
+#light-bg-banner .col-sm-4{
+  position: relative;
+}
+#light-bg-banner .col-sm-4 .field--name-field-link a {
+  background: #fff;
+  border: 4px solid #bbd9eb;
+  padding: 24px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #00245b;
+  height: 72px;
+  display: inline-block;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+.paragraph-id--230 #light-bg-banner .col-sm-4 .field--name-field-link a::after {
+  content: "";
+  background: url(../../images/icon-button-download.png);
+  background-size: cover;
+  width: 12px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 32px;
+}
+#light-bg-banner .col-sm-4 .field--name-field-link a:hover{
+  background: #00254b;
+  color: #fff;
+  border: 4px solid transparent;
+}
+
+
+/* --------------DARK BG BANNER Paragraph ------------------------ */
+#dark-bg-banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  color: #ffffff !important;
+}
+#dark-bg-banner .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#dark-bg-banner a{
+  color: #b9d9eb;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 26px;
+  border-bottom: 1.5px solid #b9d9eb;
+}
+#dark-bg-banner a:hover{
+  color: #ff9900;
+}
+#dark-bg-banner p::selection{
+  background: #91b2c3;
+}
+
+.banner-overlay-html-content-description--component p em {
+	font-size: 23px;
+	text-align: left;
+	font-style: normal;
+	line-height: 32px;
+	color: #003366;
+}
+.banner-overlay-html-content-description--component p.decoration {
+    font-size: 56px;
+    line-height: 1;
+    font-weight: 300;
+    color: #003366;
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: -35px;
+    width: 20px;
+    height: 17px;
+    background: url(../../images/quote.svg) top no-repeat;
+    background-size: 20px 17px;
+}
+.banner-overlay-html-content-description--component .qutation-block {
+    position: relative;
+}
+.banner-overlay-html-content-description--component .qutation-block strong{
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+  color: #003366;
+}
+
+
+.page-node-45 .banner-overlay-html-content-description--component h2 {
+    text-align: center;
+    font-size: 45px;
+    line-height: 25px;
+    color: #003366;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+.banner-overlay-html-content-description--component .text {
+    font-weight: 300;
+    line-height: 24px;
+}
+.banner-overlay-html-content-description--component .link{
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.banner-overlay-html-content-description--component .link a{
+  color: #0099cc;
+  text-decoration: none;
+}
+.banner-overlay-html-content-description--component .link a:hover {
+  color: #ff9900;
+  text-decoration: none;
+}
+.banner-overlay-html-content-description--component .counter-box{
+  text-align: center;
+  margin-top: 61px;
+}
+.banner-overlay-html-content-description--component .counter-box h1{
+  font-size: 60px;
+  font-weight: 200;
+  line-height: normal;
+  margin-bottom: 20px;
+  letter-spacing: -3px;
+}
+.banner-overlay-html-content-description--component .counter-box .count-text{
+  font-size: 15px;
+  line-height: 20px;
+  padding: 0 12px;
+  color: #1a3a67;
+}
+.banner-overlay-html-content-description--component .counter-box h3{
+  text-align: center;
+  font-size: 23px;
+  line-height: 29px;
+  color: #003366;
+  font-weight: 600;
+}
+.banner-overlay-html-content-description--component .counter-box h1 span{
+  font-style: normal;
+  color: #189cd7;
+  font-weight: 400;
+  font-size: 70px;
+}
+.banner-overlay-html-content-description--component .counter-box .update-month{
+  margin-top: 35px;
+}
+.banner-overlay-html-content-description--component .counter-box .update-month em{
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* .banner-overlay-html-content-description--component ul{
+  margin: 30px 0px;
+} */
+.paragraph-id--216 .banner-overlay-html-content-description--component ul,.paragraph-id--216 .banner-overlay-html-content-description--component ul li{
+  margin: 0px !important;
+}
+.banner-overlay-html-content-description--component ul li{
+  margin-bottom: 16px;
+}
+.banner-overlay-html-content-description--component ul li a{
+  font-weight: 400;
+}
+.banner-overlay-html-content-description--component ul li::marker {
+    color: #ff9900;
+}
+
+.banner-overlay-html-content-description--component ul li ul{
+  margin: 0px;
+}
+.banner-overlay-html-content-description--component ul li ul li {
+  margin-bottom: 16px;
+  position: relative;
+}
+.banner-overlay-html-content-description--component ul li ul li::marker{
+  font-size: 0px;
+}
+.banner-overlay-html-content-description--component ul li ul li:before {
+  content: " ";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #ff9900;
+  top: 50%;
+  left: -23px;
+
+}
+
+
+/* --------------------------------Full HTML Light Dark Banner----------------------- */
+
+#full-html-light-dark{
+  overflow: hidden;
+  padding: 64px 0px;
+}
+#full-html-light-dark .field_fullhtml_light_dark_field {
+  background-color: #fff;
+  padding: 15px 48px;
+}
+#full-html-light-dark .description--component{
+  padding: 0px;
+}
+#full-html-light-dark .field_full_html_paragraph .field--item{
+  background-color: #fff;
+  padding: 5px 25px;
+}
+#full-html-light-dark .field--name-field-heading-1{
+  text-align: center;
+    font-weight: 300;
+    text-transform: none;
+    line-height: 1.1em;
+    padding-bottom: 32px;
+    font-size: 35px;
+    font-weight: 200;
+    color: #003366;
+}
+#full-html-light-dark h5{
+  color: #003366 !important;
+  font-weight: 600;
+  font-size: 23px;
+  letter-spacing: 0 !important;
+  line-height: 1.4;
+  padding-bottom: 16px;
+  margin-bottom: 0 !important;
+}
+.paragraph-id--226 h5{
+  padding-bottom: 0px !important;
+}
+#full-html-light-dark a{
+  border-bottom: 1.5px solid #b9d9eb;
+}
+#full-html-light-dark .description--component{
+  margin-bottom: 0px !important;
+  padding-bottom: 16px;
+}
+.paragraph-id--230 #light-bg-banner{
+  margin-top: 17px !important;
+}
+.paragraph-id--260 #full-html-light-dark{
+  padding-top: 0 !important;
+  padding-bottom: 8px !important;
+}
+
+.paragraph-id--260 .paragraph-id--255 .dark-bg-banner {
+  padding: 0 2em;
+}
+.paragraph-id--298 .whole-bios-card-section h2{
+  margin-bottom: 32px;
+}
+.paragraph-id--278 .paragraph-id--277 .description--component h2{
+  margin-top: 0 !important;
+}
+.paragraph-id--298 .whole-bios-card-section h2.text-align-center{
+  margin-top: 0px !important;
+}
+.paragraph-id--298 .whole-bios-card-section .field--item:last-child .bios-card-without-image-field{
+  margin-bottom: 0;
+}
+.paragraph-id--368 .description--component {
+  margin-top: 64px !important;
+  margin-bottom: 64px !important;
+}
+.paragraph-id--455 .accordion-column-content{
+  padding-top: 0px;
+}
+.paragraph-id--400 #genetic-counselling-work .genetic-counseling{
+  margin-top: 32px;
+}
+.paragraph-id--400 #genetic-counselling-work .genetic-counseling:last-child{
+  margin-bottom: 64px;
+}
+.paragraph-id--455 .inner-block-2 .col-sm-10 .field.field--name-field-description-text-area{
+  margin-top: 16px;
+}
+.paragraph-id--625 .col-sm-10 .field--name-field-description-text-area h3{
+  margin-top: 0;
+}
+.paragraph-id--393 .banner-overlay-html-content-description--component  ul,
+.paragraph-id--396 .banner-overlay-html-content-description--component  ul{
+  margin-bottom: 16px;
+}
+.paragraph-id--393 .banner-overlay-html-content-description--component  ul,
+.paragraph-id--396 .banner-overlay-html-content-description--component  ul{
+  margin-top: 16px;
+}
+.paragraph-id--318 #icon-copy-link-list .paragraph-id--317 #icon-copy-link-list-feilds ul li::marker{
+  color: #ff9900;
+}

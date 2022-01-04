@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% block paragraph %}
+	<div{{attributes.addClass(classes)}}>
+    {% set ThumbnailImage = file_url(paragraph.field_background_thumbnail.entity.uri.value) %}
+		<section id="clp-video-description-thubmnail" style="overflow:hidden;">
+			<div class="video-content">
+					<a data-colorbox-inline=".video-box-{{ paragraph.id() }}" style="width: 650px; height:400px;">
+						<div class="image-box"> 
+                            <img src={{ThumbnailImage}} alt={{content.field_background_thumbnail.alt}}/>
+							<div class="three-column-video-play-button"><img src="/themes/custom/alnylam/images/button-desktop-play-button-40-px.png"></div>
+						</div>
+                        <div class="description">{{ paragraph.field_description_text_area.value|raw}}</div>
+						<div class="video-box-{{ paragraph.id() }}" style="display: none;">{{ content.field_embed_video }}</div>
+					</a>
+					{% if paragraph.field_video_desc.value %}
+						<div class="clp-video-desc">{{ content.field_video_desc}}</div>
+					{% endif %}
+			</div>
+		</section>
+	</div>
+{% endblock paragraph %}

@@ -1,0 +1,36 @@
+
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+  {% set ComponentWidth = paragraph.field_set_width.value %}
+  {% set BackgroundColor = paragraph.field_background_color_code.value %}
+	<div{{attributes.addClass(classes)}}>
+        <div id="clp-html-content-background" style="background-color:{{BackgroundColor}};">
+          <div class="content-wrapper" style="width:{{ComponentWidth}}px; margin:auto; ">
+              <div class="clp-html-background-desc">
+                {{paragraph.field_description_text_area.value|raw}}
+              </div>
+              <div class="{{paragraph.field_pop_up_id.value|raw}} popup-content" style="display:none; background:#fff; overflow:hidden;">{{content.field_html_pop_up}}</div>
+          </div>
+        <div>
+	</div>
+{% endblock paragraph %}
+

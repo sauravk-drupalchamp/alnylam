@@ -1,0 +1,510 @@
+/*--------------investigator-initiated-studies---------------*/
+.paragraph-id--200 .description--component {
+  padding-top: 0px;
+}
+/******************diversity-inclusion-page*****************/
+.paragraph-id--154 .description--component {
+  padding-bottom: 64px;
+}
+/*********************************************************/
+.description--component .col-sm-4 h2{
+  font-size: 45px;
+  color: #003366;
+  font-weight: 600;
+  line-height: 1.1em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.description--component .col-sm-4 h3{
+  font-size: 35px;
+  font-weight: 300;
+  color: #003366;
+}
+.description--component .col-sm-4 p{
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.paragraph--type--sim img{
+width: 100%;
+height: auto;
+}
+.description--component .row.text-center .col-sm-3 p.image-title {
+  color: #003366;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+  margin-top: 13px;
+}
+.description--component .content.overlap{
+  border-bottom: 6px solid #003366;
+  min-height: 565px;
+  margin-left: -92px;
+  background: #fff;
+  margin-top: 39px;
+  padding: 64px 40px 64px 96px;
+  box-shadow: 0 0 4px #ddd;
+}
+/* ----------------------Eligiblity field--------------- */
+.description--component ul{
+  margin: 30px 0px;
+}
+.description--component ul li{
+  margin-bottom: 16px;
+}
+.description--component ul li::marker {
+  color: #ff9900;
+}
+.description--component ul li a{
+  font-weight: 400;
+}
+.page-node-46 #html-content-background{
+  margin-bottom: 64px;
+}
+/* ------------------------------------------------ HTML WITH BACKGROUND -------------------------------------*/
+#html-content-background h4{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 35px;
+  font-weight: 300;
+  color: #003366;
+  line-height: 1.1em;
+  padding-bottom: 24px !important;
+  margin-bottom: 0 !important;
+}
+#html-content-background h1{
+margin-bottom: 8px !important;
+}
+#html-content-background text{
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+  color: #818181;
+  margin-bottom: 32px !important;
+  display: block;
+}
+
+#html-content-background .description--component ol li p{
+  font-size: 14px !important;
+  margin-bottom: 0px !important;
+  font-weight:  normal !important;
+}
+#html-content-background .description--component ol li::marker{
+  font-weight: bold;
+}
+
+#html-content-background .row .col-sm-6 ul li::marker{
+  color: #ff9900;
+}
+
+#html-content-background .row.inner-block {
+    display: contents;
+}
+
+#html-content-background .description--component h3{
+  color: #003366;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+#html-content-background .description--component{
+  padding: 0px;
+}
+
+/* --------------------------------Full Html content with background--------------------- */
+
+#full-html-content-background{
+  padding: 64px 0px;
+  margin-bottom: 64px;
+}
+
+#full-html-content-background h4{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 35px;
+  font-weight: 300;
+  color: #003366;
+  line-height: 1.1em;
+  padding-bottom: 24px !important;
+  margin-bottom: 0 !important;
+}
+#full-html-content-background text{
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+  color: #818181;
+  margin-bottom: 20px !important;
+  display: block;
+}
+
+#full-html-content-background p{
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+  color: #333333;
+}
+#full-html-content-background p.text-align-center {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+  color: #333333;
+  padding: 0 64px;
+}
+#full-html-content-background a{
+  border-bottom: 1.5px solid #b9d9eb;
+}
+
+
+#full-html-content-background .row .col-sm-6 ul li::marker{
+  color: #ff9900;
+}
+
+#full-html-content-background .row.inner-block {
+    padding: 0px 60px;
+}
+
+#full-html-content-background .description--component h3{
+  color: #003366;
+  font-size: 23px;
+}
+#full-html-content-background .description--component{
+  padding: 0px;
+}
+/* ---------------------- HTML content background advocacy bottom grid ---------------------- */
+
+#html-content-background .advocacy-bottom-grid{
+  text-align: center;
+}
+
+#html-content-background .advocacy-bottom-grid .col-sm-3{
+  background: #ffffff;
+  width: 22.9%;
+  padding: 40px 32px;
+  margin-right: 30px;
+  min-height: 592px;
+}
+
+#html-content-background .advocacy-bottom-grid .col-sm-3:nth-child(4){
+  margin-right: 0px;
+}
+
+#html-content-background .advocacy-bottom-grid h4{
+  font-size: 35px;
+  font-weight: 300;
+  color: #003366;
+  line-height: 1.1em;
+  padding-bottom: 6px;
+}
+
+#html-content-background .advocacy-bottom-grid text{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+#html-content-background .advocacy-bottom-grid .grid-img img{
+  width: 114px;
+  margin-bottom: 24px;
+} 
+
+#html-content-background .advocacy-bottom-grid .grid-text h3{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 300;
+  color: #003366;
+  padding-bottom: 10px;
+  text-transform: none;
+  line-height: 1.1em;
+}
+
+#html-content-background .advocacy-bottom-grid .grid-text p{
+  text-align: center;
+  padding-bottom: 10px;
+}
+#html-content-background .advocacy-bottom-grid a{
+  font-weight: 600;
+  border-bottom: 1.5px solid #b9d9eb;
+  text-transform: uppercase;
+}
+
+#html-content-background .advocacy-bottom-grid .grid-text small{
+    color: #003366;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #333333;
+    padding-bottom: 10px;
+    margin: 0 !important
+}
+
+#html-content-background .advocacy-bottom-grid .footer-text{
+  padding-top: 50px;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+#html-content-background .description--component .four-box {
+    margin-bottom: 50px;
+}
+.field_full_html_paragraph .description--component .content-area{
+  padding: 0px 50px;
+}
+
+.field_full_html_paragraph .description--component .content-area table.container td {
+  font-size: 17px;
+  color: #333333;
+  line-height: 24px;
+  font-weight: 300;
+  padding: 16px 0 0 0;
+  text-align: left;
+  vertical-align: top;
+}
+.field_full_html_paragraph .description--component .content-area table.bottom48 {
+  margin-bottom: 48px;
+}
+/*-------------Counter box section-------------------------*/
+.description--component .counter-box h3 {
+  font-size: 23px;
+  line-height: 29px;
+  font-weight: 600;
+}
+.description--component .counter-box .col-sm-2 {
+    text-align: center;
+}
+.description--component .counter-box .col-sm-2 h1 {
+    font-size: 60px;
+    font-weight: 200;
+    line-height: normal;
+}
+.description--component .counter-box .col-sm-2 span {
+    color: #189cd7;
+    font-size: 70px;
+}
+.description--component .counter-box p.text-center.update-month {
+  margin-top: 30px;
+}
+.description--component .counter-box p em {
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+.paragraph.paragraph--type--body.paragraph-id--226.paragraph--view-mode--default hr {
+  border: 1px solid #979797;
+}
+.paragraph.paragraph--type--html-content-with-background.paragraph-id--188.paragraph--view-mode--default,.paragraph.paragraph--type--html-content-with-background.paragraph-id--190.paragraph--view-mode--default,
+.paragraph.paragraph--type--html-content-with-background.paragraph-id--192.paragraph--view-mode--default {
+  margin-bottom: 32px;
+}
+
+.paragraph.paragraph--type--html-content-with-background.paragraph-id--213.paragraph--view-mode--default{
+  margin-top: 64px;
+}
+.paragraph.paragraph--type--body.paragraph-id--204.paragraph--view-mode--default{
+  margin-bottom: 64px;
+}
+.paragraph.paragraph--type--body.paragraph-id--204.paragraph--view-mode--default a{
+  border-bottom: 1.5px solid #b9d9eb;
+}
+.paragraph-id--263 .paragraph-id--262 .description--component .field--name-field-body ul{
+  margin-top: 0;
+}
+.paragraph-id--435 .advocacy-bottom-grid .col-sm-3{
+  min-height: 466px !important;
+}
+
+.paragraph-id--533 #dark-bg-banner{
+  padding: 64px 48px;
+}
+.paragraph.paragraph--type--body.paragraph-id--602.paragraph--view-mode--default .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paragraph.paragraph--type--html-content-with-background.paragraph-id--603.paragraph--view-mode--default {
+  margin-top: 0;
+}
+.paragraph.paragraph--type--_-column-card.paragraph-id--539.paragraph--view-mode--default #two-column-card {
+	padding-top: 0px;
+}
+.paragraph.paragraph--type--html-content-with-background.paragraph-id--605.paragraph--view-mode--default {
+  margin: 64px 0px;
+}
+
+.paragraph.paragraph--type--video-with-content.paragraph-id--516.paragraph--view-mode--default .text-content {
+	padding: 0px 40px;
+}
+.paragraph-id--516 .whole-video-with-content-area{
+  padding-top: 0px !important;
+}
+.paragraph.paragraph--type--_-column-card.paragraph-id--527.paragraph--view-mode--default #two-column-card{
+  padding-top: 0px;
+}
+.paragraph.paragraph--type--body.paragraph-id--208.paragraph--view-mode--default {
+	margin: 64px 0px;
+}
+
+.paragraph.paragraph--type--body.paragraph-id--517.paragraph--view-mode--default .img-wrapper {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 245px;
+}
+.paragraph-id--518 #full-html-content-background {
+  margin-bottom: 0px !important;
+  padding: 64px 0 0 0;
+}
+.paragraph-id--518 #full-html-content-background h2{
+  margin-top: 0px !important;
+}
+p.primary-hyperoxaluria-full-html-background-img {
+  margin-bottom: 16px;
+}
+
+.paragraph-id--344{
+  margin-bottom: 0px !important;
+}
+
+.paragraph-id--530 p,.paragraph-id--605 p{
+  font-size: 14px !important;
+}
+.paragraph-id--530 a{
+  font-weight: 400 !important;
+}
+.paragraph-id--161 h2{
+  margin-top: 0px;
+}
+.paragraph.paragraph--type--_-column-video-section.paragraph-id--473.paragraph--view-mode--default .three-column-video-content-box {
+  padding-top: 16px;
+}
+.paragraph-id--482 h2 {
+  margin-top: 0px !important;
+}
+.paragraph-id--489 .field.field--name-field-description-text-area.field--type-text-long.field--label-hidden.field--item sup {
+  top: 1px;
+}
+.paragraph-id--496 .patient-philosophy.corporate-responsibility {
+  padding-top: 0px !important;
+}
+.paragraph-id--506 div#html-content-background h3 {
+  padding-left: 5px;
+}
+.paragraph-id--501 h2{
+  margin-top: 0px !important;
+}
+.paragraph-id--46 p {
+	margin-bottom: 0px !important;
+}
+.whole-full-html-callout-brochure-area p.margin-bottom-16px {
+  margin-bottom: -30px !important;
+}
+.paragraph-id--177 h2{
+  margin-top: 0px !important;
+}
+.paragraph-id--177 ul{
+  padding-left: 18px !important;
+}
+.paragraph-id--186 .banner-overlay-html-content-description--component ul {
+  margin: 0px 0px 24px 0px;
+}
+.paragraph-id--194 .description--component ul,.paragraph-id--190 .description--component ul {
+  margin: 0px 0px;
+} 
+.paragraph-id--202 .banner-overlay-html-content-description--component {
+  padding-bottom: 0px !important;
+}
+.paragraph-id--203 #dark-bg-banner{
+  margin-bottom: 16px !important;
+}
+.paragraph-id--208 a{
+  border-bottom: 1.5px solid #b9d9eb;
+}
+.paragraph-id--207 #dark-bg-banner{
+  font-size: 23px;
+  line-height: 32px;
+}
+.paragraph-id--199 #light-bg-banner{
+  margin-top: 0px !important;
+}
+
+.paragraph-id--317 #icon-copy-link-list-feilds{
+  padding-bottom: 0px !important;
+}
+.paragraph-id--624{
+  padding-bottom: 64px !important;
+}
+.paragraph-id--624 p {
+  margin: 0px !important;
+  padding-left: 60px;
+  font-size: 14px;
+}
+
+.paragraph-id--263 h2{
+  margin-top: 0px !important;
+}
+.paragraph-id--256 h2, .paragraph-id--253 h2{
+	margin-top: 0px !important;
+}
+.paragraph-id--260 .field_fullhtml_light_dark_field{
+  padding-top: 0px !important;
+}
+.paragraph-id--371 .link.our-products-ext a::after {
+  content: "";
+  background: url(../../images/External_link_font_awesome.svg.png);
+  background-size: cover;
+  width: 12px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  top: 22px;
+  right: -16px;
+}
+
+.paragraph-id--455 #accordion-column-content{
+  padding-top: 0px !important;
+}
+.paragraph-id--455 #accordion-column-content h2{
+  margin-top: 0px !important;
+}
+.paragraph.paragraph--type--body.paragraph-id--398.paragraph--view-mode--default {
+	padding: 30px 0 64px;
+}
+.paragraph-id--384 .banner-overlay-html-content-description--component {
+  padding-bottom: 12px !important;
+}
+.paragraph-id--387 #light-bg-banner{
+  margin-bottom: 64px !important;
+}
+.paragraph-id--428 .button-more.button-more {
+  padding: 15px 35px;
+}
+.paragraph-id--126 p.font-20,.paragraph-id--93 p.font-20{
+  margin-bottom: 0px !important;
+}
+.paragraph-id--148 .bios-card-without-image-field.col-sm-12{
+  margin-bottom: 0px;
+}
+.paragraph-id--66 p.font-20{
+  margin-bottom: 64px !important;
+}
+.paragraph-id--188 #html-content-background, .paragraph-id--190 #html-content-background, .paragraph-id--192 #html-content-background, .paragraph-id--194 #html-content-background{
+  padding: 48px !important;
+}
+.paragraph-id--188 #html-content-background h3, .paragraph-id--190 #html-content-background h3, .paragraph-id--192 #html-content-background h3, .paragraph-id--194 #html-content-background h3{
+  margin-top: 0px !important;
+}
+.paragraph-id--188 #html-content-background .description--component ul, .paragraph-id--190 #html-content-background .description--component ul, .paragraph-id--192 #html-content-background .description--component ul, .paragraph-id--194 #html-content-background .description--component ul{
+  margin-bottom: 0px !important;
+}
+.paragraph-id--209 #light-bg-banner .col-sm-4 .field--name-field-link a,.paragraph-id--210 #light-bg-banner .col-sm-4 .field--name-field-link a,.paragraph-id--211 #light-bg-banner .col-sm-4 .field--name-field-link a{
+  padding-left: 28px!important;
+}
+.paragraph-id--165 .whole-callour-brochure-bullet-area-bg-img{
+  background-position: unset !important;
+}
+.paragraph-id--1184 h1.our-company::before {
+  margin-left: -64px;
+}

@@ -1,0 +1,21 @@
+section.whole-full-with-video-area {
+    position: relative;
+}
+.full-width-video-title img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    transform: translate(-50%, -50%);
+}
+.full-width-video-title h2 {
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    left: 31%;
+    top: 46%;
+    width: 387px;
+    font-size: 49px;
+    line-height: 1.25;
+    transform: translate(-28%, -50%);
+}

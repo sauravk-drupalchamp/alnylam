@@ -1,0 +1,44 @@
+{#
+/**
+ * @file
+ * Theme override to display a single component.
+ *
+ * footer area template
+ */
+#}
+
+<footer>
+
+	<div id="whole-footer-top" class="container-fluid">
+		<div class="footer-top">
+			<div class="row">
+				{% if page.footer_top_column_first %}
+					<div class="footer-top-column-1 col-sm-3">{{ page.footer_top_column_first }}</div>
+				{% endif %}
+				{% if page.footer_top_column_second %}
+					<div class="footer-top-column-2 col-sm-3">{{ page.footer_top_column_second }}</div>
+				{% endif %}
+				{% if page.footer_top_column_third %}
+					<div class="footer-top-column-3 col-sm-3">{{ page.footer_top_column_third }}</div>
+				{% endif %}
+				{% if page.footer_top_column_fourth %}
+					<div class="footer-top-column-4 col-sm-3">{{ page.footer_top_column_fourth }}</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+
+	<div id="whole-footer-bottom" class="container-fluid">
+		<div class="footer-bottom">
+			<div class="row">
+				{% if page.footer_bottom_left %}
+					<div class="footer-bottom-left-area col-sm-6">{{ page.footer_bottom_left }}</div>
+				{% endif %}
+				{% if page.footer_bottom_right %}
+					<div class="footer-bottom-right-area col-sm-6">{{ page.footer_bottom_right }}</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+
+</footer>

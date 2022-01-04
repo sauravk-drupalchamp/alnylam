@@ -1,0 +1,33 @@
+
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+	<div{{attributes.addClass(classes)}}>
+        {% set ComponentBackground = paragraph.field_background_color_code.value %}
+		{% set ComponentWidth =  paragraph.field_set_width.value %}
+
+            <div id="icon-copy-link-list" class="icon-copy-link-list" style="background:{{ ComponentBackground }}; margin:auto;">
+                <div style="width:{{ ComponentWidth }}px; margin:auto;">
+                    {{content.field_icon_copy_link_list_feilds}}
+                </div>
+            </div>
+	</div>
+{% endblock paragraph %}

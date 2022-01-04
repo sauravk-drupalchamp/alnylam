@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+body {
+  padding: 0px;
+  margin: 0px;
+  font-stretch: normal;
+  font-style: normal;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #333;
+}
+
+/***
+** Header Area
+**/
+header {
+  padding-left: 64px;
+  padding-right: 64px;
+  max-width: 1793px;
+  margin: auto;
+}
+#whole-header-top {
+  display: flex;
+  align-items: center;
+  padding: 8px 0 4px 0px;
+  border-bottom: 1px solid #b9d9eb;
+}
+div#whole-header-bottom {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+}
+/***
+** Content Area
+**/
+#maindiv {
+  margin: auto; 
+  padding: 0px; 
+}
+#midcontent-area {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+/***
+** Footer Area
+**/
+#whole-footer-top {
+  padding:  64px 35px;
+  background: #f4f9fc url(../images/dna-lines.png);
+  background-repeat: repeat-x;
+  overflow: hidden;
+}
+.footer-top {
+  width: 1175px;
+  margin: auto;
+}
+#block-footermenu{
+  display: none;
+}
+
+div#whole-footer-bottom {
+  font-size: 13px;
+  color: #fff;
+  padding: 17px 55px;
+  background: #00254b;
+}
+.footer-bottom {
+  width: 1175px;
+  margin: auto;
+}

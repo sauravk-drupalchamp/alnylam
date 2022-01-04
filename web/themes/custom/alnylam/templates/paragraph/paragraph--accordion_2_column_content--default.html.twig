@@ -1,0 +1,40 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+	<div{{attributes.addClass(classes)}}>
+
+		{% set ComponentWidth =  paragraph.field_set_width.value %}
+		{% set ComponentBackgroundColor =  paragraph.field_background_color_code.value %}
+		<div class="two-column-card-with-left-content" style="background-color:{{ ComponentBackgroundColor }};">
+			<div style="width:{{ ComponentWidth }}px; margin:auto; ">
+				<div class="whole-accordian-column-content" style="overflow:hidden;">
+					<div class="heading">{{content.field_heading_1}}</div>
+					<div class="whole-accordian-column-content description">{{content.field_video_desc}}</div>
+					<div class="accordian-content">
+						<div style="float:left; width:50%;">{{content.field_accordian_left_}}</div>
+						<div style="width:50%; float:right;">{{content.field_accordian_right}}</div>
+					</div>
+				</div>
+				<div class="contact-link">{{content.field_qutote}}</div>
+			</div>
+		</div>
+	</div>
+{% endblock paragraph %}

@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+  	<div{{ attributes.addClass(classes) }}>	   
+	    <div class="contact-us-map-card row">
+            <div class="col-sm-6 map-card-block">
+                <h2>{{content.field_heading_1}}</h2>
+                <p>{{content.field_video_desc}}</p>
+            </div>
+            <div class="col-sm-6">{{content.field_description_text_area}}</div>
+        </div>
+	</div>
+{% endblock paragraph %}

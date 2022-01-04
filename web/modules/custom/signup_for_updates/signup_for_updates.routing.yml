@@ -1,0 +1,16 @@
+signup_for_updates.ubd_api_information:
+  path: '/admin/config/ubd-api-information'
+  defaults:
+    _form: '\Drupal\signup_for_updates\Form\advancedEmailSubscriber'
+    _title: 'UDB API Information '
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+
+
+
+    
+
+    
+

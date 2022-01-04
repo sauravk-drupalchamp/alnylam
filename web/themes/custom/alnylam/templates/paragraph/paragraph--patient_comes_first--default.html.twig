@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% block paragraph %}
+    <div{{attributes.addClass(classes)}} style="position: relative;">
+
+      {% set ComponentBackground =  paragraph.field_background_color_code.value %}
+      <div class="whole-patient-comes-first-section" style="background:{{ComponentBackground}};">
+        <div class="content">
+          <div class="description">{{content.field_body}}</div>
+        </div>
+      </div>
+      <div class="image-quote overlap">
+        <div class="image">{{content.field_upload_image}}</div>
+        <div class="quote">{{content.field_qutote}}</div>
+        <div class="video-play-button-text">
+          <span class="video-play-button"></span>
+        </div>
+        <div class="patients-comes-first-video" style="display: none;">{{content.field_embed_video}}</div>
+      </div>
+    </div>
+{% endblock paragraph %}

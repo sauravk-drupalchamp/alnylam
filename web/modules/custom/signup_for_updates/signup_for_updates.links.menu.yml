@@ -1,0 +1,4 @@
+signup_for_updates.my_group_menu:
+    parent: system.admin_config
+    title: 'UDB API Information'
+    route_name: signup_for_updates.ubd_api_information

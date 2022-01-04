@@ -1,0 +1,216 @@
+.paragraph-id--598 .banner-overlay-html-content-description--component {
+    margin-bottom: 35px !important;
+    border-bottom: 1px solid #999;
+}
+div#edit-markup-01 h4 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+fieldset#edit-medical-professional--wrapper legend {
+    display: none;
+}
+div#edit-medical-professional {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+div#edit-medical-professional .form-type-radio {
+    display: inline-block;
+    width: 25%;
+}
+div#edit-medical-professional .form-type-radio label {
+    background-color: #0099CC;
+    padding: 13px 37px;
+    width: 100%;
+    color: #fff;
+}
+div#edit-medical-professional .form-type-radio input {
+    display: none;
+}
+div#edit-medical-professional .form-type-radio:first-child {
+    margin-right: 26px;
+}
+div#edit-medical-professional .form-type-radio label:hover {
+    background-color: #FF9900;
+}
+div#edit-persional-information-international .panel-heading {
+    display: none;
+}
+div#edit-markup-02 .intro_custom_subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    color: #333333;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: -15px;
+}
+/* ---form--- */
+#edit-persional-information-international .panel-body {
+    max-width: 880px;
+    margin: auto;
+    padding: 40px 0 30px 0;
+}
+#edit-persional-information-international {
+    background-color: #f8f8f8;
+    margin: 22px -100vw 0 -100vw;
+    border: none;
+}
+#edit-persional-information-international .panel-body label.control-label {
+    color: #7b7b7b;
+    font-weight: 600;
+}
+#edit-persional-information-international .panel-body .form-item-country{
+    display: inline-block;
+    width: 45%;
+}
+
+#edit-persional-information-international .panel-body .form-item-medical-specialization{
+    width: 45%;
+    float: right;
+}
+#edit-persional-information-international  .panel-body .form-item-professional-designation{
+    width: 45%;
+}
+#edit-persional-information-international .panel-body .form-control {
+    display: block;
+    height: 45px;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    margin: 0;
+    line-height: 30px;
+    background: #ffffff;
+    color: #000;
+    font-weight: 200;
+    border-radius: 0px;
+}
+div#edit-persional-information-international .panel-body .form-group {
+    margin-bottom: 31px;
+}
+.has-glyphicons .select-wrapper:after {
+    content: '▼';
+    border: 1px solid #0099CC;
+    padding: 16px 12px;
+    position: absolute;
+    top: 15%;
+    font-size: 10px;
+    color: #0099CC;
+}
+/* ------ im intrested in ------- */
+#edit-interested-international- .panel-heading {
+    display: none;
+}
+#edit-interested-international- {
+    border: none;
+}
+#edit-interested-international- .panel-body .checkbox input[type="checkbox"] {
+    width: 1.6em;
+    height: 1.6em;
+    position: absolute;
+    left: 18px;
+    top: -3px;
+}
+#webform-submission-signup-for-updates-international-node-307-add-form .panel-default {
+    border-color: transparent;
+}
+div#edit-interested-international- .panel-body {
+    max-width: 880px;
+    margin: auto;
+    background-color: #ffffff;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#edit-markup-03 .interested-in {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 300;
+    margin-top: 42px;
+}
+
+div#edit-markup-04 {
+    text-align: center;
+}
+#edit-markup-04 .btn-primary {
+    color: #fff;
+    background-color: #0099cc;
+    font-size: 16px;
+    padding: 8px 36px;
+    border: none;
+    border-radius: 0px;
+    margin: 35px 0 23px 0;
+}
+
+#edit-markup-05 .intro_custom_subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* margin-bottom: 22px; */
+}
+
+div#edit-interested-international- .panel-body .control-label {
+    font-size: 15px;
+    color: #7b7b7b;
+}
+
+#edit-interested-international- .panel-body .checkbox {
+    display: inline-block;
+    width: 48%;
+}
+
+#edit-interested-international- .panel-body .checkbox label {
+    margin-bottom: 26px;
+    padding-left: 33px;
+}
+#edit-interested-international- #edit-markup-06 {
+    border-bottom: 1px solid #999;
+    padding-bottom: 30px;
+}
+#edit-interested-international- .panel-body #edit-markup-06 {
+    margin-bottom: 40px;
+}
+#edit-interested-international- .panel-body .form-item-by-submitting-this-form-i-certify-that-i-am-a-healthcare-profess.js-form-item-by-submitting-this-form-i-certify-that-i-am-a-healthcare-profess.checkbox {
+   width:100%;
+}
+
+#edit-interested-international- .panel-body .form-item-i-agree-to-the-processing-of-my-personal-data-by-alnylam-and-its {
+   width: 100%;
+}
+#edit-markup-07 p.optional.grey {
+    font-size: 17px;
+    font-weight: 400;
+    font-style: italic;
+    color: #7b7b7b;
+    margin-bottom: 6px;
+    margin-top: -14px;
+}
+div#edit-actions {
+    text-align: center;
+}
+
+button#edit-actions-submit {
+    font-size: 16px;
+    padding: 16px 46px;
+    border-radius: 0px;
+    background-color: #0099cc;
+    border: none;
+    width: 25%;
+    margin: 20px 0 93px 0;
+}
+button#edit-actions-submit:hover{
+    background-color: #FF9900;
+}
+
+
+/* --------------------------- */
+.active-checkbox::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.6em;
+    height: 1.6em;
+    background-color:#0099cc;
+}

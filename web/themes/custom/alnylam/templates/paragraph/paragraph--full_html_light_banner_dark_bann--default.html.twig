@@ -1,0 +1,35 @@
+
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+	<div{{attributes.addClass(classes)}}>
+        {% set ComponentWidth = paragraph.field_set_width.value %}
+        {% set ComponentBackground = paragraph.field_background_color_code.value %}
+		<div id="full-html-light-dark" style="background: {{ComponentBackground}};">
+                <div style="width: {{ComponentWidth}}px; margin:auto;">
+                    <div>{{content.field_heading_1}}</div>
+                    <div class="field_fullhtml_light_dark_field">{{content.field_fullhtml_light_dark_field}}</div>
+                    <div class="field_full_html_paragraph">{{content.field_full_html_para}}</div>
+                </div>
+		</div>
+	</div>
+{% endblock paragraph %}
+

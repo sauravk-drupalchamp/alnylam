@@ -1,0 +1,5 @@
+name:  Signup for updates
+type: module
+description: 'This is Signup for update module'
+core_version_requirement: ^8.8.0 || ^9
+package: Custom
